@@ -1,13 +1,40 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { ChevronDown } from 'lucide-react';
+import { fadeUp } from './fadeUp';
+
 export default function FAQ({ content }) {
+  const { headline, items } = content.faq;
+
   return (
-    <section id="faq" style={{ maxWidth: 720, margin: '0 auto', padding: '2rem 1.5rem' }}>
-      <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Häufig gestellte Fragen</h2>
-      {(content.faq || []).map((item) => (
-        <details key={item.q} style={{ marginBottom: '0.75rem', borderBottom: '1px solid #e5e5e5', paddingBottom: '0.75rem' }}>
-          <summary style={{ cursor: 'pointer', fontWeight: 600 }}>{item.q}</summary>
-          <p style={{ marginTop: '0.5rem', color: '#444' }}>{item.a}</p>
-        </details>
-      ))}
+    <section id="faq" className="py-20 px-5" style={{ background: '#161f19' }}>
+      <div className="max-w-2xl mx-auto">
+        <motion.h2
+          {...fadeUp(0)}
+          className="text-3xl font-bold text-white leading-snug mb-10 text-center"
+          style={{ fontFamily: 'Poppins' }}
+        >
+          {headline}
+        </motion.h2>
+
+        <div className="space-y-3">
+          {items.map((item, i) => (
+            <motion.details
+              key={item.q}
+              {...fadeUp(Math.min(i * 0.03, 0.3))}
+              className="group rounded-2xl border border-white/8 px-5 py-4"
+              style={{ background: 'linear-gradient(135deg, #1e3325 0%, #192a20 100%)' }}
+            >
+              <summary className="flex items-center justify-between gap-3 cursor-pointer list-none text-white font-semibold text-sm">
+                {item.q}
+                <ChevronDown className="w-4 h-4 text-[#50C878] flex-shrink-0 transition-transform group-open:rotate-180" />
+              </summary>
+              <p className="text-white/55 text-sm leading-relaxed mt-3">{item.a}</p>
+            </motion.details>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

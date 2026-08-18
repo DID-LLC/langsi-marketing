@@ -3,34 +3,38 @@ import Header from '../../../components/pair-page/Header';
 import Hero from '../../../components/pair-page/Hero';
 import Problem from '../../../components/pair-page/Problem';
 import Demo from '../../../components/pair-page/Demo';
+import MicroDemo from '../../../components/pair-page/MicroDemo';
 import MethodExplanation from '../../../components/pair-page/MethodExplanation';
+import Pillars from '../../../components/pair-page/Pillars';
 import LanguageChallenges from '../../../components/pair-page/LanguageChallenges';
 import Features from '../../../components/pair-page/Features';
 import Progress from '../../../components/pair-page/Progress';
 import Video from '../../../components/pair-page/Video';
-import Pricing from '../../../components/pair-page/Pricing';
+import RealPricing from '../../../components/pair-page/RealPricing';
 import FAQ from '../../../components/pair-page/FAQ';
 import FinalCTA from '../../../components/pair-page/FinalCTA';
 import Footer from '../../../components/pair-page/Footer';
 
 export const metadata = {
-  title: content.hero_headline,
-  description: content.hero_subline,
+  title: `${content.hero_h1_1} ${content.hero_h1_2}`,
+  description: content.hero_sub,
 };
 
-export default function DeThPage() {
+export default function Page() {
   return (
     <>
       <Header content={content} />
       <Hero content={content} />
       <Problem content={content} />
       <Demo content={content} />
+      <MicroDemo content={content} />
       <MethodExplanation content={content} />
+      <Pillars content={content} />
       <LanguageChallenges content={content} />
       <Features content={content} />
       <Progress content={content} />
       <Video content={content} />
-      <Pricing content={content} />
+      <RealPricing content={content} />
       <FAQ content={content} />
       <FinalCTA content={content} />
       <Footer content={content} />

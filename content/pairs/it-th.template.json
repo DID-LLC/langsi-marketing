@@ -2,9 +2,47 @@
   "base_language": "it",
   "target_language": "th",
   "primary_keyword": "Imparare il thailandese per italofoni",
-  "secondary_keywords": ["imparare il thailandese", "vocabolario thailandese", "pronuncia thailandese", "thailandese per principianti"],
-  "hero_headline": "Impara il thailandese come si parla davvero",
-  "hero_subline": "Langsi scompone ogni frase thailandese parola per parola — con pronuncia, traduzione e il contesto che nessun frasario ti dà.",
+  "secondary_keywords": [
+    "imparare il thailandese",
+    "vocabolario thailandese",
+    "pronuncia thailandese",
+    "thailandese per principianti"
+  ],
+  "hero_h1_1": "Dal vocabolario",
+  "hero_h1_2": "alla lingua.",
+  "hero_sub": "Impara una parola vera — ascoltala, riconoscila, comprendine la struttura. Registrati gratis e salva i tuoi progressi.",
+  "hero_badge": "Scopri le lingue. In 15 secondi.",
+  "hero_cta": "Inizia gratis",
+  "nav_login": "Accedi",
+  "nav_cta": "Inizia gratis",
+  "mode_tag": "Allenamento del vocabolario",
+  "mode_h2": "Una parola. Tre modi per impararla.",
+  "mode_sub": "Flashcard, scelta multipla e ascolto — perché imparare davvero è più che leggere.",
+  "mode_fc_title": "Flashcard",
+  "mode_fc_desc": "Con fonetica e audio. Al tuo ritmo.",
+  "mode_mc_title": "Scelta multipla",
+  "mode_mc_desc": "Scegli la traduzione giusta — veloce e mirato.",
+  "mode_listen_title": "Ascolto",
+  "mode_listen_desc": "Ascolta una parola e scrivi ciò che senti.",
+  "method_tag": "Metodo Langsi",
+  "method_h2_1": "Tradurre non basta.",
+  "method_h2_2": "Capire sì.",
+  "method_sub": "Ogni frase viene scomposta parola per parola — con fonetica, significato e traduzione naturale. Vedi come è costruita la lingua, non solo cosa significa.",
+  "method_b1": "Ogni parola singolarmente con il suo significato",
+  "method_b2": "Struttura della frase spiegata visivamente",
+  "method_b3": "Traduzione letterale + naturale",
+  "method_b4": "Note grammaticali nel contesto",
+  "final_h2_1": "Inizia oggi.",
+  "final_h2_2": "Gratis.",
+  "final_sub": "Impara, ascolta, parla — nessun abbonamento necessario per iniziare.",
+  "final_cta": "Inizia gratis",
+  "trust_no_card": "Nessuna carta di credito",
+  "trust_free": "Inizia gratis",
+  "trust_cancel": "Annulla quando vuoi",
+  "trust_instant": "Inizia subito",
+  "footer_copy": "© 2026 Langsi · Dal vocabolario alla lingua.",
+  "footer_login": "Accedi",
+  "footer_delete_account": "Elimina account",
   "demo_vocabulary": {},
   "romanization_method": "Fonetica latina con segni tonali (niente IPA) — leggibile dal primo minuto, anche senza la scrittura thailandese.",
   "language_specific_challenges": [
@@ -13,17 +51,132 @@
     "I registri formale e colloquiale differiscono molto — Langsi mostra entrambe le varianti per ogni frase."
   ],
   "feature_highlights": [
-    { "title": "Scomposizione frase per frase", "body": "Ogni frase di esempio viene scomposta in singole parole con traduzione e pronuncia — il «Metodo Langsi»." },
-    { "title": "Ripetizione spaziata Leitner", "body": "Le carte ritornano proprio quando stai per dimenticarle — un metodo scientificamente fondato." },
-    { "title": "Tre modalità di esercizio", "body": "Flashcard, scelta multipla e ascolto allenano lettura, riconoscimento e comprensione insieme." },
-    { "title": "Pronuncia reale", "body": "Ogni parola e frase è ascoltabile direttamente nel browser — nessuna app aggiuntiva necessaria." }
+    {
+      "title": "Scomposizione frase per frase",
+      "body": "Ogni frase di esempio viene scomposta in singole parole con traduzione e pronuncia — il «Metodo Langsi»."
+    },
+    {
+      "title": "Ripetizione spaziata Leitner",
+      "body": "Le carte ritornano proprio quando stai per dimenticarle — un metodo scientificamente fondato."
+    },
+    {
+      "title": "Tre modalità di esercizio",
+      "body": "Flashcard, scelta multipla e ascolto allenano lettura, riconoscimento e comprensione insieme."
+    },
+    {
+      "title": "Pronuncia reale",
+      "body": "Ogni parola e frase è ascoltabile direttamente nel browser — nessuna app aggiuntiva necessaria."
+    }
   ],
-  "faq": [
-    { "q": "Devo conoscere la scrittura thailandese?", "a": "No. Tutto è disponibile anche in fonetica latina con segni tonali." },
-    { "q": "Quante parole copre il corso italiano-thailandese?", "a": "Oltre 500 parole attivamente arricchite, ordinate per rilevanza quotidiana e difficoltà." },
-    { "q": "In cosa si differenzia Langsi da una normale app di flashcard?", "a": "Langsi mostra il contesto completo della frase e il registro (formale/colloquiale), non solo parole isolate." },
-    { "q": "Langsi è gratuito?", "a": "Sì, con un livello iniziale gratuito." }
-  ],
-  "cta_label": "Impara il thailandese gratis",
+  "pillars": {
+    "why": "Perché Langsi?",
+    "h2": "I 3 pilastri dell'apprendimento reale",
+    "listen_title": "Ascolto",
+    "listen_desc": "Ogni parola e frase riproducibile all'istante — un tocco, subito.",
+    "speak_title": "Parlato",
+    "speak_desc": "Il riconoscimento vocale è integrato in tutta l'app — non è una funzione nascosta.",
+    "understand_title": "Comprensione",
+    "understand_desc": "Il metodo Langsi mostra le frasi parola per parola — struttura invece di memorizzazione.",
+    "streak_label": "Serie giornaliera",
+    "streak_sub": "Sistema di motivazione",
+    "goal_label": "Obiettivo giornaliero personale",
+    "goal_sub": "Il tuo ritmo",
+    "leitner_label": "Sistema Leitner",
+    "leitner_sub": "Ripetizione dilazionata"
+  },
+  "pricing": {
+    "tag": "Prezzi · Offerta di lancio",
+    "h2": "Semplice. Trasparente. Equo.",
+    "sub": "Inizia gratis — senza carta di credito. Aggiorna quando vuoi.",
+    "free_label": "Gratis",
+    "free_sub": "Gratis · Nessun abbonamento",
+    "free_f1": "Vocabolario in contesto — frasi reali, non semplici liste di flashcard",
+    "free_f2": "Audio per ogni parola e frase",
+    "free_f3": "Più livelli di difficoltà, dal principiante all'avanzato",
+    "free_cta": "Inizia gratis",
+    "single_label": "Una lingua",
+    "single_badge": "Prezzo di lancio",
+    "single_sub": "/mese · annulla quando vuoi",
+    "single_f1": "Tutto ciò che è nel piano Gratis",
+    "single_f2": "Tutte e 3 le modalità di apprendimento",
+    "single_f3": "Esercizi di ascolto con IA",
+    "single_f4": "Esercizi di pronuncia valutati dall'IA",
+    "single_f5": "Monitoraggio dei progressi",
+    "single_cta": "Inizia ora",
+    "bundle_label": "Tutte le lingue",
+    "bundle_sub": "/mese · tutte le lingue future incluse",
+    "bundle_f1": "Tutto ciò che è nel piano Una lingua",
+    "bundle_f2": "Tutte le lingue attuali e nuove",
+    "bundle_f3": "Miglior prezzo a lungo termine",
+    "bundle_cta": "Ottieni il pacchetto",
+    "trust1": "Nessuna carta di credito richiesta",
+    "trust2": "Annulla quando vuoi",
+    "trust3": "Pronto immediatamente"
+  },
+  "faq": {
+    "headline": "Domande frequenti sull'app di vocabolario Langsi",
+    "items": [
+      {
+        "q": "Cos'è Langsi e come funziona l'app di vocabolario?",
+        "a": "Langsi è un'app di vocabolario intelligente che ti aiuta non solo a memorizzare parole, ma a capirne il significato, la pronuncia e l'uso. L'app unisce l'allenamento del vocabolario a traduzioni, audio, frasi di esempio, aiuti alla pronuncia e spiegazioni aggiuntive. Le ripetizioni seguono i tuoi progressi personali, così ti eserciti proprio sul vocabolario più importante per te in questo momento."
+      },
+      {
+        "q": "Cosa distingue Langsi da un'app di vocabolario classica?",
+        "a": "Molti programmi di vocabolario classici si concentrano soprattutto sul collegamento tra una parola e la sua traduzione. Langsi va oltre. L'app di vocabolario collega le parole a frasi di esempio, audio, pronuncia e un'analisi strutturata della lingua. Così non impari solo cosa significa una parola, ma anche come suona e come viene usata in frasi reali."
+      },
+      {
+        "q": "Quali lingue posso imparare con l'app di vocabolario Langsi?",
+        "a": "Langsi è stata sviluppata come app di vocabolario multilingue per molte lingue e combinazioni linguistiche. Tiene conto sia della lingua che vuoi imparare sia della tua lingua madre, così traduzioni, spiegazioni e contenuti si adattano esattamente alla tua combinazione. Puoi scegliere le lingue disponibili direttamente durante la configurazione di Langsi."
+      },
+      {
+        "q": "Come mi aiuta Langsi a usare davvero il vocabolario?",
+        "a": "Una traduzione da sola di solito non basta per usare una nuova parola con sicurezza. Per questo Langsi ti mostra come una parola viene usata in diverse frasi di esempio e situazioni. Così sviluppi un senso migliore per il significato, la struttura della frase e l'uso naturale della lingua — e una singola parola diventa, passo dopo passo, lingua che sai davvero usare."
+      },
+      {
+        "q": "Come funziona il metodo Langsi per imparare il vocabolario?",
+        "a": "Il metodo Langsi unisce diversi passaggi di apprendimento. Vedi una parola nuova e il suo significato, ascolti la pronuncia, la incontri in frasi di esempio e puoi analizzare la struttura della frase più in dettaglio. La parola viene poi ripetuta in base ai tuoi progressi. Così l'app di vocabolario Langsi unisce vedere, capire, ascoltare, ricordare e usare in un processo di apprendimento strutturato."
+      },
+      {
+        "q": "Ci sono frasi di esempio e spiegazioni per il vocabolario?",
+        "a": "Sì. Langsi arricchisce le parole con frasi di esempio di diversa difficoltà e informazioni aggiuntive su significato e uso. Nei contenuti supportati puoi anche analizzare più in dettaglio le frasi e le loro singole parti. Così impari il vocabolario nel contesto, non isolato."
+      },
+      {
+        "q": "Posso esercitarmi anche nella pronuncia e nel parlato con Langsi?",
+        "a": "Sì. Pronuncia e comprensione orale sono elementi centrali dell'app di vocabolario Langsi. Puoi ascoltare parole e contenuti ed esercitare la tua pronuncia. Così non conosci una parola solo visivamente, ma sviluppi anche un senso reale di come viene effettivamente pronunciata."
+      },
+      {
+        "q": "L'app di vocabolario è adatta anche a thailandese, cinese e altri sistemi di scrittura?",
+        "a": "Sì. Langsi è adatta anche a imparare il vocabolario di lingue con un sistema di scrittura diverso, come il thailandese. Quando ha senso per una combinazione linguistica, viene mostrata anche una traslitterazione più facile da leggere accanto alla scrittura originale. Così puoi imparare prima pronuncia e significato, abituandoti gradualmente alla scrittura originale della lingua."
+      },
+      {
+        "q": "L'app di vocabolario si adatta ai miei progressi di apprendimento?",
+        "a": "Sì. Langsi distingue tra vocabolario nuovo e parole che hai già imparato o dovresti ripassare. Il tuo stato di apprendimento si evolve in base alle tue risposte, quindi le parole non vengono ripetute a caso, ma reinserite nel tuo allenamento in base ai tuoi progressi reali."
+      },
+      {
+        "q": "Posso provare gratuitamente l'app di vocabolario Langsi?",
+        "a": "Sì. Puoi registrarti su Langsi e provare l’app di vocabolario. Così puoi verificare tu stesso come funziona imparare con audio, frasi di esempio, pronuncia e ripetizioni strutturate, e se il metodo Langsi si adatta al tuo modo di imparare."
+      },
+      {
+        "q": "Devo installare l'app di vocabolario?",
+        "a": "No. Puoi usare Langsi direttamente dal browser di smartphone, tablet o computer. Sui dispositivi supportati puoi anche installare la web app sulla schermata home e aprire Langsi quasi come un'app normale."
+      },
+      {
+        "q": "Langsi è una buona app di vocabolario per principianti?",
+        "a": "Sì. I principianti traggono particolare vantaggio dal non dover imparare parole nuove solo tramite traduzioni. La combinazione di significato, audio, frasi di esempio e traslitterazione opzionale aiuta a imparare parole nuove in un contesto chiaro fin dall'inizio. Puoi iniziare con contenuti semplici e passare gradualmente a esempi più difficili."
+      },
+      {
+        "q": "L'app di vocabolario Langsi usa l'intelligenza artificiale?",
+        "a": "Sì. Langsi usa l'intelligenza artificiale per generare, tra le altre cose, traduzioni, frasi di esempio, spiegazioni linguistiche e altre informazioni di apprendimento per diverse combinazioni linguistiche. L'IA è uno strumento all'interno del sistema di apprendimento; al centro resta l'apprendimento strutturato e la ripetizione del vocabolario. Come per ogni contenuto generato dall'IA, alcuni risultati possono occasionalmente contenere errori, per questo Langsi viene migliorata continuamente."
+      },
+      {
+        "q": "Quanto costa l'app di vocabolario Langsi?",
+        "a": "Puoi provare Langsi gratuitamente. Quali funzioni sono incluse nei singoli piani e quanto costa l'utilizzo lo trovi direttamente nella nostra pagina dei prezzi, così puoi decidere quale piano si adatta ai tuoi obiettivi di apprendimento."
+      },
+      {
+        "q": "Posso disdire il mio abbonamento Langsi in qualsiasi momento?",
+        "a": "Per i piani a pagamento di Langsi valgono le condizioni di durata e disdetta mostrate al momento della sottoscrizione. Queste condizioni vengono mostrate prima di attivare qualsiasi abbonamento a pagamento."
+      }
+    ]
+  },
   "app_deep_link": "https://app.langsi.app/register?source=it&target=th"
 }

@@ -1,14 +1,21 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { fadeUp } from './fadeUp';
+
 export default function Progress({ content }) {
-  const leitnerFeature = (content.feature_highlights || []).find((f) =>
-    f.title.includes('Leitner'),
-  );
+  const leitnerFeature = (content.feature_highlights || []).find((f) => f.title.includes('Leitner'));
 
   if (!leitnerFeature) return null;
 
   return (
-    <section style={{ maxWidth: 720, margin: '0 auto', padding: '2rem 1.5rem' }}>
-      <h2 style={{ fontSize: '1.5rem', marginBottom: '0.75rem' }}>{leitnerFeature.title}</h2>
-      <p style={{ color: '#444' }}>{leitnerFeature.body}</p>
+    <section className="py-16 px-5" style={{ background: '#161f19' }}>
+      <motion.div {...fadeUp(0)} className="max-w-xl mx-auto text-center">
+        <h2 className="text-2xl font-bold text-white mb-3" style={{ fontFamily: 'Poppins' }}>
+          {leitnerFeature.title}
+        </h2>
+        <p className="text-white/55 text-sm">{leitnerFeature.body}</p>
+      </motion.div>
     </section>
   );
 }

@@ -1,24 +1,21 @@
-export default function Footer() {
+export default function Footer({ content }) {
   return (
-    <footer style={{ borderTop: '1px solid #e5e5e5', marginTop: '2rem' }}>
-      <div
-        style={{
-          maxWidth: 960,
-          margin: '0 auto',
-          padding: '1.5rem',
-          display: 'flex',
-          flexWrap: 'wrap',
-          gap: '1rem',
-          justifyContent: 'space-between',
-          color: '#666',
-          fontSize: '0.9rem',
-        }}
-      >
-        <span>© 2026 Langsi</span>
-        <div style={{ display: 'flex', gap: '1rem' }}>
-          <a href="https://app.langsi.app/impressum">Impressum</a>
-          <a href="https://app.langsi.app/datenschutz">Datenschutz</a>
-          <a href="https://app.langsi.app/agb">AGB</a>
+    <footer style={{ background: '#161f19', borderTop: '1px solid rgba(255,255,255,0.08)' }}>
+      <div className="max-w-5xl mx-auto px-5 py-8 flex flex-wrap gap-4 items-center justify-between">
+        <span className="text-white/40 text-sm">{content.footer_copy}</span>
+        <div className="flex items-center gap-5 text-sm">
+          <a href="https://app.langsi.app/login" className="text-white/50 hover:text-white transition-colors">
+            {content.footer_login}
+          </a>
+          <a href="https://app.langsi.app/impressum" className="text-white/50 hover:text-white transition-colors">
+            Impressum
+          </a>
+          <a href="https://app.langsi.app/datenschutz" className="text-white/50 hover:text-white transition-colors">
+            Datenschutz
+          </a>
+          <a href="https://app.langsi.app/agb" className="text-white/50 hover:text-white transition-colors">
+            AGB
+          </a>
         </div>
       </div>
     </footer>

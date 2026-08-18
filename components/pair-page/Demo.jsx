@@ -1,33 +1,46 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { fadeUp } from './fadeUp';
+
 export default function Demo({ content }) {
   const demo = content.demo_vocabulary || {};
 
   if (!demo.word_th) {
-    // content/pairs/de-th.json's demo_vocabulary is populated at build time
-    // by scripts/fetchBuildTimeContent.mjs (the `prebuild` step). If this
-    // renders, prebuild hasn't run — not fabricated placeholder data.
+    // content/pairs/{source}-th.json's demo_vocabulary is populated at build
+    // time by scripts/fetchBuildTimeContent.mjs (the `prebuild` step). If
+    // this renders, prebuild hasn't run — not fabricated placeholder data.
     return (
-      <section style={{ maxWidth: 720, margin: '0 auto', padding: '2rem 1.5rem' }}>
-        <h2 style={{ fontSize: '1.5rem', marginBottom: '0.75rem' }}>Beispiel-Vokabel</h2>
-        <p style={{ color: '#888' }}>Demo-Vokabel wird beim Build geladen.</p>
+      <section className="py-16 px-5" style={{ background: '#1a251d' }}>
+        <div className="max-w-2xl mx-auto text-center">
+          <p className="text-white/40 text-sm">Demo-Vokabel wird beim Build geladen.</p>
+        </div>
       </section>
     );
   }
 
   return (
-    <section style={{ maxWidth: 720, margin: '0 auto', padding: '2rem 1.5rem' }}>
-      <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Beispiel-Vokabel</h2>
-      <div style={{ border: '1px solid #e5e5e5', borderRadius: 8, padding: '1.5rem' }}>
-        <p style={{ fontSize: '1.75rem', marginBottom: '0.25rem' }}>{demo.word_th}</p>
-        <p style={{ color: '#666', marginBottom: '0.25rem' }}>{demo.romanization}</p>
-        <p style={{ marginBottom: '1rem' }}>{demo.translation_de}</p>
+    <section className="py-16 px-5" style={{ background: '#1a251d' }}>
+      <div className="max-w-2xl mx-auto">
+        <motion.div
+          {...fadeUp(0)}
+          className="rounded-2xl border border-white/8 p-8"
+          style={{ background: 'linear-gradient(135deg, #1e3325 0%, #192a20 100%)' }}
+        >
+          <p className="text-3xl text-white mb-1" style={{ fontFamily: 'Poppins' }}>
+            {demo.word_th}
+          </p>
+          <p className="text-[#50C878] text-sm mb-1">{demo.romanization}</p>
+          <p className="text-white/60 text-sm mb-6">{demo.translation_de}</p>
 
-        {(demo.example_sentences || []).map((s) => (
-          <div key={s.sentence_variant_key} style={{ marginTop: '0.75rem' }}>
-            <p style={{ marginBottom: '0.125rem' }}>{s.sentence_th}</p>
-            <p style={{ color: '#666', marginBottom: '0.125rem' }}>{s.transliteration}</p>
-            <p style={{ color: '#444' }}>{s.translation_de}</p>
-          </div>
-        ))}
+          {(demo.example_sentences || []).map((s) => (
+            <div key={s.sentence_variant_key} className="mt-4 pt-4 border-t border-white/8">
+              <p className="text-white/85 mb-1">{s.sentence_th}</p>
+              <p className="text-white/40 text-sm mb-1">{s.transliteration}</p>
+              <p className="text-white/60 text-sm">{s.translation_de}</p>
+            </div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );

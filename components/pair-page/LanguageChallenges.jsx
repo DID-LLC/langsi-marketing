@@ -1,16 +1,28 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { fadeUp } from './fadeUp';
+
 export default function LanguageChallenges({ content }) {
   return (
-    <section style={{ maxWidth: 720, margin: '0 auto', padding: '2rem 1.5rem' }}>
-      <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>
-        Besonderheiten der thailändischen Sprache
-      </h2>
-      <ul style={{ paddingLeft: '1.25rem', color: '#444' }}>
-        {(content.language_specific_challenges || []).map((challenge) => (
-          <li key={challenge} style={{ marginBottom: '0.75rem' }}>
-            {challenge}
-          </li>
-        ))}
-      </ul>
+    <section className="py-20 px-5" style={{ background: '#161f19' }}>
+      <div className="max-w-3xl mx-auto">
+        <motion.p {...fadeUp(0)} className="text-white/55 text-sm text-center mb-10 max-w-xl mx-auto">
+          {content.romanization_method}
+        </motion.p>
+        <div className="space-y-4">
+          {(content.language_specific_challenges || []).map((challenge, i) => (
+            <motion.div
+              key={challenge}
+              {...fadeUp(i * 0.1)}
+              className="rounded-2xl border border-white/8 p-5 text-white/70 text-sm leading-relaxed"
+              style={{ background: 'linear-gradient(135deg, #1e3325 0%, #192a20 100%)' }}
+            >
+              {challenge}
+            </motion.div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }
