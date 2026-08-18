@@ -16,6 +16,20 @@ function loadPosts() {
   }
 }
 
+// `topic_segment` can be an empty string in the real BlogPost data. An empty
+// string produces an empty URL segment, which Next.js's static export
+// rejects outright — surfacing as the misleading "missing
+// generateStaticParams()" build error instead of anything about the empty
+// segment itself (confirmed by reproducing locally: a single post with
+// topic_segment: "" is enough to trigger it). This fallback is ONLY for the
+// routing/URL segment value — the underlying topic_segment field itself is
+// left untouched for display/metadata use. Used identically in both
+// generateStaticParams() and the lookup below so the generated route and
+// the post it resolves to always agree.
+function topicUrlSegment(post) {
+  return post.topic_segment || 'allgemein';
+}
+
 export async function generateStaticParams() {
   const posts = loadPosts();
   if (posts.length === 0) {
@@ -30,19 +44,26 @@ export async function generateStaticParams() {
   return posts.map((post) => ({
     source: post.source_language,
     target: post.target_language,
-    topic: post.topic_segment,
+    topic: topicUrlSegment(post),
     slug: post.slug,
   }));
 }
 
-export default function BlogPostPage({ params }) {
+export default async function BlogPostPage({ params }) {
+  // Next.js 15+/16: `params` is a Promise in Server Components and must be
+  // awaited — reading properties off it directly (as this previously did)
+  // silently yields `undefined` for every field, so no post ever matched
+  // and every generated page rendered "Beitrag nicht gefunden", regardless
+  // of topic_segment. Caught while verifying the topic_segment fallback
+  // above against real matching data.
+  const resolvedParams = await params;
   const posts = loadPosts();
   const post = posts.find(
     (p) =>
-      p.source_language === params.source &&
-      p.target_language === params.target &&
-      p.topic_segment === params.topic &&
-      p.slug === params.slug,
+      p.source_language === resolvedParams.source &&
+      p.target_language === resolvedParams.target &&
+      topicUrlSegment(p) === resolvedParams.topic &&
+      p.slug === resolvedParams.slug,
   );
 
   if (!post) {
