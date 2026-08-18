@@ -1,0 +1,29 @@
+{
+  "base_language": "fr",
+  "target_language": "th",
+  "primary_keyword": "Apprendre le thaï pour francophones",
+  "secondary_keywords": ["apprendre le thaï", "vocabulaire thaï", "prononciation thaïe", "thaï pour débutants"],
+  "hero_headline": "Apprenez le thaï comme on le parle vraiment",
+  "hero_subline": "Langsi décompose chaque phrase thaïe mot par mot — avec prononciation, traduction et le contexte qu'aucun guide de conversation ne donne.",
+  "demo_vocabulary": {},
+  "romanization_method": "Phonétique latine avec marques tonales (pas d'API) — lisible dès la première minute, même sans l'écriture thaïe.",
+  "language_specific_challenges": [
+    "5 tons changent complètement le sens d'un mot — Langsi indique chaque ton directement dans la prononciation.",
+    "Pas d'espaces entre les mots en écriture thaïe — Langsi découpe automatiquement les phrases en unités apprenables.",
+    "Les registres formel et familier diffèrent fortement — Langsi montre les deux variantes pour chaque phrase."
+  ],
+  "feature_highlights": [
+    { "title": "Décomposition phrase par phrase", "body": "Chaque phrase d'exemple est décomposée mot par mot avec traduction et prononciation — la « méthode Langsi »." },
+    { "title": "Répétition espacée Leitner", "body": "Les cartes reviennent juste avant que vous ne les oubliiez — une méthode scientifiquement fondée." },
+    { "title": "Trois modes d'entraînement", "body": "Cartes mémoire, choix multiple et écoute entraînent lecture, reconnaissance et compréhension." },
+    { "title": "Prononciation réelle", "body": "Chaque mot et chaque phrase peuvent être écoutés directement dans le navigateur — sans application supplémentaire." }
+  ],
+  "faq": [
+    { "q": "Dois-je connaître l'écriture thaïe au préalable ?", "a": "Non. Tout est aussi disponible en phonétique latine avec marques tonales." },
+    { "q": "Combien de mots couvre le cours français-thaï ?", "a": "Plus de 630 mots activement enrichis, classés par pertinence quotidienne et difficulté." },
+    { "q": "En quoi Langsi diffère-t-il d'une appli de cartes classique ?", "a": "Langsi montre le contexte complet de la phrase et le registre (formel/familier), pas seulement des mots isolés." },
+    { "q": "Langsi est-il gratuit ?", "a": "Oui, avec un accès gratuit de départ." }
+  ],
+  "cta_label": "Apprendre le thaï gratuitement",
+  "app_deep_link": "https://app.langsi.app/register?source=fr&target=th"
+}

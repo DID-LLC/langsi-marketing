@@ -1,0 +1,29 @@
+{
+  "base_language": "en",
+  "target_language": "th",
+  "primary_keyword": "Learn Thai for English speakers",
+  "secondary_keywords": ["learn Thai", "Thai vocabulary", "Thai pronunciation", "Thai for beginners"],
+  "hero_headline": "Learn Thai the way it actually sounds",
+  "hero_subline": "Langsi breaks down every Thai sentence word by word — with pronunciation, translation, and the context no phrasebook gives you.",
+  "demo_vocabulary": {},
+  "romanization_method": "Latin phonetics with tone marks (no IPA) — readable from minute one, even without Thai script.",
+  "language_specific_challenges": [
+    "5 tones completely change a word's meaning — Langsi marks every tone directly in the pronunciation.",
+    "No spaces between words in Thai script — Langsi automatically breaks sentences into learnable chunks.",
+    "Formal and casual registers differ sharply — Langsi shows both variants for every sentence."
+  ],
+  "feature_highlights": [
+    { "title": "Sentence-by-sentence breakdown", "body": "Every example sentence is broken into individual words with translation and pronunciation — the \"Langsi Method\"." },
+    { "title": "Leitner spaced repetition", "body": "Cards resurface right when you're about to forget them — backed by cognitive science." },
+    { "title": "Three practice modes", "body": "Flashcards, multiple choice, and listening train reading, recognition, and comprehension together." },
+    { "title": "Real pronunciation", "body": "Every word and sentence is spoken aloud right in your browser — no extra app needed." }
+  ],
+  "faq": [
+    { "q": "Do I need to know Thai script first?", "a": "No. Everything is also shown in Latin phonetics with tone marks." },
+    { "q": "How many words does the English-Thai course cover?", "a": "Over 570 actively enriched words, ranked by everyday relevance and difficulty." },
+    { "q": "How is Langsi different from a regular flashcard app?", "a": "Langsi shows full sentence context and register (formal/casual), not just isolated word translations." },
+    { "q": "Is Langsi free to use?", "a": "Yes, with a free starting tier." }
+  ],
+  "cta_label": "Start learning Thai for free",
+  "app_deep_link": "https://app.langsi.app/register?source=en&target=th"
+}

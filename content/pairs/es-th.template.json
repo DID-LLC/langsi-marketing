@@ -1,0 +1,29 @@
+{
+  "base_language": "es",
+  "target_language": "th",
+  "primary_keyword": "Aprender tailandés para hispanohablantes",
+  "secondary_keywords": ["aprender tailandés", "vocabulario tailandés", "pronunciación tailandesa", "tailandés para principiantes"],
+  "hero_headline": "Aprende tailandés tal como realmente se habla",
+  "hero_subline": "Langsi descompone cada frase tailandesa palabra por palabra — con pronunciación, traducción y el contexto que ninguna guía de conversación te da.",
+  "demo_vocabulary": {},
+  "romanization_method": "Fonética latina con marcas tonales (sin AFI) — legible desde el primer minuto, incluso sin conocer la escritura tailandesa.",
+  "language_specific_challenges": [
+    "5 tonos cambian por completo el significado de una palabra — Langsi marca cada tono directamente en la pronunciación.",
+    "No hay espacios entre palabras en la escritura tailandesa — Langsi divide automáticamente las frases en unidades aprendibles.",
+    "Los registros formal y coloquial difieren mucho — Langsi muestra ambas variantes en cada frase."
+  ],
+  "feature_highlights": [
+    { "title": "Descomposición frase por frase", "body": "Cada frase de ejemplo se descompone en palabras individuales con traducción y pronunciación — el «Método Langsi»." },
+    { "title": "Repetición espaciada Leitner", "body": "Las tarjetas vuelven justo cuando estás a punto de olvidarlas — un método con base científica." },
+    { "title": "Tres modos de práctica", "body": "Tarjetas, opción múltiple y escucha entrenan lectura, reconocimiento y comprensión a la vez." },
+    { "title": "Pronunciación real", "body": "Cada palabra y frase se puede escuchar directamente en el navegador — sin ninguna app adicional." }
+  ],
+  "faq": [
+    { "q": "¿Necesito conocer la escritura tailandesa primero?", "a": "No. Todo está también disponible en fonética latina con marcas tonales." },
+    { "q": "¿Cuántas palabras cubre el curso español-tailandés?", "a": "Más de 267 palabras activamente enriquecidas, ordenadas por relevancia diaria y dificultad." },
+    { "q": "¿En qué se diferencia Langsi de una app de tarjetas normal?", "a": "Langsi muestra el contexto completo de la frase y el registro (formal/coloquial), no solo palabras aisladas." },
+    { "q": "¿Es gratis Langsi?", "a": "Sí, con un nivel inicial gratuito." }
+  ],
+  "cta_label": "Aprende tailandés gratis",
+  "app_deep_link": "https://app.langsi.app/register?source=es&target=th"
+}

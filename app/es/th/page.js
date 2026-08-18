@@ -1,4 +1,4 @@
-import content from '../../../content/pairs/de-th.json';
+import content from '../../../content/pairs/es-th.json';
 import Header from '../../../components/pair-page/Header';
 import Hero from '../../../components/pair-page/Hero';
 import Problem from '../../../components/pair-page/Problem';
@@ -18,7 +18,7 @@ export const metadata = {
   description: content.hero_subline,
 };
 
-export default function DeThPage() {
+export default function Page() {
   return (
     <>
       <Header content={content} />
