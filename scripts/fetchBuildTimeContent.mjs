@@ -9,7 +9,7 @@
 // Exits non-zero on any network/auth/shape error so the build fails loudly
 // instead of shipping with empty or stale content.
 
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 
 const BASE_URL = 'https://langsi-9a154b61.base44.app/api';
@@ -112,6 +112,7 @@ async function buildPairContent() {
 
   const output = { ...template, demo_vocabulary };
 
+  await mkdir(path.dirname(OUTPUT_PAIR_PATH), { recursive: true });
   await writeFile(OUTPUT_PAIR_PATH, JSON.stringify(output, null, 2) + '\n', 'utf-8');
   console.log(`Wrote ${OUTPUT_PAIR_PATH}`);
 }
@@ -135,6 +136,7 @@ async function buildBlogPosts() {
     console.log('--- end raw first BlogPost ---');
   }
 
+  await mkdir(path.dirname(OUTPUT_BLOG_PATH), { recursive: true });
   await writeFile(OUTPUT_BLOG_PATH, JSON.stringify(posts, null, 2) + '\n', 'utf-8');
   console.log(`Wrote ${OUTPUT_BLOG_PATH}`);
 }
