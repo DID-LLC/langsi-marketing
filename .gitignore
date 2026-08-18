@@ -16,3 +16,7 @@ yarn-error.log*
 
 # local env files
 .env*.local
+
+# generated at build time (see scripts/fetchBuildTimeContent.mjs) — not committed
+/content/pairs/de-th.json
+/content/blog/posts.json

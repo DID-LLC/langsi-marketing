@@ -1,0 +1,30 @@
+{
+  "base_language": "de",
+  "target_language": "th",
+  "primary_keyword": "Thailändisch lernen für Deutschsprachige",
+  "secondary_keywords": ["Thai lernen", "Thailändisch Vokabeln", "Thai Aussprache lernen", "Thai für Anfänger"],
+  "hero_headline": "Thailändisch lernen, wie ein Muttersprachler denkt",
+  "hero_subline": "Langsi zerlegt jeden thailändischen Satz Wort für Wort – mit Aussprache, Übersetzung und dem Kontext, den kein Vokabelheft liefert.",
+  "demo_vocabulary": {},
+  "romanization_method": "Lateinische Lautschrift mit Tonmarkierung (kein IPA) – lesbar ab der ersten Minute, auch ohne Thai-Schrift.",
+  "language_specific_challenges": [
+    "5 Töne verändern die Bedeutung eines Wortes vollständig – Langsi markiert jeden Ton direkt in der Aussprache.",
+    "Keine Leerzeichen zwischen Wörtern im Thai-Schriftbild – Langsi zerlegt Sätze automatisch in einzelne, lernbare Einheiten.",
+    "Formelle und umgangssprachliche Register unterscheiden sich stark – Langsi zeigt beide Varianten pro Satz."
+  ],
+  "feature_highlights": [
+    { "title": "Satz-für-Satz-Zerlegung", "body": "Jeder Beispielsatz wird in einzelne Wörter mit Übersetzung und Aussprache aufgeschlüsselt – die „Langsi-Methode“." },
+    { "title": "Leitner-Wiederholungssystem", "body": "Karten kommen genau dann wieder dran, wenn du kurz davor bist, sie zu vergessen – wissenschaftlich fundiert." },
+    { "title": "Drei Übungsformen", "body": "Karteikarten, Multiple-Choice und Hörverständnis trainieren Lesen, Erkennen und Verstehen gleichermaßen." },
+    { "title": "Echte Aussprache", "body": "Jedes Wort und jeder Satz ist per Sprachausgabe hörbar – direkt im Browser, ohne Zusatz-App." }
+  ],
+  "faq": [
+    { "q": "Brauche ich Vorkenntnisse in Thai-Schrift?", "a": "Nein. Alle Inhalte sind zusätzlich in lateinischer Lautschrift mit Tonmarkierung verfügbar." },
+    { "q": "Wie viele Wörter umfasst der Deutsch-Thai-Kurs?", "a": "Über 1.200 aktiv angereicherte Vokabeln, sortiert nach Alltagsrelevanz und Schwierigkeitsgrad." },
+    { "q": "Wie unterscheidet sich Langsi von klassischen Vokabel-Apps?", "a": "Langsi zeigt nicht nur Wort-für-Wort-Übersetzungen, sondern echten Satzkontext inklusive Register (formell/umgangssprachlich)." },
+    { "q": "Ist Langsi kostenlos nutzbar?", "a": "Ja, mit einem kostenlosen Einstieg." },
+    { "q": "Funktioniert Langsi auf dem Handy?", "a": "Ja, Langsi läuft als Web-App direkt im Browser, ohne Installation." }
+  ],
+  "cta_label": "Kostenlos Thailändisch lernen",
+  "app_deep_link": "https://app.langsi.app/register?source=de&target=th"
+}
