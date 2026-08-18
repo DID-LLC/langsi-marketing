@@ -38,6 +38,10 @@ jobs:
           static_site_generator: next
       - name: Install dependencies
         run: npm ci
+      - name: Fetch build-time content from Base44
+        run: node scripts/fetchBuildTimeContent.mjs
+        env:
+          BASE44_API_KEY: ${{ secrets.BASE44_API_KEY }}
       - name: Build with Next.js
         run: npx next build
       - name: Upload artifact
