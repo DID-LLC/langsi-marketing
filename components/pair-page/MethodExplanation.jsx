@@ -10,7 +10,7 @@ export default function MethodExplanation({ content }) {
   const bullets = [content.method_b1, content.method_b2, content.method_b3, content.method_b4];
 
   return (
-    <section className="py-20 px-5" style={{ background: '#1a251d' }}>
+    <section id="method" className="py-20 px-5" style={{ background: '#1a251d' }}>
       <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         <motion.div {...fadeUp(0)} className="rounded-2xl overflow-hidden border border-white/8">
           <img src={IMG_METHOD} alt="" className="w-full h-auto" />

@@ -3,36 +3,36 @@
 // Runs as the `prebuild` step (see package.json) in the GitHub Actions build,
 // before `next build`. Fetches build-time content from the Base44 REST API
 // and writes it to content/pairs/{source}-th.json (one per pair in
-// PAIRS below) and content/blog/posts.json — all gitignored, generated
-// fresh on every build.
+// SOURCE_LANGS below) and content/blog/posts.json — all gitignored,
+// generated fresh on every build.
 //
 // Required env var: BASE44_API_KEY (GitHub Actions secret, already configured).
 // Exits non-zero on any network/auth/shape error so the build fails loudly
 // instead of shipping with empty or stale content.
+//
+// Per-pair demo data (vocabulary, example sentences, word-for-word analysis)
+// is resolved dynamically via LanguagePair -> Vocabulary -> ExampleSentence,
+// mirroring the exact resolution the app repo's own
+// base44/functions/warmLandingDemoCache/entry.ts (resolveDemoVocabulary) and
+// base44/functions/getLandingDemo/entry.ts use — no hardcoded
+// language_pair_id/vocabulary_id here, so this stays correct if an admin
+// changes landing_demo_override or onboarding_order=1 changes.
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 
 const BASE_URL = 'https://langsi-9a154b61.base44.app/api';
+// getLandingDemo is called through the SDK's dedicated function-invocation
+// mount (${serverUrl}/functions/{name} — no /api, no /apps/{appId}/ prefix),
+// confirmed by reading node_modules/@base44/sdk/dist/modules/functions.js's
+// own fetch() method in the app repo AND by curling both candidate URL
+// shapes directly (both worked identically; this one matches the SDK's own
+// convention, so it's used here). getLandingDemo is PUBLIC/unauthenticated —
+// no api_key header on this call, unlike the /api/entities/* calls below.
+const FUNCTIONS_BASE_URL = 'https://langsi-9a154b61.base44.app';
 const API_KEY = process.env.BASE44_API_KEY;
 
-// One entry per source→th language pair. `languagePairId` is carried along
-// for reference/documentation only — the actual fetch below reaches
-// Vocabulary and LangsiExplanation directly by `vocabularyId`, it never
-// needs to go through LanguagePair.
-const PAIRS = [
-  { source: 'de', languagePairId: '6908128ab0a782dcbd0f9f95', vocabularyId: '6a33e4928b0dd2b25771fa75' },
-  { source: 'en', languagePairId: '69141331dcb0ce7c713d06c3', vocabularyId: '69ae5f1c69c008749f3abde1' },
-  { source: 'fr', languagePairId: '69b5bef6ae7df9898af5c277', vocabularyId: '6a29895d1a01941803316a29' },
-  { source: 'it', languagePairId: '69568049a9acaa3920ace2d9', vocabularyId: '6a2682ab7c7566b9b0da533c' },
-  { source: 'ru', languagePairId: '6a2690ce87eb075776c5d353', vocabularyId: '6a2997ab598da8af8ae4afce' },
-  { source: 'zh', languagePairId: '6a26d7bf79119b860dea3d1f', vocabularyId: '6a2c09cd09630ed2473ced44' },
-  { source: 'hi', languagePairId: '6a26d782adf1b8ca1bf59f8b', vocabularyId: '6a2bc0537aa4046b778f88f0' },
-  { source: 'es', languagePairId: '69b5bf2643a8c420aa652bb3', vocabularyId: '6a4a82172dc19470c3118b76' },
-  { source: 'ur', languagePairId: '6a6170f1ae3fbb6ec3f6cf47', vocabularyId: '6a6177a567a16b38bdae01c2' },
-  { source: 'ar', languagePairId: '6a47ecea5070364b882a4a45', vocabularyId: '6a553ab23fa38c4b71ff95e6' },
-  { source: 'ja', languagePairId: '6a553abd2d264832464c3187', vocabularyId: '6a55d646b0fd0eda8ed3c3e6' },
-];
+const SOURCE_LANGS = ['de', 'en', 'fr', 'it', 'ru', 'zh', 'hi', 'es', 'ur', 'ar', 'ja'];
 
 const OUTPUT_BLOG_PATH = path.join(process.cwd(), 'content/blog/posts.json');
 
@@ -59,87 +59,136 @@ async function base44Get(pathAndQuery) {
   return res.json();
 }
 
-// Picks the sentence text/transliteration/translation for one LangsiExplanation
-// record. Each record's explanation_json.explanation.register_analysis holds
-// one sentence per register (colloquial/standard/formal) in alternative_variants;
-// detected_register_key identifies which one corresponds to the original
-// example sentence this explanation was generated for, so that's the variant
-// we surface here. Falls back to the first available variant if the detected
-// one isn't present in the array for some reason.
-function extractSentence(explanation) {
-  const analysis = explanation?.explanation_json?.explanation?.register_analysis;
-  const variants = analysis?.alternative_variants ?? [];
-  const chosen =
-    variants.find((v) => v.register_key === analysis?.detected_register_key) ?? variants[0];
-
-  if (!chosen) return null;
-
-  return {
-    sentence_variant_key: explanation.sentence_variant_key,
-    sentence_th: chosen.sentence,
-    transliteration: chosen.transliteration,
-    translation_de:
-      chosen.natural_translation ??
-      explanation.explanation_json?.explanation?.natural_translation ??
-      null,
-  };
-}
-
-// Field names on the returned object (word_th, romanization, translation_de,
-// sentence_th, translation_de on each example sentence) are the literal
-// demo_vocabulary shape every pair's template expects — fixed across all 11
-// pairs by design (not actually German-specific), so every page's Demo
-// component can read the same keys regardless of the pair's source language.
-async function buildDemoVocabulary(vocabularyId) {
-  console.log(`Fetching Vocabulary/${vocabularyId}...`);
-  const vocab = await base44Get(`/entities/Vocabulary/${vocabularyId}`);
-
-  console.log(`Fetching LangsiExplanation for vocabulary_id=${vocabularyId}...`);
-  const explanations = await base44Get(
-    `/entities/LangsiExplanation?q=${encodeURIComponent(
-      JSON.stringify({ vocabulary_id: vocabularyId }),
-    )}&limit=20`,
-  );
-
-  if (!Array.isArray(explanations)) {
-    throw new Error(
-      `Expected an array from LangsiExplanation filter, got: ${JSON.stringify(explanations)}`,
-    );
+async function callGetLandingDemo(languagePairId) {
+  const url = `${FUNCTIONS_BASE_URL}/functions/getLandingDemo`;
+  let res;
+  try {
+    res = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ language_pair_id: languagePairId }),
+    });
+  } catch (err) {
+    throw new Error(`Network error fetching ${url}: ${err.message}`);
   }
-
-  console.log(
-    `Found ${explanations.length} LangsiExplanation record(s) for vocabulary_id=${vocabularyId} — not assuming a fixed count (0 and 1 must both work).`,
-  );
-
-  const example_sentences = explanations
-    .slice()
-    .sort((a, b) => String(a.sentence_variant_key).localeCompare(String(b.sentence_variant_key)))
-    .map(extractSentence)
-    .filter(Boolean);
-
-  return {
-    word_th: vocab.word,
-    romanization: vocab.phonetic_display || vocab.phonetic_romanization || '',
-    translation_de: vocab.translation,
-    example_sentences,
-  };
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(`POST ${url} failed: ${res.status} ${res.statusText}\n${body}`);
+  }
+  const json = await res.json();
+  return json?.results?.[languagePairId]?.explanation ?? null;
 }
 
-async function buildPairContent(pair) {
-  const templatePath = path.join(process.cwd(), `content/pairs/${pair.source}-th.template.json`);
-  const outputPath = path.join(process.cwd(), `content/pairs/${pair.source}-th.json`);
+async function resolveLanguagePair(sourceLang) {
+  const rows = await base44Get(
+    `/entities/LanguagePair?q=${encodeURIComponent(
+      JSON.stringify({ source_lang: sourceLang, target_lang: 'th', is_active: true }),
+    )}`,
+  );
+  if (!Array.isArray(rows) || rows.length === 0) {
+    throw new Error(`No active LanguagePair found for source_lang=${sourceLang}, target_lang=th`);
+  }
+  return rows[0];
+}
 
-  const demo_vocabulary = await buildDemoVocabulary(pair.vocabularyId);
+// Mirrors warmLandingDemoCache/entry.ts's resolveDemoVocabulary exactly:
+// landing_demo_override.vocabulary_id if set and still valid, else
+// onboarding_order=1.
+async function resolveVocabulary(pair) {
+  const overrideId = pair.landing_demo_override?.vocabulary_id;
+  if (overrideId) {
+    const overrideRows = await base44Get(
+      `/entities/Vocabulary?q=${encodeURIComponent(JSON.stringify({ id: overrideId, language_pair_id: pair.id }))}`,
+    );
+    if (Array.isArray(overrideRows) && overrideRows[0]) return overrideRows[0];
+  }
+  const rows = await base44Get(
+    `/entities/Vocabulary?q=${encodeURIComponent(JSON.stringify({ language_pair_id: pair.id, onboarding_order: 1 }))}`,
+  );
+  if (!Array.isArray(rows) || rows.length === 0) {
+    throw new Error(`No demo vocabulary found for language_pair_id=${pair.id}`);
+  }
+  return rows[0];
+}
 
-  console.log(`Reading template ${templatePath}...`);
+async function resolveExampleSentences(vocabularyId) {
+  const rows = await base44Get(
+    `/entities/ExampleSentence?q=${encodeURIComponent(
+      JSON.stringify({ vocabulary_id: vocabularyId, is_active: true }),
+    )}`,
+  );
+  if (!Array.isArray(rows)) {
+    throw new Error(`Expected an array from ExampleSentence filter, got: ${JSON.stringify(rows)}`);
+  }
+  return rows.slice().sort((a, b) => a.order_index - b.order_index);
+}
+
+// Only the source language's Language row is fetched — the video slot is
+// explicitly the source language's own explainer clip (see instructions),
+// and nothing in the output consumes a target-language (Thai) Language row,
+// so that second fetch the diagnosis considered would just be an unused
+// network call.
+async function resolveSourceLanguage(sourceLang) {
+  const rows = await base44Get(`/entities/Language?q=${encodeURIComponent(JSON.stringify({ code: sourceLang }))}`);
+  if (!Array.isArray(rows) || rows.length === 0) {
+    throw new Error(`No Language row found for code=${sourceLang}`);
+  }
+  return rows[0];
+}
+
+async function buildPairContent(sourceLang) {
+  const templatePath = path.join(process.cwd(), `content/pairs/${sourceLang}-th.template.json`);
+  const outputPath = path.join(process.cwd(), `content/pairs/${sourceLang}-th.json`);
+
+  console.log(`[${sourceLang}] Resolving LanguagePair...`);
+  const pair = await resolveLanguagePair(sourceLang);
+
+  console.log(`[${sourceLang}] Resolving demo vocabulary...`);
+  const vocabulary = await resolveVocabulary(pair);
+
+  console.log(`[${sourceLang}] Fetching example sentences for vocabulary_id=${vocabulary.id}...`);
+  const sentences = await resolveExampleSentences(vocabulary.id);
+  console.log(`[${sourceLang}] Found ${sentences.length} example sentence(s) — not assuming a fixed count.`);
+
+  console.log(`[${sourceLang}] Fetching source Language row (for landing_video_url)...`);
+  const sourceLanguage = await resolveSourceLanguage(sourceLang);
+
+  console.log(`[${sourceLang}] Calling getLandingDemo for language_pair_id=${pair.id}...`);
+  const analysis = await callGetLandingDemo(pair.id);
+
+  const demo = {
+    vocabulary: {
+      word: vocabulary.word,
+      translation: vocabulary.translation,
+      phonetic_display: vocabulary.phonetic_display || vocabulary.phonetic_romanization || '',
+    },
+    sentences: sentences.map((s) => ({
+      sentence: s.sentence,
+      translation: s.translation,
+      phonetic_display: s.phonetic_display || '',
+      highlight_word: s.highlight_word || '',
+      order_index: s.order_index,
+    })),
+    analysis,
+  };
+
+  const video = {
+    url: sourceLanguage.landing_video_url || null,
+    source_lang_name: sourceLanguage.english_name || sourceLang,
+  };
+
+  console.log(`[${sourceLang}] Reading template ${templatePath}...`);
   const templateRaw = await readFile(templatePath, 'utf-8');
-  const template = JSON.parse(templateRaw);
+  // demo_vocabulary was the old (PROMPT-14/16) build-time-populated field —
+  // fully superseded by `demo` here, so it's dropped rather than carried
+  // over as dead unused JSON.
+  const { demo_vocabulary, ...template } = JSON.parse(templateRaw);
 
-  const output = { ...template, demo_vocabulary };
+  const output = { ...template, demo, video };
 
   await mkdir(path.dirname(outputPath), { recursive: true });
   await writeFile(outputPath, JSON.stringify(output, null, 2) + '\n', 'utf-8');
-  console.log(`Wrote ${outputPath}`);
+  console.log(`[${sourceLang}] Wrote ${outputPath}`);
 }
 
 async function buildBlogPosts() {
@@ -167,9 +216,9 @@ async function buildBlogPosts() {
 }
 
 async function main() {
-  for (const pair of PAIRS) {
-    console.log(`\n=== Building content/pairs/${pair.source}-th.json ===`);
-    await buildPairContent(pair);
+  for (const sourceLang of SOURCE_LANGS) {
+    console.log(`\n=== Building content/pairs/${sourceLang}-th.json ===`);
+    await buildPairContent(sourceLang);
   }
   await buildBlogPosts();
   console.log('fetchBuildTimeContent: done.');

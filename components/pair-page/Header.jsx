@@ -14,6 +14,15 @@ export default function Header({ content }) {
           </span>
         </div>
         <div className="flex items-center gap-5">
+          <a href="#method" className="hidden md:inline text-white/60 hover:text-white text-sm transition-colors">
+            {content.method_tag}
+          </a>
+          <a href="#pricing" className="hidden md:inline text-white/60 hover:text-white text-sm transition-colors">
+            {content.pricing.tag}
+          </a>
+          <a href="#faq" className="hidden md:inline text-white/60 hover:text-white text-sm transition-colors">
+            FAQ
+          </a>
           <a href="https://app.langsi.app/login" className="text-white/60 hover:text-white text-sm transition-colors">
             {content.nav_login}
           </a>

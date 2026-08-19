@@ -5,24 +5,14 @@ import { ChevronDown } from 'lucide-react';
 import { fadeUp } from './fadeUp';
 
 export default function FAQ({ content }) {
-  const { headline, items } = content.faq;
-
   return (
     <section id="faq" className="py-20 px-5" style={{ background: '#161f19' }}>
       <div className="max-w-2xl mx-auto">
-        <motion.h2
-          {...fadeUp(0)}
-          className="text-3xl font-bold text-white leading-snug mb-10 text-center"
-          style={{ fontFamily: 'Poppins' }}
-        >
-          {headline}
-        </motion.h2>
-
         <div className="space-y-3">
-          {items.map((item, i) => (
+          {(content.pair_faq || []).map((item, i) => (
             <motion.details
               key={item.q}
-              {...fadeUp(Math.min(i * 0.03, 0.3))}
+              {...fadeUp(Math.min(i * 0.05, 0.3))}
               className="group rounded-2xl border border-white/8 px-5 py-4"
               style={{ background: 'linear-gradient(135deg, #1e3325 0%, #192a20 100%)' }}
             >

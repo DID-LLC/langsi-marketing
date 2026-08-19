@@ -8,11 +8,11 @@
     "pronunciación tailandesa",
     "tailandés para principiantes"
   ],
-  "hero_h1_1": "Del vocabulario",
-  "hero_h1_2": "al idioma.",
-  "hero_sub": "Aprende una palabra real — escúchala, reconócela, comprende su estructura. Regístrate gratis y guarda tu progreso.",
-  "hero_badge": "Experimenta los idiomas. En 15 segundos.",
-  "hero_cta": "Empezar gratis",
+  "hero_h1_1": "Entiende el vocabulario tailandés",
+  "hero_h1_2": "y úsalo de verdad.",
+  "hero_sub": "Contexto en lugar de tarjetas, frases reales en lugar de palabras sueltas — así se aprende tailandés tal como se habla de verdad.",
+  "hero_badge": "Español → Thai",
+  "hero_cta": "Español → Thai: empieza gratis",
   "nav_login": "Iniciar sesión",
   "nav_cta": "Probar gratis",
   "mode_tag": "Entrenamiento de vocabulario",
@@ -28,10 +28,10 @@
   "method_h2_1": "Traducir no es suficiente.",
   "method_h2_2": "Entender, sí.",
   "method_sub": "Cada frase se descompone palabra a palabra — con fonética, significado y traducción natural. Ves cómo se construye el idioma, no solo qué significa.",
-  "method_b1": "Cada palabra individualmente con su significado",
-  "method_b2": "Estructura de la frase explicada visualmente",
-  "method_b3": "Traducción literal + natural",
-  "method_b4": "Notas gramaticales en contexto",
+  "method_b1": "Conocer la palabra nueva",
+  "method_b2": "Entenderla en contexto",
+  "method_b3": "Escucharla y pronunciarla",
+  "method_b4": "Repetirla de forma sistemática",
   "final_h2_1": "Empieza hoy.",
   "final_h2_2": "Gratis.",
   "final_sub": "Aprende, escucha, habla — sin suscripción para empezar.",
@@ -44,46 +44,6 @@
   "footer_login": "Iniciar sesión",
   "footer_delete_account": "Eliminar cuenta",
   "demo_vocabulary": {},
-  "romanization_method": "Fonética latina con marcas tonales (sin AFI) — legible desde el primer minuto, incluso sin conocer la escritura tailandesa.",
-  "language_specific_challenges": [
-    "5 tonos cambian por completo el significado de una palabra — Langsi marca cada tono directamente en la pronunciación.",
-    "No hay espacios entre palabras en la escritura tailandesa — Langsi divide automáticamente las frases en unidades aprendibles.",
-    "Los registros formal y coloquial difieren mucho — Langsi muestra ambas variantes en cada frase."
-  ],
-  "feature_highlights": [
-    {
-      "title": "Descomposición frase por frase",
-      "body": "Cada frase de ejemplo se descompone en palabras individuales con traducción y pronunciación — el «Método Langsi»."
-    },
-    {
-      "title": "Repetición espaciada Leitner",
-      "body": "Las tarjetas vuelven justo cuando estás a punto de olvidarlas — un método con base científica."
-    },
-    {
-      "title": "Tres modos de práctica",
-      "body": "Tarjetas, opción múltiple y escucha entrenan lectura, reconocimiento y comprensión a la vez."
-    },
-    {
-      "title": "Pronunciación real",
-      "body": "Cada palabra y frase se puede escuchar directamente en el navegador — sin ninguna app adicional."
-    }
-  ],
-  "pillars": {
-    "why": "¿Por qué Langsi?",
-    "h2": "Los 3 pilares del aprendizaje real",
-    "listen_title": "Escuchar",
-    "listen_desc": "Cada palabra y frase reproducible al instante — un toque, de inmediato.",
-    "speak_title": "Hablar",
-    "speak_desc": "El reconocimiento de voz está integrado en toda la app — no es una función oculta.",
-    "understand_title": "Comprender",
-    "understand_desc": "El método Langsi muestra frases palabra a palabra — estructura en lugar de memorización.",
-    "streak_label": "Racha diaria",
-    "streak_sub": "Sistema de motivación",
-    "goal_label": "Objetivo diario propio",
-    "goal_sub": "Tu ritmo",
-    "leitner_label": "Sistema Leitner",
-    "leitner_sub": "Repetición espaciada"
-  },
   "pricing": {
     "tag": "Precios · Oferta de lanzamiento",
     "h2": "Simple. Transparente. Justo.",
@@ -113,70 +73,57 @@
     "trust2": "Cancela cuando quieras",
     "trust3": "Listo de inmediato"
   },
-  "faq": {
-    "headline": "Preguntas frecuentes sobre la app de vocabulario Langsi",
-    "items": [
-      {
-        "q": "¿Qué es Langsi y cómo funciona la app de vocabulario?",
-        "a": "Langsi es una app de vocabulario inteligente con la que no solo memorizas palabras, sino que entiendes su significado, pronunciación y uso. La app combina el entrenamiento de vocabulario con traducciones, audio, frases de ejemplo, ayudas de pronunciación y explicaciones adicionales. Las repeticiones se adaptan a tu progreso de aprendizaje personal, para que practiques justo el vocabulario que más te conviene ahora mismo."
-      },
-      {
-        "q": "¿En qué se diferencia Langsi de una app de vocabulario tradicional?",
-        "a": "Muchos entrenadores de vocabulario clásicos se centran sobre todo en unir una palabra con su traducción. Langsi va un paso más allá. La app de vocabulario conecta las palabras con frases de ejemplo, audio, pronunciación y un análisis estructurado del idioma. Así no solo aprendes qué significa una palabra, sino también cómo suena y cómo se usa en frases reales."
-      },
-      {
-        "q": "¿Qué idiomas puedo aprender con la app de vocabulario Langsi?",
-        "a": "Langsi se diseñó como una app de vocabulario multilingüe para muchos idiomas y combinaciones de idiomas. Tiene en cuenta tanto el idioma que quieres aprender como tu propio idioma, de modo que las traducciones, explicaciones y contenidos se adaptan a tu combinación exacta. Puedes elegir los idiomas disponibles directamente al configurar Langsi."
-      },
-      {
-        "q": "¿Cómo me ayuda Langsi a usar realmente el vocabulario?",
-        "a": "Una traducción sola normalmente no basta para usar una palabra nueva con seguridad. Por eso Langsi te muestra cómo se usa una palabra en distintas frases de ejemplo y situaciones. Así desarrollas un mejor sentido para el significado, la estructura de la frase y el uso natural del idioma, y una palabra suelta se convierte, paso a paso, en un idioma que realmente puedes usar."
-      },
-      {
-        "q": "¿Cómo funciona el método Langsi para aprender vocabulario?",
-        "a": "El método Langsi combina varios pasos de aprendizaje. Ves una palabra nueva y su significado, escuchas su pronunciación, la conoces en frases de ejemplo y puedes analizar la estructura de la frase con más detalle. Después, la palabra se repite según tu progreso de aprendizaje. Así, la app de vocabulario Langsi une ver, entender, escuchar, recordar y aplicar en un proceso de aprendizaje estructurado."
-      },
-      {
-        "q": "¿Hay frases de ejemplo y explicaciones para el vocabulario?",
-        "a": "Sí. Langsi añade a cada palabra frases de ejemplo de distinta dificultad e información adicional sobre su significado y uso. En los contenidos compatibles, además puedes analizar frases y sus partes con más detalle. Así aprendes el vocabulario en contexto, no de forma aislada."
-      },
-      {
-        "q": "¿Puedo practicar pronunciación y expresión oral con Langsi?",
-        "a": "Sí. La pronunciación y la comprensión auditiva son partes fundamentales de la app de vocabulario Langsi. Puedes escuchar palabras y contenidos y practicar tu propia pronunciación. Así no solo conoces una palabra de forma visual, sino que también desarrollas un mejor sentido de cómo suena realmente."
-      },
-      {
-        "q": "¿La app de vocabulario también sirve para tailandés, chino y otros sistemas de escritura?",
-        "a": "Sí. Langsi también es adecuada para aprender vocabulario en idiomas con un sistema de escritura distinto, como el tailandés. Cuando tiene sentido para una combinación de idiomas, se muestra además una transcripción más fácil de leer junto a la escritura original. Así puedes aprender primero la pronunciación y el significado y, poco a poco, acostumbrarte a la escritura original del idioma."
-      },
-      {
-        "q": "¿La app de vocabulario se adapta a mi progreso de aprendizaje?",
-        "a": "Sí. Langsi diferencia entre vocabulario nuevo y palabras que ya has aprendido o que deberías repasar. Tu estado de aprendizaje evoluciona con tus respuestas, así que las palabras no se repiten al azar, sino según tu progreso real."
-      },
-      {
-        "q": "¿Puedo probar gratis la app de vocabulario Langsi?",
-        "a": "Sí. Puedes registrarte en Langsi y probar la app de vocabulario. Así puedes comprobar tú mismo cómo funciona aprender con audio, frases de ejemplo, pronunciación y repeticiones estructuradas, y si el método Langsi encaja con tu forma de aprender."
-      },
-      {
-        "q": "¿Tengo que instalar la app de vocabulario?",
-        "a": "No. Puedes usar Langsi directamente desde el navegador de tu móvil, tablet u ordenador. En los dispositivos compatibles, también puedes instalar la web app en tu pantalla de inicio y abrir Langsi casi como una app normal."
-      },
-      {
-        "q": "¿Langsi es una buena app de vocabulario para principiantes?",
-        "a": "Sí. Los principiantes se benefician especialmente de no tener que aprender palabras nuevas solo a través de traducciones. La combinación de significado, audio, frases de ejemplo y transcripción opcional ayuda a aprender palabras nuevas en un contexto claro desde el principio. Puedes empezar con contenidos sencillos e ir avanzando poco a poco hacia ejemplos más difíciles."
-      },
-      {
-        "q": "¿La app de vocabulario Langsi usa inteligencia artificial?",
-        "a": "Sí. Langsi utiliza inteligencia artificial para generar, entre otras cosas, traducciones, frases de ejemplo, explicaciones lingüísticas y otra información de aprendizaje para distintas combinaciones de idiomas. La IA es una herramienta dentro del sistema de aprendizaje; el centro sigue siendo el aprendizaje y la repetición estructurada del vocabulario. Como con cualquier contenido generado por IA, algunos resultados pueden contener errores ocasionales, por lo que Langsi se mejora de forma continua."
-      },
-      {
-        "q": "¿Cuánto cuesta la app de vocabulario Langsi?",
-        "a": "Primero puedes probar Langsi sin coste. Qué funciones incluye cada plan y cuánto cuesta el uso lo encuentras directamente en nuestra página de precios, para que puedas decidir qué plan se ajusta a tus objetivos de aprendizaje."
-      },
-      {
-        "q": "¿Puedo cancelar mi suscripción a Langsi en cualquier momento?",
-        "a": "Para los planes de pago de Langsi se aplican las condiciones de duración y cancelación mostradas al contratar. Estas condiciones se muestran antes de que confirmes una suscripción de pago."
-      }
+  "app_deep_link": "https://app.langsi.app/register?source=es&target=th",
+  "advantages": [
+    {
+      "title": "Transcripción fácil de leer",
+      "body": "Cada palabra tailandesa aparece también en fonética latina con marcas tonales — legible desde el primer minuto, incluso sin conocer la escritura tailandesa."
+    },
+    {
+      "title": "Tonos y duración vocálica bajo control",
+      "body": "El tailandés distingue cinco tonos y vocales cortas y largas. Langsi marca ambos directamente en la transcripción, sin dejarlo al azar."
+    },
+    {
+      "title": "El tailandés en distintas tipografías",
+      "body": "Las palabras se muestran en varias tipografías tailandesas para que te acostumbres a distintos estilos de escritura e impresión, no solo a una."
+    },
+    {
+      "title": "Audio de la palabra y de la frase",
+      "body": "Cada palabra y cada frase de ejemplo completa se pueden escuchar — directamente en el navegador, a velocidad natural."
+    },
+    {
+      "title": "Frases divididas en unidades aprendibles",
+      "body": "El tailandés escribe las palabras sin espacios entre ellas. Langsi divide automáticamente cada frase en grupos de palabras comprensibles."
+    }
+  ],
+  "progress": {
+    "tag": "Tu progreso",
+    "h2": "Un aprendizaje que se ve",
+    "sub": "Langsi te muestra siempre en qué punto estás — y qué sigue.",
+    "points": [
+      "Objetivo diario personal que se adapta a tu ritmo",
+      "El sistema de repetición Leitner evita que olvides nada",
+      "Progreso visible por palabra, categoría y día",
+      "Resúmenes diarios descargables — perfectos para seguir aprendiendo con IA"
     ]
   },
-  "app_deep_link": "https://app.langsi.app/register?source=es&target=th"
+  "pair_faq": [
+    {
+      "q": "¿Necesito conocer la escritura tailandesa para aprender con Langsi?",
+      "a": "No. Cada palabra y frase también se muestra en fonética latina con marcas tonales — puedes empezar de inmediato y acostumbrarte a la escritura tailandesa poco a poco."
+    },
+    {
+      "q": "¿Es Langsi adecuado para principiantes absolutos en tailandés?",
+      "a": "Sí. La combinación de significado, audio, frases de ejemplo y fonética te ayuda a aprender palabras nuevas en un contexto claro desde el primer día, sin conocimientos previos."
+    },
+    {
+      "q": "¿Puedo practicar la pronunciación tailandesa con Langsi?",
+      "a": "Sí. Cada palabra y frase de ejemplo se puede escuchar, así que puedes entrenar la pronunciación y los tonos directamente, no solo leer la escritura."
+    },
+    {
+      "q": "¿Cuánto cuesta Langsi y tengo que instalar algo?",
+      "a": "Puedes empezar gratis. Langsi funciona directamente en el navegador, sin instalación — encontrarás los detalles de precios más arriba."
+    }
+  ],
+  "final_cta_h2": "Convierte tu próxima palabra en tailandés en una frase real."
 }

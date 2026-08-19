@@ -8,11 +8,11 @@
     "Thai Aussprache lernen",
     "Thai für Anfänger"
   ],
-  "hero_h1_1": "Aus Vokabeln",
-  "hero_h1_2": "wird Sprache.",
-  "hero_sub": "Lerne ein echtes Wort — höre es, erkenne es, verstehe seinen Aufbau. Registriere dich kostenlos und speichere deinen Fortschritt.",
-  "hero_badge": "Erlebe Sprachen. In 15 Sekunden.",
-  "hero_cta": "Kostenlos starten",
+  "hero_h1_1": "Thai-Vokabeln verstehen",
+  "hero_h1_2": "und wirklich anwenden.",
+  "hero_sub": "Kontext statt Karteikarten, echte Sätze statt Einzelwörter — so lernst du Thai so, wie es wirklich gesprochen wird.",
+  "hero_badge": "Deutsch → Thai",
+  "hero_cta": "Deutsch → Thai kostenlos starten",
   "nav_login": "Einloggen",
   "nav_cta": "Kostenlos testen",
   "mode_tag": "Vokabeltraining",
@@ -28,10 +28,10 @@
   "method_h2_1": "Übersetzen reicht nicht.",
   "method_h2_2": "Verstehen schon.",
   "method_sub": "Jeder Satz wird Wort für Wort aufgeschlüsselt — mit Lautschrift, Wortbedeutung und natürlicher Übersetzung. Du siehst wie Sprache aufgebaut ist, nicht nur was sie bedeutet.",
-  "method_b1": "Jedes Wort einzeln mit Bedeutung",
-  "method_b2": "Satzstruktur visuell erklärt",
-  "method_b3": "Wörtliche + natürliche Übersetzung",
-  "method_b4": "Grammatikhinweise im Kontext",
+  "method_b1": "Neues Wort kennenlernen",
+  "method_b2": "Im Kontext verstehen",
+  "method_b3": "Hören und selbst sprechen",
+  "method_b4": "Systematisch wiederholen",
   "final_h2_1": "Starte heute.",
   "final_h2_2": "Kostenlos.",
   "final_sub": "Lerne, höre, sprich — kein Abo nötig, um anzufangen.",
@@ -44,46 +44,6 @@
   "footer_login": "Einloggen",
   "footer_delete_account": "Konto löschen",
   "demo_vocabulary": {},
-  "romanization_method": "Lateinische Lautschrift mit Tonmarkierung (kein IPA) – lesbar ab der ersten Minute, auch ohne Thai-Schrift.",
-  "language_specific_challenges": [
-    "5 Töne verändern die Bedeutung eines Wortes vollständig – Langsi markiert jeden Ton direkt in der Aussprache.",
-    "Keine Leerzeichen zwischen Wörtern im Thai-Schriftbild – Langsi zerlegt Sätze automatisch in einzelne, lernbare Einheiten.",
-    "Formelle und umgangssprachliche Register unterscheiden sich stark – Langsi zeigt beide Varianten pro Satz."
-  ],
-  "feature_highlights": [
-    {
-      "title": "Satz-für-Satz-Zerlegung",
-      "body": "Jeder Beispielsatz wird in einzelne Wörter mit Übersetzung und Aussprache aufgeschlüsselt – die „Langsi-Methode“."
-    },
-    {
-      "title": "Leitner-Wiederholungssystem",
-      "body": "Karten kommen genau dann wieder dran, wenn du kurz davor bist, sie zu vergessen – wissenschaftlich fundiert."
-    },
-    {
-      "title": "Drei Übungsformen",
-      "body": "Karteikarten, Multiple-Choice und Hörverständnis trainieren Lesen, Erkennen und Verstehen gleichermaßen."
-    },
-    {
-      "title": "Echte Aussprache",
-      "body": "Jedes Wort und jeder Satz ist per Sprachausgabe hörbar – direkt im Browser, ohne Zusatz-App."
-    }
-  ],
-  "pillars": {
-    "why": "Warum Langsi?",
-    "h2": "Die 3 Säulen echten Lernens",
-    "listen_title": "Hören",
-    "listen_desc": "Jedes Wort & jeder Satz direkt anhörbar — ein Tap, sofort.",
-    "speak_title": "Sprechen",
-    "speak_desc": "Voice-to-Text ist überall in der App integriert — kein verstecktes Feature.",
-    "understand_title": "Verstehen",
-    "understand_desc": "Die Langsi-Methode zeigt Sätze Wort für Wort — Struktur statt Auswendiglernen.",
-    "streak_label": "Tägliche Streak",
-    "streak_sub": "Motivations-System",
-    "goal_label": "Eigenes Tagesziel",
-    "goal_sub": "Dein Tempo",
-    "leitner_label": "Leitner-System",
-    "leitner_sub": "Spaced Repetition"
-  },
   "pricing": {
     "tag": "Preise · Launch-Angebot",
     "h2": "Einfach. Transparent. Fair.",
@@ -113,70 +73,57 @@
     "trust2": "Jederzeit kündbar",
     "trust3": "Sofort einsatzbereit"
   },
-  "faq": {
-    "headline": "Häufige Fragen zur Langsi Vokabel App",
-    "items": [
-      {
-        "q": "Was ist Langsi und wie funktioniert die Vokabel App?",
-        "a": "Langsi ist eine intelligente Vokabel App, mit der du Wörter nicht nur auswendig lernst, sondern ihre Bedeutung, Aussprache und Verwendung verstehen kannst. Die App verbindet Vokabeltraining mit Übersetzungen, Audio, Beispielsätzen, Aussprachehilfen und zusätzlichen Erklärungen. Wiederholungen orientieren sich an deinem persönlichen Lernfortschritt, damit du gezielt die Vokabeln lernst, die gerade wichtig für dich sind."
-      },
-      {
-        "q": "Was unterscheidet Langsi von einer klassischen Vokabel App?",
-        "a": "Viele klassische Vokabeltrainer konzentrieren sich hauptsächlich auf die Verbindung zwischen einem Wort und seiner Übersetzung. Langsi geht einen Schritt weiter. Die Vokabel App verbindet Wörter mit Beispielsätzen, Audio, Aussprache und einer strukturierten Analyse der Sprache. Du lernst dadurch nicht nur, was eine Vokabel bedeutet, sondern auch, wie sie klingt und wie sie in echten Sätzen verwendet wird."
-      },
-      {
-        "q": "Welche Sprachen kann ich mit der Langsi Vokabel App lernen?",
-        "a": "Langsi wurde als mehrsprachige Vokabel App für viele verschiedene Sprachen und Sprachkombinationen entwickelt. Dabei berücksichtigt Langsi sowohl die Sprache, die du lernen möchtest, als auch deine eigene Sprache. Dadurch können Übersetzungen, Erklärungen und Lerninhalte passend zu deiner Sprachkombination bereitgestellt werden. Die aktuell verfügbaren Sprachen kannst du direkt bei der Einrichtung von Langsi auswählen."
-      },
-      {
-        "q": "Wie hilft mir Langsi dabei, Vokabeln wirklich anzuwenden?",
-        "a": "Eine Übersetzung allein reicht meistens nicht aus, um ein neues Wort sicher verwenden zu können. Langsi zeigt dir deshalb, wie eine Vokabel in unterschiedlichen Beispielsätzen und Situationen eingesetzt wird. Dadurch entwickelst du ein besseres Gefühl für Bedeutung, Satzstruktur und natürlichen Sprachgebrauch. So wird aus einer einzelnen Vokabel Schritt für Schritt Sprache, die du tatsächlich verwenden kannst."
-      },
-      {
-        "q": "Wie funktioniert die Langsi-Methode zum Vokabeln lernen?",
-        "a": "Die Langsi-Methode verbindet mehrere Lernschritte miteinander. Du siehst eine neue Vokabel und ihre Bedeutung, hörst die Aussprache, lernst das Wort in Beispielsätzen kennen und kannst Satzstrukturen genauer analysieren. Anschließend wird die Vokabel entsprechend deinem Lernfortschritt wiederholt. So verbindet die Langsi Vokabel App Sehen, Verstehen, Hören, Erinnern und Anwenden zu einem strukturierten Lernprozess."
-      },
-      {
-        "q": "Gibt es zu den Vokabeln Beispielsätze und Erklärungen?",
-        "a": "Ja. Langsi ergänzt Vokabeln mit Beispielsätzen unterschiedlicher Schwierigkeit und zusätzlichen Informationen zur Bedeutung und Verwendung. Bei unterstützten Lerninhalten kannst du außerdem Sätze und einzelne Bestandteile genauer analysieren. Dadurch lernst du Vokabeln nicht isoliert, sondern direkt in einem sprachlichen Zusammenhang."
-      },
-      {
-        "q": "Kann ich mit Langsi auch Aussprache und Sprechen üben?",
-        "a": "Ja. Aussprache und Hörverständnis sind wichtige Bestandteile der Langsi Vokabel App. Du kannst Wörter und Lerninhalte anhören und deine eigene Aussprache üben. Dadurch lernst du eine Vokabel nicht nur visuell kennen, sondern entwickelst gleichzeitig ein besseres Gefühl dafür, wie sie tatsächlich ausgesprochen wird und klingt."
-      },
-      {
-        "q": "Ist die Vokabel App auch für Thai, Chinesisch und andere Schriftsysteme geeignet?",
-        "a": "Ja. Langsi eignet sich auch zum Vokabellernen bei Sprachen mit einem anderen Schriftsystem, zum Beispiel Thai. Wenn es für eine Sprachkombination sinnvoll ist, kann zusätzlich zur Originalschrift eine leichter lesbare Umschrift angezeigt werden. So kannst du zunächst Aussprache und Bedeutung lernen und dich gleichzeitig Schritt für Schritt an die ursprüngliche Schrift der Sprache gewöhnen."
-      },
-      {
-        "q": "Passt sich die Vokabel App an meinen Lernfortschritt an?",
-        "a": "Ja. Langsi unterscheidet zwischen neuen Vokabeln und Wörtern, die du bereits gelernt hast oder wiederholen solltest. Dein Lernstatus entwickelt sich mit deinen Antworten weiter. Dadurch werden Vokabeln nicht einfach zufällig wiederholt, sondern abhängig von deinem bisherigen Lernfortschritt erneut in dein Training eingebunden."
-      },
-      {
-        "q": "Kann ich die Langsi Vokabel App kostenlos testen?",
-        "a": "Ja. Du kannst dich bei Langsi registrieren und die Vokabel App ausprobieren. So kannst du selbst testen, wie das Lernen mit Audio, Beispielsätzen, Aussprache und strukturierten Wiederholungen funktioniert und ob die Langsi-Methode zu deiner Art zu lernen passt."
-      },
-      {
-        "q": "Muss ich die Vokabel App installieren?",
-        "a": "Nein. Du kannst Langsi direkt über den Browser auf deinem Smartphone, Tablet oder Computer verwenden. Auf unterstützten Geräten kannst du die Web-App zusätzlich auf deinem Startbildschirm installieren und Langsi ähnlich wie eine normale App öffnen."
-      },
-      {
-        "q": "Ist Langsi als Vokabel App für Anfänger geeignet?",
-        "a": "Ja. Gerade Anfänger profitieren davon, neue Vokabeln nicht ausschließlich über Übersetzungen lernen zu müssen. Die Kombination aus Bedeutung, Audio, Beispielsätzen und optionaler Umschrift hilft dabei, neue Wörter von Anfang an in einem verständlichen Zusammenhang zu lernen. Du kannst mit einfachen Lerninhalten beginnen und dich schrittweise zu schwierigeren Beispielen weiterentwickeln."
-      },
-      {
-        "q": "Nutzt die Langsi Vokabel App künstliche Intelligenz?",
-        "a": "Ja. Langsi nutzt künstliche Intelligenz, um unter anderem Übersetzungen, Beispielsätze, sprachliche Erklärungen und weitere Lerninformationen für unterschiedliche Sprachkombinationen bereitzustellen. Die KI ist dabei ein Werkzeug innerhalb des Lernsystems. Im Mittelpunkt steht weiterhin das strukturierte Lernen und Wiederholen von Vokabeln. Wie bei allen KI-generierten Sprachinhalten können einzelne Ergebnisse gelegentlich Fehler enthalten. Langsi wird deshalb kontinuierlich weiterentwickelt und verbessert."
-      },
-      {
-        "q": "Was kostet die Langsi Vokabel App?",
-        "a": "Du kannst Langsi zunächst ausprobieren. Welche Funktionen in den einzelnen Tarifen enthalten sind und was die Nutzung kostet, findest du direkt in unserer Preisübersicht. So kannst du entscheiden, welcher Umfang zu deinen persönlichen Lernzielen passt."
-      },
-      {
-        "q": "Kann ich mein Langsi-Abonnement jederzeit kündigen?",
-        "a": "Für kostenpflichtige Langsi-Tarife gelten die beim Abschluss angezeigten Laufzeit- und Kündigungsbedingungen. Diese Bedingungen werden dir angezeigt, bevor du ein kostenpflichtiges Abonnement abschließt."
-      }
+  "app_deep_link": "https://app.langsi.app/register?source=de&target=th",
+  "advantages": [
+    {
+      "title": "Verständliche Umschrift",
+      "body": "Jedes Thai-Wort erscheint zusätzlich in lateinischer Lautschrift mit Tonmarkierung — lesbar ab der ersten Minute, auch ohne Thai-Schrift."
+    },
+    {
+      "title": "Ton- und Vokallängen im Blick",
+      "body": "Thai unterscheidet fünf Töne und kurze von langen Vokalen. Langsi markiert beides direkt in der Umschrift, statt es dem Zufall zu überlassen."
+    },
+    {
+      "title": "Thai in verschiedenen Schriftarten",
+      "body": "Wörter werden in mehreren Thai-Schriftbildern gezeigt, damit du dich an unterschiedliche Handschriften und Drucktypen gewöhnst — nicht nur an eine einzige Schriftart."
+    },
+    {
+      "title": "Audio zu Wort und Satz",
+      "body": "Jedes einzelne Wort und jeder komplette Beispielsatz lässt sich anhören — direkt im Browser, in natürlicher Sprechgeschwindigkeit."
+    },
+    {
+      "title": "Sätze in lernbare Einheiten zerlegt",
+      "body": "Thai schreibt Wörter ohne Leerzeichen. Langsi zerlegt jeden Satz automatisch in einzelne, verständliche Wortgruppen."
+    }
+  ],
+  "progress": {
+    "tag": "Dein Fortschritt",
+    "h2": "Lernen, das sichtbar bleibt",
+    "sub": "Langsi zeigt dir jederzeit, wo du stehst — und wie es weitergeht.",
+    "points": [
+      "Persönliches Tagesziel, das sich deinem Tempo anpasst",
+      "Leitner-Wiederholungssystem sorgt dafür, dass nichts in Vergessenheit gerät",
+      "Sichtbarer Fortschritt pro Wort, Kategorie und Tag",
+      "Herunterladbare Tageszusammenfassungen — perfekt zum Weiterlernen mit KI"
     ]
   },
-  "app_deep_link": "https://app.langsi.app/register?source=de&target=th"
+  "pair_faq": [
+    {
+      "q": "Muss ich die Thai-Schrift kennen, um mit Langsi zu lernen?",
+      "a": "Nein. Jedes Wort und jeder Satz wird zusätzlich in lateinischer Lautschrift mit Tonmarkierung angezeigt — du kannst sofort loslegen und dich Schritt für Schritt an die Thai-Schrift gewöhnen."
+    },
+    {
+      "q": "Ist Langsi für absolute Thai-Anfänger geeignet?",
+      "a": "Ja. Die Kombination aus Bedeutung, Audio, Beispielsätzen und Lautschrift hilft dir von Anfang an, neue Wörter in einem verständlichen Zusammenhang zu lernen — auch ohne Vorkenntnisse."
+    },
+    {
+      "q": "Kann ich mit Langsi die Thai-Aussprache üben?",
+      "a": "Ja. Jedes Wort und jeder Beispielsatz lässt sich anhören, sodass du Aussprache und Töne direkt trainieren kannst — nicht nur die Schrift lesen."
+    },
+    {
+      "q": "Was kostet Langsi und muss ich etwas installieren?",
+      "a": "Du kannst kostenlos starten. Langsi läuft direkt im Browser, keine Installation nötig — die Details zu den Tarifen findest du im Preisbereich oben."
+    }
+  ],
+  "final_cta_h2": "Mach aus deiner nächsten Thai-Vokabel einen echten Satz."
 }

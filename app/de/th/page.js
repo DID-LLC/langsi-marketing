@@ -2,12 +2,9 @@ import content from '../../../content/pairs/de-th.json';
 import Header from '../../../components/pair-page/Header';
 import Hero from '../../../components/pair-page/Hero';
 import Problem from '../../../components/pair-page/Problem';
-import Demo from '../../../components/pair-page/Demo';
 import MicroDemo from '../../../components/pair-page/MicroDemo';
 import MethodExplanation from '../../../components/pair-page/MethodExplanation';
-import Pillars from '../../../components/pair-page/Pillars';
-import LanguageChallenges from '../../../components/pair-page/LanguageChallenges';
-import Features from '../../../components/pair-page/Features';
+import Advantages from '../../../components/pair-page/Advantages';
 import Progress from '../../../components/pair-page/Progress';
 import Video from '../../../components/pair-page/Video';
 import RealPricing from '../../../components/pair-page/RealPricing';
@@ -26,12 +23,9 @@ export default function Page() {
       <Header content={content} />
       <Hero content={content} />
       <Problem content={content} />
-      <Demo content={content} />
       <MicroDemo content={content} />
       <MethodExplanation content={content} />
-      <Pillars content={content} />
-      <LanguageChallenges content={content} />
-      <Features content={content} />
+      <Advantages content={content} />
       <Progress content={content} />
       <Video content={content} />
       <RealPricing content={content} />
