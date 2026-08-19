@@ -1,9 +1,7 @@
 import enThContent from '../content/pairs/en-th.json';
 import Header from '../components/pair-page/Header';
 import Hero from '../components/pair-page/Hero';
-import Problem from '../components/pair-page/Problem';
-import MicroDemo from '../components/pair-page/MicroDemo';
-import MethodExplanation from '../components/pair-page/MethodExplanation';
+import AdsScrollytelling from '../components/pair-page/AdsScrollytelling';
 import Progress from '../components/pair-page/Progress';
 import RealPricing from '../components/pair-page/RealPricing';
 import FinalCTA from '../components/pair-page/FinalCTA';
@@ -26,10 +24,10 @@ export const metadata = {
 };
 
 // Reuses en-th.json for everything (English is the root's identity, and the
-// interactive demo in section 4 is explicitly specified to keep showing the
-// real en->th demo data) EXCEPT the three fields that literally name Thai as
-// a fixed target — hero_badge, hero_cta (read by both Hero and MicroDemo's
-// own CTA button) and final_cta_h2 — since '/' has no fixed target language.
+// interactive demo is explicitly specified to keep showing the real en->th
+// demo data) EXCEPT the three fields that literally name Thai as a fixed
+// target — hero_badge, hero_cta (read by both Hero and AdsScrollytelling's
+// own CTA buttons) and final_cta_h2 — since '/' has no fixed target language.
 const content = {
   ...enThContent,
   hero_badge: 'Multiple Languages Available',
@@ -41,11 +39,9 @@ export default function RootPage() {
   return (
     <>
       <LanguageRedirect />
-      <Header content={content} />
+      <Header content={content} showFaq={false} />
       <Hero content={content} />
-      <Problem content={content} />
-      <MicroDemo content={content} />
-      <MethodExplanation content={content} />
+      <AdsScrollytelling content={content} />
       <Progress content={content} />
       <RealPricing content={content} />
       <FinalCTA content={content} />

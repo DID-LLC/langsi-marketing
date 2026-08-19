@@ -26,12 +26,6 @@
   "mode_listen_desc": "Höre ein Wort und tippe, was du hörst.",
   "method_tag": "Langsi-Methode",
   "method_h2_1": "Übersetzen reicht nicht.",
-  "method_h2_2": "Verstehen schon.",
-  "method_sub": "Jeder Satz wird Wort für Wort aufgeschlüsselt — mit Lautschrift, Wortbedeutung und natürlicher Übersetzung. Du siehst wie Sprache aufgebaut ist, nicht nur was sie bedeutet.",
-  "method_b1": "Neues Wort kennenlernen",
-  "method_b2": "Im Kontext verstehen",
-  "method_b3": "Hören und selbst sprechen",
-  "method_b4": "Systematisch wiederholen",
   "final_h2_1": "Starte heute.",
   "final_h2_2": "Kostenlos.",
   "final_sub": "Lerne, höre, sprich — kein Abo nötig, um anzufangen.",
@@ -74,28 +68,6 @@
     "trust3": "Sofort einsatzbereit"
   },
   "app_deep_link": "https://app.langsi.app/register?source=de&target=th",
-  "advantages": [
-    {
-      "title": "Verständliche Umschrift",
-      "body": "Jedes Thai-Wort erscheint zusätzlich in lateinischer Lautschrift mit Tonmarkierung — lesbar ab der ersten Minute, auch ohne Thai-Schrift."
-    },
-    {
-      "title": "Ton- und Vokallängen im Blick",
-      "body": "Thai unterscheidet fünf Töne und kurze von langen Vokalen. Langsi markiert beides direkt in der Umschrift, statt es dem Zufall zu überlassen."
-    },
-    {
-      "title": "Thai in verschiedenen Schriftarten",
-      "body": "Wörter werden in mehreren Thai-Schriftbildern gezeigt, damit du dich an unterschiedliche Handschriften und Drucktypen gewöhnst — nicht nur an eine einzige Schriftart."
-    },
-    {
-      "title": "Audio zu Wort und Satz",
-      "body": "Jedes einzelne Wort und jeder komplette Beispielsatz lässt sich anhören — direkt im Browser, in natürlicher Sprechgeschwindigkeit."
-    },
-    {
-      "title": "Sätze in lernbare Einheiten zerlegt",
-      "body": "Thai schreibt Wörter ohne Leerzeichen. Langsi zerlegt jeden Satz automatisch in einzelne, verständliche Wortgruppen."
-    }
-  ],
   "progress": {
     "tag": "Dein Fortschritt",
     "h2": "Lernen, das sichtbar bleibt",
@@ -125,5 +97,33 @@
       "a": "Du kannst kostenlos starten. Langsi läuft direkt im Browser, keine Installation nötig — die Details zu den Tarifen findest du im Preisbereich oben."
     }
   ],
-  "final_cta_h2": "Mach aus deiner nächsten Thai-Vokabel einen echten Satz."
+  "final_cta_h2": "Mach aus deiner nächsten Thai-Vokabel einen echten Satz.",
+  "ads_t": {
+    "ads_hero_prefix": "Willkommen zu Deiner neuen Vokabel-App für ",
+    "ads_hero_suffix": ".",
+    "ads_hero_tag": "Vorsprung durch Kontext",
+    "ads_scroll_hint": "Scrolle weiter, um mehr zu erfahren.",
+    "ads_level_beginner": "Für Einsteiger",
+    "ads_level_advanced": "Für Fortgeschrittene",
+    "ads_flashcard_label": "Karteikarte",
+    "ads_listen_title": "Anhören",
+    "ads_know_word": "Kennst du das Wort?",
+    "ads_yes": "Ja",
+    "ads_no": "Nein",
+    "ads_tier_easy": "Einfach",
+    "ads_tier_medium": "Mittel",
+    "ads_tier_advanced": "Fortgeschritten",
+    "ads_analysis_loading": "Wird vorbereitet…",
+    "ads_analysis_unavailable": "Die Wort-für-Wort-Analyse ist für dieses Beispiel gerade nicht verfügbar.",
+    "ads_table_word": "Wort",
+    "ads_table_transliteration": "Umschrift",
+    "ads_table_meaning": "Bedeutung",
+    "ads_menu_aria": "Menü",
+    "ads_menu_login": "Login / Registrieren",
+    "ads_menu_pricing": "Preise",
+    "ads_change_language": "Sprache wählen",
+    "ads_fallback_headline": "Drei Sprachen. Eine Methode.",
+    "ads_fallback_sub": "Wort für Wort verstehen — nicht nur übersetzen.",
+    "ads_empty_state": "Aktuell sind noch keine Beispiele verfügbar. Schau bald wieder vorbei — wir erweitern unser Angebot laufend."
+  }
 }

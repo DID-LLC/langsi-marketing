@@ -26,12 +26,6 @@
   "mode_listen_desc": "Escucha una palabra y escribe lo que oyes.",
   "method_tag": "Método Langsi",
   "method_h2_1": "Traducir no es suficiente.",
-  "method_h2_2": "Entender, sí.",
-  "method_sub": "Cada frase se descompone palabra a palabra — con fonética, significado y traducción natural. Ves cómo se construye el idioma, no solo qué significa.",
-  "method_b1": "Conocer la palabra nueva",
-  "method_b2": "Entenderla en contexto",
-  "method_b3": "Escucharla y pronunciarla",
-  "method_b4": "Repetirla de forma sistemática",
   "final_h2_1": "Empieza hoy.",
   "final_h2_2": "Gratis.",
   "final_sub": "Aprende, escucha, habla — sin suscripción para empezar.",
@@ -74,28 +68,6 @@
     "trust3": "Listo de inmediato"
   },
   "app_deep_link": "https://app.langsi.app/register?source=es&target=th",
-  "advantages": [
-    {
-      "title": "Transcripción fácil de leer",
-      "body": "Cada palabra tailandesa aparece también en fonética latina con marcas tonales — legible desde el primer minuto, incluso sin conocer la escritura tailandesa."
-    },
-    {
-      "title": "Tonos y duración vocálica bajo control",
-      "body": "El tailandés distingue cinco tonos y vocales cortas y largas. Langsi marca ambos directamente en la transcripción, sin dejarlo al azar."
-    },
-    {
-      "title": "El tailandés en distintas tipografías",
-      "body": "Las palabras se muestran en varias tipografías tailandesas para que te acostumbres a distintos estilos de escritura e impresión, no solo a una."
-    },
-    {
-      "title": "Audio de la palabra y de la frase",
-      "body": "Cada palabra y cada frase de ejemplo completa se pueden escuchar — directamente en el navegador, a velocidad natural."
-    },
-    {
-      "title": "Frases divididas en unidades aprendibles",
-      "body": "El tailandés escribe las palabras sin espacios entre ellas. Langsi divide automáticamente cada frase en grupos de palabras comprensibles."
-    }
-  ],
   "progress": {
     "tag": "Tu progreso",
     "h2": "Un aprendizaje que se ve",
@@ -125,5 +97,33 @@
       "a": "Puedes empezar gratis. Langsi funciona directamente en el navegador, sin instalación — encontrarás los detalles de precios más arriba."
     }
   ],
-  "final_cta_h2": "Convierte tu próxima palabra en tailandés en una frase real."
+  "final_cta_h2": "Convierte tu próxima palabra en tailandés en una frase real.",
+  "ads_t": {
+    "ads_hero_prefix": "Bienvenido a tu nueva app de vocabulario de ",
+    "ads_hero_suffix": ".",
+    "ads_hero_tag": "Ventaja gracias al contexto",
+    "ads_scroll_hint": "Desplázate para saber más.",
+    "ads_level_beginner": "Para principiantes",
+    "ads_level_advanced": "Para avanzados",
+    "ads_flashcard_label": "Tarjeta",
+    "ads_listen_title": "Escuchar",
+    "ads_know_word": "¿Conoces esta palabra?",
+    "ads_yes": "Sí",
+    "ads_no": "No",
+    "ads_tier_easy": "Fácil",
+    "ads_tier_medium": "Medio",
+    "ads_tier_advanced": "Avanzado",
+    "ads_analysis_loading": "Preparando…",
+    "ads_analysis_unavailable": "El análisis palabra por palabra no está disponible para este ejemplo por ahora.",
+    "ads_table_word": "Palabra",
+    "ads_table_transliteration": "Transliteración",
+    "ads_table_meaning": "Significado",
+    "ads_menu_aria": "Menú",
+    "ads_menu_login": "Iniciar sesión / Registrarse",
+    "ads_menu_pricing": "Precios",
+    "ads_change_language": "Elegir idioma",
+    "ads_fallback_headline": "Tres idiomas. Un método.",
+    "ads_fallback_sub": "Entender palabra por palabra — no solo traducir.",
+    "ads_empty_state": "Actualmente no hay ejemplos disponibles. Vuelve pronto — ampliamos nuestra oferta continuamente."
+  }
 }

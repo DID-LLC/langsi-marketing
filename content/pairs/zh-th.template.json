@@ -26,12 +26,6 @@
   "mode_listen_desc": "听一个单词，然后输入你听到的内容。",
   "method_tag": "Langsi 学习法",
   "method_h2_1": "翻译还不够。",
-  "method_h2_2": "理解才够。",
-  "method_sub": "每个句子都被逐词拆解——包含音标、词义和自然翻译。你看到的是语言是如何构建的，而不仅仅是它的意思。",
-  "method_b1": "认识新单词",
-  "method_b2": "在语境中理解",
-  "method_b3": "聆听并开口说",
-  "method_b4": "系统化复习",
   "final_h2_1": "今天开始。",
   "final_h2_2": "完全免费。",
   "final_sub": "学习、聆听、开口说——无需订阅即可开始。",
@@ -74,28 +68,6 @@
     "trust3": "即刻可用"
   },
   "app_deep_link": "https://app.langsi.app/register?source=zh&target=th",
-  "advantages": [
-    {
-      "title": "易读的拼音",
-      "body": "每个泰语单词都配有带声调标记的拉丁拼音——即使不认识泰文字母，从第一分钟起就能读懂。"
-    },
-    {
-      "title": "声调和元音长短一目了然",
-      "body": "泰语有五个声调，还区分长短元音。Langsi 直接在拼音中标出这两点，而不是靠猜。"
-    },
-    {
-      "title": "不同字体下的泰文",
-      "body": "单词会以多种泰文字体展示，帮助你熟悉不同的手写和印刷风格，而不仅仅是一种字体。"
-    },
-    {
-      "title": "单词和句子均可听发音",
-      "body": "每个单词和每个完整例句都可以播放——直接在浏览器中进行，语速自然。"
-    },
-    {
-      "title": "句子拆分为可学习的单元",
-      "body": "泰语书写时单词之间没有空格。Langsi 会自动将每个句子拆分成易懂的词组。"
-    }
-  ],
   "progress": {
     "tag": "你的学习进度",
     "h2": "看得见的学习成果",
@@ -125,5 +97,33 @@
       "a": "你可以免费开始使用。Langsi 直接在浏览器中运行，无需安装——具体价格详情见上方价格部分。"
     }
   ],
-  "final_cta_h2": "把你的下一个泰语单词变成一句真正的话。"
+  "final_cta_h2": "把你的下一个泰语单词变成一句真正的话。",
+  "ads_t": {
+    "ads_hero_prefix": "欢迎使用你的全新",
+    "ads_hero_suffix": "词汇学习应用。",
+    "ads_hero_tag": "凭借语境抢先一步",
+    "ads_scroll_hint": "继续滚动了解更多。",
+    "ads_level_beginner": "适合初学者",
+    "ads_level_advanced": "适合进阶学习者",
+    "ads_flashcard_label": "单词卡",
+    "ads_listen_title": "聆听",
+    "ads_know_word": "你认识这个词吗？",
+    "ads_yes": "认识",
+    "ads_no": "不认识",
+    "ads_tier_easy": "简单",
+    "ads_tier_medium": "中等",
+    "ads_tier_advanced": "进阶",
+    "ads_analysis_loading": "准备中…",
+    "ads_analysis_unavailable": "此示例的逐词分析目前不可用。",
+    "ads_table_word": "单词",
+    "ads_table_transliteration": "拼音",
+    "ads_table_meaning": "含义",
+    "ads_menu_aria": "菜单",
+    "ads_menu_login": "登录 / 注册",
+    "ads_menu_pricing": "价格",
+    "ads_change_language": "选择语言",
+    "ads_fallback_headline": "三种语言，一种方法。",
+    "ads_fallback_sub": "逐词理解——而不仅仅是翻译。",
+    "ads_empty_state": "目前暂无可用示例。请稍后再来——我们正在持续扩充内容。"
+  }
 }

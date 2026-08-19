@@ -1,10 +1,7 @@
 import content from '../../../content/pairs/de-th.json';
 import Header from '../../../components/pair-page/Header';
 import Hero from '../../../components/pair-page/Hero';
-import Problem from '../../../components/pair-page/Problem';
-import MicroDemo from '../../../components/pair-page/MicroDemo';
-import MethodExplanation from '../../../components/pair-page/MethodExplanation';
-import Advantages from '../../../components/pair-page/Advantages';
+import AdsScrollytelling from '../../../components/pair-page/AdsScrollytelling';
 import Progress from '../../../components/pair-page/Progress';
 import Video from '../../../components/pair-page/Video';
 import RealPricing from '../../../components/pair-page/RealPricing';
@@ -22,10 +19,7 @@ export default function Page() {
     <>
       <Header content={content} />
       <Hero content={content} />
-      <Problem content={content} />
-      <MicroDemo content={content} />
-      <MethodExplanation content={content} />
-      <Advantages content={content} />
+      <AdsScrollytelling content={content} />
       <Progress content={content} />
       <Video content={content} />
       <RealPricing content={content} />

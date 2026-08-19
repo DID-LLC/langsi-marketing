@@ -26,12 +26,6 @@
   "mode_listen_desc": "Écoutez un mot et tapez ce que vous entendez.",
   "method_tag": "Méthode Langsi",
   "method_h2_1": "Traduire ne suffit pas.",
-  "method_h2_2": "Comprendre, si.",
-  "method_sub": "Chaque phrase est décomposée mot par mot — avec phonétique, signification et traduction naturelle. Vous voyez comment la langue est construite, pas seulement ce qu'elle signifie.",
-  "method_b1": "Découvrir le nouveau mot",
-  "method_b2": "Le comprendre en contexte",
-  "method_b3": "L'écouter et le prononcer",
-  "method_b4": "Le répéter systématiquement",
   "final_h2_1": "Commencez aujourd'hui.",
   "final_h2_2": "Gratuitement.",
   "final_sub": "Apprenez, écoutez, parlez — aucun abonnement nécessaire pour commencer.",
@@ -74,28 +68,6 @@
     "trust3": "Opérationnel immédiatement"
   },
   "app_deep_link": "https://app.langsi.app/register?source=fr&target=th",
-  "advantages": [
-    {
-      "title": "Translittération facile à lire",
-      "body": "Chaque mot thaï apparaît aussi en phonétique latine avec marques tonales — lisible dès la première minute, même sans connaître l'écriture thaïe."
-    },
-    {
-      "title": "Tons et longueur des voyelles maîtrisés",
-      "body": "Le thaï distingue cinq tons et des voyelles courtes ou longues. Langsi indique les deux directement dans la translittération, sans rien laisser au hasard."
-    },
-    {
-      "title": "Le thaï dans différentes polices",
-      "body": "Les mots sont affichés dans plusieurs polices thaïes pour vous habituer à différents styles d'écriture et d'impression, pas à une seule police."
-    },
-    {
-      "title": "Audio pour le mot et la phrase",
-      "body": "Chaque mot et chaque phrase d'exemple complète peuvent être écoutés — directement dans le navigateur, à vitesse naturelle."
-    },
-    {
-      "title": "Phrases découpées en unités apprenables",
-      "body": "Le thaï écrit les mots sans espaces entre eux. Langsi découpe automatiquement chaque phrase en groupes de mots compréhensibles."
-    }
-  ],
   "progress": {
     "tag": "Votre progression",
     "h2": "Un apprentissage qui reste visible",
@@ -125,5 +97,33 @@
       "a": "Vous pouvez commencer gratuitement. Langsi fonctionne directement dans le navigateur, sans installation — les détails des tarifs se trouvent plus haut."
     }
   ],
-  "final_cta_h2": "Transformez votre prochain mot thaï en une vraie phrase."
+  "final_cta_h2": "Transformez votre prochain mot thaï en une vraie phrase.",
+  "ads_t": {
+    "ads_hero_prefix": "Bienvenue dans votre nouvelle application de vocabulaire ",
+    "ads_hero_suffix": ".",
+    "ads_hero_tag": "Une longueur d'avance grâce au contexte",
+    "ads_scroll_hint": "Faites défiler pour en savoir plus.",
+    "ads_level_beginner": "Pour débutants",
+    "ads_level_advanced": "Pour avancés",
+    "ads_flashcard_label": "Carte mémoire",
+    "ads_listen_title": "Écouter",
+    "ads_know_word": "Connaissez-vous ce mot ?",
+    "ads_yes": "Oui",
+    "ads_no": "Non",
+    "ads_tier_easy": "Facile",
+    "ads_tier_medium": "Moyen",
+    "ads_tier_advanced": "Avancé",
+    "ads_analysis_loading": "Préparation…",
+    "ads_analysis_unavailable": "L'analyse mot par mot n'est pas disponible pour cet exemple pour le moment.",
+    "ads_table_word": "Mot",
+    "ads_table_transliteration": "Translittération",
+    "ads_table_meaning": "Signification",
+    "ads_menu_aria": "Menu",
+    "ads_menu_login": "Connexion / Inscription",
+    "ads_menu_pricing": "Tarifs",
+    "ads_change_language": "Choisir la langue",
+    "ads_fallback_headline": "Trois langues. Une méthode.",
+    "ads_fallback_sub": "Comprendre mot par mot — pas seulement traduire.",
+    "ads_empty_state": "Aucun exemple disponible pour le moment. Revenez bientôt — nous élargissons notre offre en continu."
+  }
 }

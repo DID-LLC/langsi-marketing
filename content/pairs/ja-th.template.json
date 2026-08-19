@@ -26,12 +26,6 @@
   "mode_listen_desc": "単語を聞いて、聞こえたとおりに入力しよう。",
   "method_tag": "Langsiメソッド",
   "method_h2_1": "翻訳だけでは足りない。",
-  "method_h2_2": "理解することが大切。",
-  "method_sub": "すべての文を単語ごとに分解——発音記号、単語の意味、自然な訳とともに。意味だけでなく、言語がどう構成されているかが見える。",
-  "method_b1": "新しい単語を知る",
-  "method_b2": "文脈で理解する",
-  "method_b3": "聞いて自分で発音する",
-  "method_b4": "体系的に復習する",
   "final_h2_1": "今日から始めよう。",
   "final_h2_2": "無料で。",
   "final_sub": "学ぶ、聞く、話す——始めるのにサブスクリプションは不要。",
@@ -74,28 +68,6 @@
     "trust3": "すぐに利用可能"
   },
   "app_deep_link": "https://app.langsi.app/register?source=ja&target=th",
-  "advantages": [
-    {
-      "title": "読みやすいローマ字表記",
-      "body": "すべてのタイ語の単語には声調記号付きのラテン式発音表記も付いています——タイ文字を知らなくても最初の一分から読めます。"
-    },
-    {
-      "title": "声調と母音の長さも明確に",
-      "body": "タイ語には5つの声調があり、母音の長短も区別されます。Langsiは推測に頼らず、両方を発音表記に直接示します。"
-    },
-    {
-      "title": "さまざまな書体のタイ文字",
-      "body": "単語は複数のタイ文字書体で表示されるため、一つのフォントだけでなく、さまざまな手書き・印刷スタイルに慣れることができます。"
-    },
-    {
-      "title": "単語と例文の両方に音声",
-      "body": "すべての単語と完全な例文を、ブラウザ上でそのまま自然な速さで聞くことができます。"
-    },
-    {
-      "title": "文を学びやすい単位に分割",
-      "body": "タイ語は単語間にスペースを置きません。Langsiはすべての文を自動的に理解しやすい単語グループに分割します。"
-    }
-  ],
   "progress": {
     "tag": "あなたの進捗",
     "h2": "見える形で残る学習",
@@ -125,5 +97,33 @@
       "a": "無料で始められます。Langsiはブラウザ上でそのまま動作し、インストールは不要です——料金の詳細は上の料金セクションをご覧ください。"
     }
   ],
-  "final_cta_h2": "次のタイ語の単語を、本物の文にしよう。"
+  "final_cta_h2": "次のタイ語の単語を、本物の文にしよう。",
+  "ads_t": {
+    "ads_hero_prefix": "新しい",
+    "ads_hero_suffix": "単語帳アプリへようこそ。",
+    "ads_hero_tag": "文脈による差",
+    "ads_scroll_hint": "スクロールして詳しく見る。",
+    "ads_level_beginner": "初心者向け",
+    "ads_level_advanced": "上級者向け",
+    "ads_flashcard_label": "フラッシュカード",
+    "ads_listen_title": "聞く",
+    "ads_know_word": "この単語を知っていますか？",
+    "ads_yes": "はい",
+    "ads_no": "いいえ",
+    "ads_tier_easy": "簡単",
+    "ads_tier_medium": "普通",
+    "ads_tier_advanced": "上級",
+    "ads_analysis_loading": "準備中…",
+    "ads_analysis_unavailable": "この例文の単語ごとの分析は現在利用できません。",
+    "ads_table_word": "単語",
+    "ads_table_transliteration": "発音表記",
+    "ads_table_meaning": "意味",
+    "ads_menu_aria": "メニュー",
+    "ads_menu_login": "ログイン / 登録",
+    "ads_menu_pricing": "料金",
+    "ads_change_language": "言語を選択",
+    "ads_fallback_headline": "3つの言語。1つの方法。",
+    "ads_fallback_sub": "単語ごとに理解する——単なる翻訳ではなく。",
+    "ads_empty_state": "現在、利用可能な例文はありません。近日中にまた確認してください——コンテンツを継続的に拡充しています。"
+  }
 }

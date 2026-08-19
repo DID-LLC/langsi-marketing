@@ -26,12 +26,6 @@
   "mode_listen_desc": "Hear a word and type what you hear.",
   "method_tag": "Langsi Method",
   "method_h2_1": "Translation isn't enough.",
-  "method_h2_2": "Understanding is.",
-  "method_sub": "Every sentence is broken down word by word — with phonetics, word meaning and natural translation. You see how language is built, not just what it means.",
-  "method_b1": "Get to know the word",
-  "method_b2": "Understand it in context",
-  "method_b3": "Hear it and say it",
-  "method_b4": "Repeat it systematically",
   "final_h2_1": "Start Today.",
   "final_h2_2": "For Free.",
   "final_sub": "Learn, listen, speak — no subscription needed to get started.",
@@ -74,28 +68,6 @@
     "trust3": "Ready immediately"
   },
   "app_deep_link": "https://app.langsi.app/register?source=en&target=th",
-  "advantages": [
-    {
-      "title": "Readable romanization",
-      "body": "Every Thai word also appears in Latin phonetics with tone marks — readable from minute one, even without Thai script."
-    },
-    {
-      "title": "Tones and vowel length, tracked",
-      "body": "Thai has five tones and distinguishes short from long vowels. Langsi marks both directly in the romanization instead of leaving it to guesswork."
-    },
-    {
-      "title": "Thai across different typefaces",
-      "body": "Words are shown in several Thai typefaces so you get used to different handwriting and print styles — not just one single font."
-    },
-    {
-      "title": "Audio for word and sentence",
-      "body": "Every single word and every full example sentence can be played aloud — right in your browser, at natural speaking speed."
-    },
-    {
-      "title": "Sentences broken into learnable chunks",
-      "body": "Thai writes words without spaces between them. Langsi automatically splits every sentence into individual, understandable word groups."
-    }
-  ],
   "progress": {
     "tag": "Your Progress",
     "h2": "Learning that stays visible",
@@ -125,5 +97,33 @@
       "a": "You can start for free. Langsi runs directly in your browser, no installation needed — see the pricing section above for the details."
     }
   ],
-  "final_cta_h2": "Turn your next Thai word into a real sentence."
+  "final_cta_h2": "Turn your next Thai word into a real sentence.",
+  "ads_t": {
+    "ads_hero_prefix": "Welcome to your new ",
+    "ads_hero_suffix": " vocabulary app.",
+    "ads_hero_tag": "Get ahead through context",
+    "ads_scroll_hint": "Scroll to learn more.",
+    "ads_level_beginner": "For beginners",
+    "ads_level_advanced": "For advanced learners",
+    "ads_flashcard_label": "Flashcard",
+    "ads_listen_title": "Listen",
+    "ads_know_word": "Do you know this word?",
+    "ads_yes": "Yes",
+    "ads_no": "No",
+    "ads_tier_easy": "Easy",
+    "ads_tier_medium": "Medium",
+    "ads_tier_advanced": "Advanced",
+    "ads_analysis_loading": "Preparing…",
+    "ads_analysis_unavailable": "The word-by-word analysis isn't available for this example right now.",
+    "ads_table_word": "Word",
+    "ads_table_transliteration": "Transliteration",
+    "ads_table_meaning": "Meaning",
+    "ads_menu_aria": "Menu",
+    "ads_menu_login": "Log in / Sign up",
+    "ads_menu_pricing": "Pricing",
+    "ads_change_language": "Choose language",
+    "ads_fallback_headline": "Three languages. One method.",
+    "ads_fallback_sub": "Understand word by word — not just translate.",
+    "ads_empty_state": "No examples are available right now. Check back soon — we're expanding our offering all the time."
+  }
 }

@@ -29,7 +29,7 @@ const SOURCE_LANGS = [
 // border, active-row highlight) — pure styling reference, no live data need:
 // all 11 target pages already exist statically, so each entry is a plain
 // next/link to its own /{code}/th/ route.
-export default function Header({ content }) {
+export default function Header({ content, showFaq = true }) {
   const [langOpen, setLangOpen] = useState(false);
   const currentLang = SOURCE_LANGS.find((l) => l.code === content.base_language);
 
@@ -79,15 +79,14 @@ export default function Header({ content }) {
         </div>
 
         <div className="flex items-center gap-5">
-          <a href="#method" className="hidden md:inline text-white/60 hover:text-white text-sm transition-colors">
-            {content.method_tag}
-          </a>
           <a href="#pricing" className="hidden md:inline text-white/60 hover:text-white text-sm transition-colors">
             {content.pricing.tag}
           </a>
-          <a href="#faq" className="hidden md:inline text-white/60 hover:text-white text-sm transition-colors">
-            FAQ
-          </a>
+          {showFaq && (
+            <a href="#faq" className="hidden md:inline text-white/60 hover:text-white text-sm transition-colors">
+              FAQ
+            </a>
+          )}
           <a href="https://app.langsi.app/login" className="text-white/60 hover:text-white text-sm transition-colors">
             {content.nav_login}
           </a>
