@@ -40,11 +40,11 @@ export default function Video({ content, titleOverride }) {
   const headline = titleOverride || (VIDEO_HEADLINE[lang] || VIDEO_HEADLINE.en)(NATIVE_NAME[lang] || lang);
 
   return (
-    <section className="py-16 px-5" style={{ background: '#1a251d' }}>
-      <div className="max-w-3xl mx-auto">
+    <section className="py-24 px-5" style={{ background: '#1a251d' }}>
+      <div className="max-w-5xl mx-auto">
         <motion.h2
           {...fadeUp(0)}
-          className="text-2xl font-bold text-white text-center mb-6"
+          className="text-2xl font-bold text-white text-center mb-12"
           style={{ fontFamily: 'Poppins' }}
         >
           {headline}

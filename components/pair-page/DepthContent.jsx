@@ -11,11 +11,11 @@ export default function DepthContent({ content }) {
   if (!content.depth_content?.length) return null;
 
   return (
-    <section className="py-20 px-5" style={{ background: '#161f19' }}>
-      <div className="max-w-2xl mx-auto">
+    <section className="py-24 px-5" style={{ background: '#161f19' }}>
+      <div className="max-w-5xl mx-auto">
         <motion.h2
           {...fadeUp(0)}
-          className="text-2xl md:text-3xl font-bold text-white text-center mb-8"
+          className="text-2xl md:text-3xl font-bold text-white text-center mb-12"
           style={{ fontFamily: 'Poppins' }}
         >
           {content.depth_h2}

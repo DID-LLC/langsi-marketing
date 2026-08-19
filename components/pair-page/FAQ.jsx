@@ -6,9 +6,9 @@ import { fadeUp } from './fadeUp';
 
 export default function FAQ({ content }) {
   return (
-    <section id="faq" className="py-20 px-5" style={{ background: '#161f19' }}>
-      <div className="max-w-2xl mx-auto">
-        <div className="space-y-3">
+    <section id="faq" className="py-24 px-5" style={{ background: '#161f19' }}>
+      <div className="max-w-5xl mx-auto">
+        <div className="space-y-5">
           {(content.pair_faq || []).map((item, i) => (
             <motion.details
               key={item.q}

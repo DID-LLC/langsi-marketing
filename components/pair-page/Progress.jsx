@@ -8,17 +8,17 @@ export default function Progress({ content }) {
   const P = content.progress;
 
   return (
-    <section className="py-20 px-5" style={{ background: '#161f19' }}>
-      <div className="max-w-2xl mx-auto">
-        <motion.div {...fadeUp(0)} className="text-center mb-10">
-          <p className="text-white/40 text-sm font-semibold tracking-widest uppercase mb-3">{P.tag}</p>
+    <section className="py-24 px-5" style={{ background: '#161f19' }}>
+      <div className="max-w-5xl mx-auto">
+        <motion.div {...fadeUp(0)} className="text-center mb-12">
+          <p className="text-white/40 text-sm font-semibold tracking-widest uppercase mb-4">{P.tag}</p>
           <h2 className="text-3xl font-bold text-white leading-snug mb-3" style={{ fontFamily: 'Poppins' }}>
             {P.h2}
           </h2>
           <p className="text-white/50 text-sm">{P.sub}</p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="grid sm:grid-cols-2 gap-5">
           {(P.points || []).map((point, i) => (
             <motion.div
               key={point}
