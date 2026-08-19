@@ -26,13 +26,18 @@ const NATIVE_NAME = {
   ru: 'Русский', zh: '中文', hi: 'हिन्दी', ur: 'اردو', ar: 'العربية', ja: '日本語',
 };
 
-export default function Video({ content }) {
+// titleOverride: used only by the root page ('/'), which has no fixed
+// source/target pair to build the usual "{source} → Thai demo" headline
+// from — passes its own fixed "Our philosophy" title instead. The 11
+// pair pages never pass this, so they keep their existing path-specific
+// headline unchanged.
+export default function Video({ content, titleOverride }) {
   const { url } = content.video;
 
   if (!url) return null;
 
   const lang = content.base_language;
-  const headline = (VIDEO_HEADLINE[lang] || VIDEO_HEADLINE.en)(NATIVE_NAME[lang] || lang);
+  const headline = titleOverride || (VIDEO_HEADLINE[lang] || VIDEO_HEADLINE.en)(NATIVE_NAME[lang] || lang);
 
   return (
     <section className="py-16 px-5" style={{ background: '#1a251d' }}>

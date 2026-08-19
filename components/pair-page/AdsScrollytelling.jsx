@@ -4,9 +4,9 @@
 // as closely as possible: same pinned-scroll mechanism (position: sticky,
 // 4×100vh container, framer-motion opacity crossfade over scroll progress),
 // same fixed scroll-along CTA button, same prefers-reduced-motion fallback
-// (stacked instead of pinned). Two real adaptations for this static site:
+// (stacked instead of pinned). Real adaptations for this static site:
 //   - `language`/`sourceLang`-driven target-language resolution
-//     (getTargetLanguageDisplayName) is replaced by a fixed "Thai" name/flag —
+//     (getTargetLanguageDisplayName) is replaced by a fixed "Thai" flag —
 //     every page on this site targets Thai, there's no dynamic target to
 //     resolve.
 //   - `level` (URL ?level= on the real app) and `onStepView` (GA4) don't
@@ -14,6 +14,12 @@
 //     site, so the level badge simply never renders (same as the source
 //     component's own behavior when no level is passed) and onStepView is
 //     just omitted.
+//   - Step 1's headline is an <h2>, not the source's <h1> — Hero.jsx (which
+//     renders before this component on every page) already owns the page's
+//     one real <h1>. Renders T.ads_intro_heading (a fixed, non-interpolated
+//     string) instead of the source's {ads_hero_prefix}{targetLangName}
+//     {ads_hero_suffix} concatenation — with a single fixed target language,
+//     there's nothing left to interpolate.
 // Data source is content.demo (vocabulary/sentences/analysis), built at
 // prebuild time by scripts/fetchBuildTimeContent.mjs — unchanged by this
 // component, only the presentation layer is new.
@@ -26,7 +32,6 @@ import AdsDemoStep3Example from './AdsDemoStep3Example';
 import AdsDemoStep4Analysis from './AdsDemoStep4Analysis';
 
 const TARGET_FLAG = '🇹🇭';
-const TARGET_NAME = 'Thai';
 // Every page on this site targets Thai, so its TTS locale is fixed too —
 // matches the app repo's own th-TH convention for Thai audio.
 const TTS_LOCALE = 'th-TH';
@@ -102,11 +107,9 @@ export default function AdsScrollytelling({ content }) {
       <div ref={containerRef} className="flex flex-col gap-10 py-16 px-5" style={{ background: '#1a251d' }}>
         <div className="text-center">
           <div className="text-5xl mb-3">{TARGET_FLAG}</div>
-          <h1 className="text-3xl font-bold text-white" style={{ fontFamily: 'Poppins' }}>
-            {T.ads_hero_prefix}
-            {TARGET_NAME}
-            {T.ads_hero_suffix}
-          </h1>
+          <h2 className="text-3xl font-bold text-white" style={{ fontFamily: 'Poppins' }}>
+            {T.ads_intro_heading}
+          </h2>
           <p className="text-[#50C878] text-sm font-semibold tracking-wide mt-2">{T.ads_hero_tag}</p>
           <p className="text-white/40 text-sm mt-3">{T.ads_scroll_hint}</p>
         </div>
@@ -142,11 +145,9 @@ export default function AdsScrollytelling({ content }) {
       <div className="sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden px-5">
         <motion.div style={{ opacity: step1Opacity, pointerEvents: step1Pointer }} className="absolute inset-0 flex flex-col items-center justify-center gap-3 px-5">
           <div className="text-6xl">{TARGET_FLAG}</div>
-          <h1 className="text-3xl md:text-4xl font-bold text-white text-center" style={{ fontFamily: 'Poppins' }}>
-            {T.ads_hero_prefix}
-            {TARGET_NAME}
-            {T.ads_hero_suffix}
-          </h1>
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center" style={{ fontFamily: 'Poppins' }}>
+            {T.ads_intro_heading}
+          </h2>
           <p className="text-[#50C878] text-sm font-semibold tracking-wide">{T.ads_hero_tag}</p>
           <p className="text-white/40 text-sm">{T.ads_scroll_hint}</p>
         </motion.div>

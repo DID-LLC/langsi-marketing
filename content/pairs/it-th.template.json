@@ -99,8 +99,6 @@
   ],
   "final_cta_h2": "Trasforma la tua prossima parola thailandese in una frase vera.",
   "ads_t": {
-    "ads_hero_prefix": "Benvenuto nella tua nuova app di vocabolario ",
-    "ads_hero_suffix": ".",
     "ads_hero_tag": "Un vantaggio grazie al contesto",
     "ads_scroll_hint": "Scorri per saperne di più.",
     "ads_level_beginner": "Per principianti",
@@ -124,6 +122,7 @@
     "ads_change_language": "Scegli lingua",
     "ads_fallback_headline": "Tre lingue. Un metodo.",
     "ads_fallback_sub": "Capire parola per parola — non solo tradurre.",
-    "ads_empty_state": "Al momento non ci sono esempi disponibili. Torna presto — ampliamo costantemente la nostra offerta."
+    "ads_empty_state": "Al momento non ci sono esempi disponibili. Torna presto — ampliamo costantemente la nostra offerta.",
+    "ads_intro_heading": "Ecco come funziona."
   }
 }

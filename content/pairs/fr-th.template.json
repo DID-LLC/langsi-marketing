@@ -99,8 +99,6 @@
   ],
   "final_cta_h2": "Transformez votre prochain mot thaï en une vraie phrase.",
   "ads_t": {
-    "ads_hero_prefix": "Bienvenue dans votre nouvelle application de vocabulaire ",
-    "ads_hero_suffix": ".",
     "ads_hero_tag": "Une longueur d'avance grâce au contexte",
     "ads_scroll_hint": "Faites défiler pour en savoir plus.",
     "ads_level_beginner": "Pour débutants",
@@ -124,6 +122,7 @@
     "ads_change_language": "Choisir la langue",
     "ads_fallback_headline": "Trois langues. Une méthode.",
     "ads_fallback_sub": "Comprendre mot par mot — pas seulement traduire.",
-    "ads_empty_state": "Aucun exemple disponible pour le moment. Revenez bientôt — nous élargissons notre offre en continu."
+    "ads_empty_state": "Aucun exemple disponible pour le moment. Revenez bientôt — nous élargissons notre offre en continu.",
+    "ads_intro_heading": "Voici comment ça marche."
   }
 }

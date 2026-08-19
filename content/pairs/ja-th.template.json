@@ -99,8 +99,6 @@
   ],
   "final_cta_h2": "次のタイ語の単語を、本物の文にしよう。",
   "ads_t": {
-    "ads_hero_prefix": "新しい",
-    "ads_hero_suffix": "単語帳アプリへようこそ。",
     "ads_hero_tag": "文脈による差",
     "ads_scroll_hint": "スクロールして詳しく見る。",
     "ads_level_beginner": "初心者向け",
@@ -124,6 +122,7 @@
     "ads_change_language": "言語を選択",
     "ads_fallback_headline": "3つの言語。1つの方法。",
     "ads_fallback_sub": "単語ごとに理解する——単なる翻訳ではなく。",
-    "ads_empty_state": "現在、利用可能な例文はありません。近日中にまた確認してください——コンテンツを継続的に拡充しています。"
+    "ads_empty_state": "現在、利用可能な例文はありません。近日中にまた確認してください——コンテンツを継続的に拡充しています。",
+    "ads_intro_heading": "こんな仕組みです。"
   }
 }

@@ -3,15 +3,6 @@
 import { motion } from 'framer-motion';
 import { fadeUp } from './fadeUp';
 
-const IMG_FLASHCARD_FRONT =
-  'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69080f3002a1f3579a154b61/4beac42fd_langsi2026-03-0615-04-48_karteikarte_vorne.png';
-const IMG_FLASHCARD_BACK =
-  'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69080f3002a1f3579a154b61/778036cb7_langsi2026-03-0615-05-10_karteikarte_hinten.png';
-const IMG_CHOICE =
-  'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69080f3002a1f3579a154b61/2441e38dd_langsi2026-03-0615-14-12_auswahl.png';
-const IMG_LISTEN =
-  'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69080f3002a1f3579a154b61/1f86f087a_langsi2026-03-0615-15-04_horen.png';
-
 export default function Hero({ content }) {
   return (
     <section className="px-5 pt-16 pb-14" style={{ background: '#1a251d' }}>
@@ -45,18 +36,6 @@ export default function Hero({ content }) {
           >
             {content.hero_cta}
           </a>
-        </motion.div>
-
-        <motion.div {...fadeUp(0.4)} className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
-          {[IMG_FLASHCARD_FRONT, IMG_FLASHCARD_BACK, IMG_CHOICE, IMG_LISTEN].map((src) => (
-            <div
-              key={src}
-              className="rounded-xl overflow-hidden border border-white/8"
-              style={{ background: 'linear-gradient(135deg, #1e3325 0%, #192a20 100%)' }}
-            >
-              <img src={src} alt="" className="w-full h-auto" />
-            </div>
-          ))}
         </motion.div>
       </div>
     </section>

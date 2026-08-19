@@ -99,8 +99,6 @@
   ],
   "final_cta_h2": "Convierte tu próxima palabra en tailandés en una frase real.",
   "ads_t": {
-    "ads_hero_prefix": "Bienvenido a tu nueva app de vocabulario de ",
-    "ads_hero_suffix": ".",
     "ads_hero_tag": "Ventaja gracias al contexto",
     "ads_scroll_hint": "Desplázate para saber más.",
     "ads_level_beginner": "Para principiantes",
@@ -124,6 +122,7 @@
     "ads_change_language": "Elegir idioma",
     "ads_fallback_headline": "Tres idiomas. Un método.",
     "ads_fallback_sub": "Entender palabra por palabra — no solo traducir.",
-    "ads_empty_state": "Actualmente no hay ejemplos disponibles. Vuelve pronto — ampliamos nuestra oferta continuamente."
+    "ads_empty_state": "Actualmente no hay ejemplos disponibles. Vuelve pronto — ampliamos nuestra oferta continuamente.",
+    "ads_intro_heading": "Así funciona."
   }
 }

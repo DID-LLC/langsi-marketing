@@ -99,8 +99,6 @@
   ],
   "final_cta_h2": "把你的下一个泰语单词变成一句真正的话。",
   "ads_t": {
-    "ads_hero_prefix": "欢迎使用你的全新",
-    "ads_hero_suffix": "词汇学习应用。",
     "ads_hero_tag": "凭借语境抢先一步",
     "ads_scroll_hint": "继续滚动了解更多。",
     "ads_level_beginner": "适合初学者",
@@ -124,6 +122,7 @@
     "ads_change_language": "选择语言",
     "ads_fallback_headline": "三种语言，一种方法。",
     "ads_fallback_sub": "逐词理解——而不仅仅是翻译。",
-    "ads_empty_state": "目前暂无可用示例。请稍后再来——我们正在持续扩充内容。"
+    "ads_empty_state": "目前暂无可用示例。请稍后再来——我们正在持续扩充内容。",
+    "ads_intro_heading": "它是这样运作的。"
   }
 }

@@ -99,8 +99,6 @@
   ],
   "final_cta_h2": "Turn your next Thai word into a real sentence.",
   "ads_t": {
-    "ads_hero_prefix": "Welcome to your new ",
-    "ads_hero_suffix": " vocabulary app.",
     "ads_hero_tag": "Get ahead through context",
     "ads_scroll_hint": "Scroll to learn more.",
     "ads_level_beginner": "For beginners",
@@ -124,6 +122,7 @@
     "ads_change_language": "Choose language",
     "ads_fallback_headline": "Three languages. One method.",
     "ads_fallback_sub": "Understand word by word — not just translate.",
-    "ads_empty_state": "No examples are available right now. Check back soon — we're expanding our offering all the time."
+    "ads_empty_state": "No examples are available right now. Check back soon — we're expanding our offering all the time.",
+    "ads_intro_heading": "This is how it works."
   }
 }
