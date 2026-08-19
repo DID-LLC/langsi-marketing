@@ -10,7 +10,7 @@
   ],
   "hero_h1_1": "Understand Thai vocabulary",
   "hero_h1_2": "and actually use it.",
-  "hero_sub": "Context instead of flashcards, real sentences instead of isolated words: with Langsi, you learn Thai the way it's actually spoken. Unlike Anki, you don't have to build your own learning system — and unlike Duolingo, there are no games, leagues, or endless learning paths to distract you. You focus on what matters: understanding vocabulary, using it in context, and actually retaining it long-term.",
+  "hero_sub": "Langsi is the Thai vocabulary app that teaches you in context, not with flashcards: real sentences instead of isolated words, so you learn Thai the way it's actually spoken. Unlike Anki, you don't have to build your own learning system — and unlike Duolingo, there are no games, leagues, or endless learning paths to distract you. You focus on what matters: understanding vocabulary, using it in context, and actually retaining it long-term.",
   "hero_badge": "English → Thai",
   "hero_cta": "English → Thai — start for free",
   "nav_login": "Log in",
@@ -73,7 +73,7 @@
     "h2": "Learning that stays visible",
     "sub": "Langsi always shows you exactly where you stand — and what's next.",
     "points": [
-      "Personal daily goal that adapts to your pace",
+      "Personal daily goal that you can adjust to your needs",
       "Leitner repetition system makes sure nothing gets forgotten",
       "Visible progress per word, category, and day",
       "Downloadable daily summaries — perfect for continuing to learn with AI"
@@ -163,7 +163,7 @@
   },
   "hub": {
     "h1": "Understand Vocabulary. Actually Use It.",
-    "sub": "Context instead of flashcards, real sentences instead of isolated words: with Langsi, you learn any language the way it's actually spoken. Unlike Anki, you don't have to build your own learning system — and unlike Duolingo, there are no games, leagues, or endless learning paths to distract you. You focus on what matters: understanding vocabulary, using it in context, and actually retaining it long-term.",
+    "sub": "Langsi is a vocabulary app that teaches you in context, not with flashcards: real sentences instead of isolated words, so you learn any language the way it's actually spoken. Unlike Anki, you don't have to build your own learning system — and unlike Duolingo, there are no games, leagues, or endless learning paths to distract you. You focus on what matters: understanding vocabulary, using it in context, and actually retaining it long-term.",
     "title": "Vocabulary App · Langsi",
     "meta_description": "Langsi is a vocabulary app that teaches real words in real sentences — not flashcards. Learn any language in context. Free to start.",
     "video_title": "Our philosophy",
@@ -244,5 +244,7 @@
     "privacy": "Privacy Policy",
     "terms": "Terms"
   },
-  "faq_heading": "Frequently Asked Questions"
+  "faq_heading": "Frequently Asked Questions",
+  "faq_show_all_label": "Show all questions",
+  "faq_show_less_label": "Show less"
 }

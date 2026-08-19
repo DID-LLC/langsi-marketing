@@ -10,7 +10,7 @@
   ],
   "hero_h1_1": "Comprenez le vocabulaire thaï",
   "hero_h1_2": "et utilisez-le vraiment.",
-  "hero_sub": "Le contexte plutôt que des cartes, de vraies phrases plutôt que des mots isolés : avec Langsi, vous apprenez le thaï comme il se parle vraiment. Contrairement à Anki, vous n'avez pas à construire vous-même votre système d'apprentissage — et contrairement à Duolingo, aucun jeu, aucune ligue ni aucun parcours d'apprentissage sans fin ne vient vous distraire. Vous vous concentrez sur l'essentiel : comprendre le vocabulaire, l'utiliser en contexte et le retenir vraiment sur le long terme.",
+  "hero_sub": "Langsi est l'application de vocabulaire thaï qui vous enseigne en contexte, pas avec des cartes : de vraies phrases plutôt que des mots isolés, pour que vous appreniez le thaï comme il se parle vraiment. Contrairement à Anki, vous n'avez pas à construire vous-même votre système d'apprentissage — et contrairement à Duolingo, aucun jeu, aucune ligue ni aucun parcours d'apprentissage sans fin ne vient vous distraire. Vous vous concentrez sur l'essentiel : comprendre le vocabulaire, l'utiliser en contexte et le retenir vraiment sur le long terme.",
   "hero_badge": "Français → Thai",
   "hero_cta": "Français → Thai : commencez gratuitement",
   "nav_login": "Se connecter",
@@ -73,7 +73,7 @@
     "h2": "Un apprentissage qui reste visible",
     "sub": "Langsi vous montre toujours où vous en êtes — et ce qui vient ensuite.",
     "points": [
-      "Objectif quotidien personnel qui s'adapte à votre rythme",
+      "Objectif quotidien personnel que vous pouvez ajuster selon vos besoins",
       "Le système de répétition Leitner évite que quoi que ce soit ne soit oublié",
       "Progression visible par mot, catégorie et jour",
       "Résumés quotidiens téléchargeables — parfaits pour continuer à apprendre avec l'IA"
@@ -127,7 +127,7 @@
   },
   "hub": {
     "h1": "Comprenez le vocabulaire. Utilisez-le vraiment.",
-    "sub": "Le contexte plutôt que des cartes, de vraies phrases plutôt que des mots isolés : avec Langsi, vous apprenez n'importe quelle langue comme elle se parle vraiment. Contrairement à Anki, vous n'avez pas à construire vous-même votre système d'apprentissage — et contrairement à Duolingo, aucun jeu, aucune ligue ni aucun parcours d'apprentissage sans fin ne vient vous distraire. Vous vous concentrez sur l'essentiel : comprendre le vocabulaire, l'utiliser en contexte et le retenir vraiment sur le long terme.",
+    "sub": "Langsi est une application de vocabulaire qui vous enseigne en contexte, pas avec des cartes : de vraies phrases plutôt que des mots isolés, pour que vous appreniez n'importe quelle langue comme elle se parle vraiment. Contrairement à Anki, vous n'avez pas à construire vous-même votre système d'apprentissage — et contrairement à Duolingo, aucun jeu, aucune ligue ni aucun parcours d'apprentissage sans fin ne vient vous distraire. Vous vous concentrez sur l'essentiel : comprendre le vocabulaire, l'utiliser en contexte et le retenir vraiment sur le long terme.",
     "title": "Appli de Vocabulaire · Langsi",
     "meta_description": "Langsi est une application de vocabulaire qui enseigne de vrais mots dans de vraies phrases — pas de cartes mémoire. Apprenez n'importe quelle langue en contexte. Essai gratuit.",
     "video_title": "Notre philosophie",
@@ -201,5 +201,7 @@
     "privacy": "Politique de Confidentialité",
     "terms": "Conditions"
   },
-  "faq_heading": "Questions fréquentes"
+  "faq_heading": "Questions fréquentes",
+  "faq_show_all_label": "Afficher toutes les questions",
+  "faq_show_less_label": "Afficher moins"
 }

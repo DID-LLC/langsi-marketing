@@ -5,8 +5,11 @@ import { fadeUp } from './fadeUp';
 
 export default function Hero({ content }) {
   return (
-    <section className="px-5 py-24" style={{ background: '#1a251d' }}>
-      <div className="max-w-5xl mx-auto text-center">
+    <section
+      className="min-h-[100dvh] flex items-center px-5 py-24"
+      style={{ background: '#1a251d' }}
+    >
+      <div className="max-w-5xl mx-auto text-center w-full">
         <motion.p
           {...fadeUp(0)}
           className="inline-block text-xs font-semibold tracking-widest uppercase text-[#50C878] bg-[#50C878]/10 border border-[#50C878]/20 rounded-full px-4 py-1.5 mb-4"

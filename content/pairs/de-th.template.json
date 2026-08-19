@@ -10,7 +10,7 @@
   ],
   "hero_h1_1": "Thai-Vokabeln verstehen",
   "hero_h1_2": "und wirklich anwenden.",
-  "hero_sub": "Kontext statt bloßer Karteikarten, echte Sätze statt isolierter Einzelwörter: Mit Langsi lernst du Thai so, wie es wirklich gesprochen wird. Anders als bei Anki musst du dein Lernsystem nicht selbst aufbauen – und anders als bei Duolingo lenken dich keine Spiele, Ligen oder zahllosen Lernpfade ab. Du konzentrierst dich auf das Wesentliche: Wortschatz verstehen, im Kontext anwenden und langfristig behalten.",
+  "hero_sub": "Langsi ist die Thai-Vokabel-App, mit der du im Kontext lernst statt mit bloßen Karteikarten: echte Sätze statt isolierter Einzelwörter, damit du Thai so lernst, wie es wirklich gesprochen wird. Anders als bei Anki musst du dein Lernsystem nicht selbst aufbauen – und anders als bei Duolingo lenken dich keine Spiele, Ligen oder zahllosen Lernpfade ab. Du konzentrierst dich auf das Wesentliche: Wortschatz verstehen, im Kontext anwenden und langfristig behalten.",
   "hero_badge": "Deutsch → Thai",
   "hero_cta": "Deutsch → Thai kostenlos starten",
   "nav_login": "Einloggen",
@@ -73,7 +73,7 @@
     "h2": "Lernen, das sichtbar bleibt",
     "sub": "Langsi zeigt dir jederzeit, wo du stehst — und wie es weitergeht.",
     "points": [
-      "Persönliches Tagesziel, das sich deinem Tempo anpasst",
+      "Persönliches Tagesziel, das du nach deinem Bedarf anpassen kannst",
       "Leitner-Wiederholungssystem sorgt dafür, dass nichts in Vergessenheit gerät",
       "Sichtbarer Fortschritt pro Wort, Kategorie und Tag",
       "Herunterladbare Tageszusammenfassungen — perfekt zum Weiterlernen mit KI"
@@ -127,7 +127,7 @@
   },
   "hub": {
     "h1": "Vokabeln verstehen. Wirklich anwenden.",
-    "sub": "Kontext statt Karteikarten, echte Sätze statt Einzelwörter — lerne jede Sprache so, wie sie wirklich gesprochen wird. Anders als bei Anki musst du dein Lernsystem nicht selbst aufbauen – und anders als bei Duolingo lenken dich keine Spiele, Ligen oder zahllosen Lernpfade ab. Du konzentrierst dich auf das Wesentliche: Wortschatz verstehen, im Kontext anwenden und langfristig behalten.",
+    "sub": "Langsi ist eine Vokabel-App, mit der du im Kontext lernst statt mit bloßen Karteikarten: echte Sätze statt isolierter Einzelwörter, damit du jede Sprache so lernst, wie sie wirklich gesprochen wird. Anders als bei Anki musst du dein Lernsystem nicht selbst aufbauen – und anders als bei Duolingo lenken dich keine Spiele, Ligen oder zahllosen Lernpfade ab. Du konzentrierst dich auf das Wesentliche: Wortschatz verstehen, im Kontext anwenden und langfristig behalten.",
     "title": "Vokabel-App · Langsi",
     "meta_description": "Langsi ist eine Vokabel-App, die echte Wörter in echten Sätzen lehrt — keine Karteikarten. Jede Sprache im Kontext lernen. Kostenlos starten.",
     "video_title": "Unsere Philosophie",
@@ -201,5 +201,7 @@
     "privacy": "Datenschutz",
     "terms": "AGB"
   },
-  "faq_heading": "Häufig gestellte Fragen"
+  "faq_heading": "Häufig gestellte Fragen",
+  "faq_show_all_label": "Alle Fragen anzeigen",
+  "faq_show_less_label": "Weniger anzeigen"
 }
