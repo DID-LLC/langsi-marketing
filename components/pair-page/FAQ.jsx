@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { fadeUp } from './fadeUp';
+import { trackFaqExpanded } from '../../lib/ga4';
 
 // Entries stay in the DOM at all times (only hidden via a CSS class) so the
 // full list is still crawlable and matches the FAQPageSchema mainEntity
@@ -15,8 +16,13 @@ export default function FAQ({ content }) {
   const items = content.pair_faq || [];
   const hasMore = items.length > VISIBLE_COUNT;
 
+  const toggleExpanded = () => {
+    if (!expanded) trackFaqExpanded({ location: 'faq_section' });
+    setExpanded((v) => !v);
+  };
+
   return (
-    <section id="faq" className="py-24 px-5" style={{ background: '#161f19' }}>
+    <section id="faq" data-track-section="faq" className="py-24 px-5" style={{ background: '#161f19' }}>
       <div className="max-w-5xl mx-auto">
         <motion.h2
           {...fadeUp(0)}
@@ -47,7 +53,7 @@ export default function FAQ({ content }) {
           <div className="text-center mt-6">
             <button
               type="button"
-              onClick={() => setExpanded((v) => !v)}
+              onClick={toggleExpanded}
               className="text-sm font-semibold text-[#50C878] hover:text-white transition-colors"
             >
               {expanded ? content.faq_show_less_label : content.faq_show_all_label}

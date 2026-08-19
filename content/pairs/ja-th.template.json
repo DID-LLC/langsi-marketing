@@ -212,5 +212,22 @@
   },
   "faq_heading": "よくある質問",
   "faq_show_all_label": "すべての質問を表示",
-  "faq_show_less_label": "表示を減らす"
+  "faq_show_less_label": "表示を減らす",
+  "cookie_consent": {
+    "title": "Cookieとプライバシー",
+    "intro": "プラットフォームの運用に必要なCookieを使用しています。あなたの同意のもと、利用状況を把握し改善するために分析Cookie（Google Analytics）も使用します。",
+    "show_details": "詳細を表示",
+    "hide_details": "詳細を隠す",
+    "necessary_title": "✅ 必要なCookie（常に有効）",
+    "necessary_text": "認証トークン、セッション管理、ローカルストレージ内の学習設定。これらのCookieがないとプラットフォームは機能しません。",
+    "analytics_title": "📊 分析Cookie（任意、同意が必要）",
+    "analytics_text": "Google Analytics 4 — 匿名の利用データ（閲覧ページ、滞在時間、デバイスデータ）。プラットフォームの改善に使用されます。提供元：Google Ireland Ltd.",
+    "more_info": "詳細は",
+    "privacy_policy": "プライバシーポリシー",
+    "necessary_only": "必要なもののみ",
+    "accept_all": "すべて同意する",
+    "change_anytime": "同意はいつでも",
+    "privacy_settings": "プライバシー設定",
+    "change_anytime2": "から撤回できます。"
+  }
 }

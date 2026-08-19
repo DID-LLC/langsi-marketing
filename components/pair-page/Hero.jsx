@@ -2,10 +2,17 @@
 
 import { motion } from 'framer-motion';
 import { fadeUp } from './fadeUp';
+import { trackLandingCTAClicked, trackEvent } from '../../lib/ga4';
 
 export default function Hero({ content }) {
+  const handleCtaClick = () => {
+    trackLandingCTAClicked({ ctaLocation: 'hero', ctaLabel: content.hero_cta });
+    trackEvent('generate_lead', { lead_type: 'landing_cta_click', cta_location: 'hero' });
+  };
+
   return (
     <section
+      data-track-section="hero"
       className="min-h-[100dvh] flex items-center px-5 py-24"
       style={{ background: '#1a251d' }}
     >
@@ -38,6 +45,7 @@ export default function Hero({ content }) {
         <motion.div {...fadeUp(0.3)}>
           <a
             href={content.app_deep_link}
+            onClick={handleCtaClick}
             className="inline-block text-sm font-bold rounded-xl px-7 py-3.5 transition-colors"
             style={{ background: '#50C878', color: '#1C3A27', fontFamily: 'Poppins' }}
           >

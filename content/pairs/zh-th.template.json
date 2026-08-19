@@ -212,5 +212,22 @@
   },
   "faq_heading": "常见问题",
   "faq_show_all_label": "显示所有问题",
-  "faq_show_less_label": "收起"
+  "faq_show_less_label": "收起",
+  "cookie_consent": {
+    "title": "Cookie 与隐私",
+    "intro": "我们使用必要的 Cookie 来运行平台。经你同意后，我们还会使用分析 Cookie（Google Analytics）来了解和改进使用情况。",
+    "show_details": "显示详情",
+    "hide_details": "隐藏详情",
+    "necessary_title": "✅ 必要 Cookie（始终启用）",
+    "necessary_text": "身份验证令牌、会话管理、本地存储中的学习设置。没有这些 Cookie，平台将无法运行。",
+    "analytics_title": "📊 分析 Cookie（可选，需要同意）",
+    "analytics_text": "Google Analytics 4——匿名使用数据（访问的页面、停留时间、设备数据）。用于改进平台。提供方：Google Ireland Ltd.",
+    "more_info": "更多信息见",
+    "privacy_policy": "隐私政策",
+    "necessary_only": "仅必要项",
+    "accept_all": "全部接受",
+    "change_anytime": "你可以随时在",
+    "privacy_settings": "隐私设置",
+    "change_anytime2": "中撤回同意。"
+  }
 }

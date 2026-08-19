@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { ChevronDown } from 'lucide-react';
+import { trackLanguageSwitcherUsed } from '../../lib/ga4';
 
 const LOGO_URL =
   'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69080f3002a1f3579a154b61/13ecfd47d_langsi_logo_leitner1.png';
@@ -67,7 +68,14 @@ export default function Header({ content, showFaq = true, hubLinks = false }) {
                     <Link
                       key={lang.code}
                       href={hubLinks ? `/${lang.code}/` : `/${lang.code}/th/`}
-                      onClick={() => setLangOpen(false)}
+                      onClick={() => {
+                        trackLanguageSwitcherUsed({
+                          fromLanguage: content.base_language,
+                          toLanguage: lang.code,
+                          context: hubLinks ? 'hub' : 'pair',
+                        });
+                        setLangOpen(false);
+                      }}
                       className={`flex items-center gap-2 px-4 py-2.5 text-sm transition-colors border-b border-white/5 last:border-b-0 ${
                         lang.code === content.base_language ? 'text-[#50C878] bg-[#50C878]/10' : 'text-white hover:bg-[#50C878]/10'
                       }`}

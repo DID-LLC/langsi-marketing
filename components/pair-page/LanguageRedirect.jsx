@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import { trackAutoRedirectFired } from '../../lib/ga4';
 
 // Client-side only (no server/middleware redirect) so '/' still responds
 // with the crawlable English default content directly — search engines and
@@ -17,7 +18,9 @@ export default function LanguageRedirect() {
       const code = String(raw).split('-')[0].toLowerCase();
       if (SUPPORTED_SOURCE_LANGS.includes(code)) {
         if (code !== 'en') {
-          window.location.replace(`/${code}/th/`);
+          const toPath = `/${code}/th/`;
+          trackAutoRedirectFired({ fromPath: window.location.pathname, toPath });
+          window.location.replace(toPath);
         }
         return;
       }

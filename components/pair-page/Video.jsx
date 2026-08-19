@@ -40,7 +40,7 @@ export default function Video({ content, titleOverride }) {
   const headline = titleOverride || (VIDEO_HEADLINE[lang] || VIDEO_HEADLINE.en)(NATIVE_NAME[lang] || lang);
 
   return (
-    <section className="py-24 px-5" style={{ background: '#1a251d' }}>
+    <section data-track-section="video" className="py-24 px-5" style={{ background: '#1a251d' }}>
       <div className="max-w-5xl mx-auto">
         <motion.h2
           {...fadeUp(0)}

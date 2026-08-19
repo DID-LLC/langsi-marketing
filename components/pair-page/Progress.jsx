@@ -8,7 +8,7 @@ export default function Progress({ content }) {
   const P = content.progress;
 
   return (
-    <section className="py-24 px-5" style={{ background: '#161f19' }}>
+    <section data-track-section="progress" className="py-24 px-5" style={{ background: '#161f19' }}>
       <div className="max-w-5xl mx-auto">
         <motion.div {...fadeUp(0)} className="text-center mb-12">
           <p className="text-white/40 text-sm font-semibold tracking-widest uppercase mb-4">{P.tag}</p>

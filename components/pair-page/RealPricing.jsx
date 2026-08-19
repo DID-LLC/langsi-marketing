@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 import { fadeUp } from './fadeUp';
+import { trackLandingCTAClicked, trackLandingPricingPlanClicked, trackEvent } from '../../lib/ga4';
 
 export default function RealPricing({ content }) {
   const P = content.pricing;
@@ -38,8 +39,15 @@ export default function RealPricing({ content }) {
     },
   ];
 
+  const handlePlanClick = (plan) => {
+    const ctaLocation = `pricing_${plan.key}`;
+    trackLandingCTAClicked({ ctaLocation, ctaLabel: plan.cta });
+    trackEvent('generate_lead', { lead_type: 'landing_cta_click', cta_location: ctaLocation });
+    trackLandingPricingPlanClicked({ planId: plan.key, ctaLocation: 'pricing' });
+  };
+
   return (
-    <section id="pricing" className="py-24 px-5" style={{ background: '#1a251d' }}>
+    <section id="pricing" data-track-section="pricing" className="py-24 px-5" style={{ background: '#1a251d' }}>
       <div className="max-w-5xl mx-auto">
         <motion.div {...fadeUp(0)} className="text-center mb-12">
           <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#50C878] bg-[#50C878]/10 border border-[#50C878]/20 rounded-full px-4 py-1.5 mb-4">
@@ -83,6 +91,7 @@ export default function RealPricing({ content }) {
               </ul>
               <a
                 href={content.app_deep_link}
+                onClick={() => handlePlanClick(plan)}
                 className={`block text-center w-full py-3 rounded-xl text-sm font-bold transition-all ${
                   plan.highlight
                     ? 'bg-[#50C878] text-[#1C3A27] hover:bg-[#3eb865]'

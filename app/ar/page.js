@@ -9,6 +9,8 @@ import FinalCTA from '../../components/pair-page/FinalCTA';
 import Footer from '../../components/pair-page/Footer';
 import SoftwareApplicationSchema from '../../components/pair-page/SoftwareApplicationSchema';
 import FAQPageSchema from '../../components/pair-page/FAQPageSchema';
+import CookieConsent from '../../components/pair-page/CookieConsent';
+import AnalyticsTracker from '../../components/pair-page/AnalyticsTracker';
 import FAQ from '../../components/pair-page/FAQ';
 
 // Same hreflang set on every /{source}/ hub page and on root (see
@@ -66,6 +68,8 @@ export default function Page() {
     <div dir="rtl">
       <SoftwareApplicationSchema content={content} />
       <FAQPageSchema content={content} />
+      <CookieConsent content={content} />
+      <AnalyticsTracker pageVariant="hub" />
       <Header content={content} showFaq hubLinks />
       <Hero content={content} />
       <AdsScrollytelling content={content} />

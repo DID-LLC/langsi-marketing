@@ -10,6 +10,8 @@ import FinalCTA from '../../../components/pair-page/FinalCTA';
 import Footer from '../../../components/pair-page/Footer';
 import SoftwareApplicationSchema from '../../../components/pair-page/SoftwareApplicationSchema';
 import FAQPageSchema from '../../../components/pair-page/FAQPageSchema';
+import CookieConsent from '../../../components/pair-page/CookieConsent';
+import AnalyticsTracker from '../../../components/pair-page/AnalyticsTracker';
 
 export const metadata = {
   title: `${content.hero_h1_1} ${content.hero_h1_2}`,
@@ -21,6 +23,8 @@ export default function Page() {
     <div dir="rtl">
       <SoftwareApplicationSchema content={content} />
       <FAQPageSchema content={content} />
+      <CookieConsent content={content} />
+      <AnalyticsTracker pageVariant="pair" />
       <Header content={content} />
       <Hero content={content} />
       <AdsScrollytelling content={content} />

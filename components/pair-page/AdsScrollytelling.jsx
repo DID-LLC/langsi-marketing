@@ -34,13 +34,14 @@
 // hook calls can't be looped.
 
 import React, { useRef, useState, useEffect } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import AdsDemoStep2Flashcard from './AdsDemoStep2Flashcard';
 import AdsDemoStepMemoryExplainer from './AdsDemoStepMemoryExplainer';
 import AdsDemoStep3Example from './AdsDemoStep3Example';
 import AdsDemoStepListenRepeatTip from './AdsDemoStepListenRepeatTip';
 import AdsDemoStep4Analysis from './AdsDemoStep4Analysis';
+import { trackViewStep } from '../../lib/ga4';
 
 const TARGET_FLAG = '🇹🇭';
 // Every page on this site targets Thai, so its TTS locale is fixed too —
@@ -137,9 +138,50 @@ export default function AdsScrollytelling({ content }) {
   // instead, since the memory explainer is the new immediate next step.
   const step3Ref = useRef(null);
   const memoryRef = useRef(null);
+  // Only used in the reduced-motion (stacked) layout — one wrapper ref per
+  // step, indexed 0..N-1, observed below to fire view_step_N once each as
+  // the visitor scrolls past them (the pinned layout tracks this via
+  // scrollYProgress instead, see useMotionValueEvent below).
+  const rmStepRefs = useRef([]);
   const reducedMotion = usePrefersReducedMotion();
   const { scrollYProgress } = useScroll({ target: containerRef, offset: ['start start', 'end end'] });
   const stepCount = N;
+
+  // Dedup so each view_step_N fires at most once per page load, regardless
+  // of which layout (pinned or reduced-motion) is tracking it.
+  const trackedStepsRef = useRef(new Set());
+  function trackStepIfNeeded(i) {
+    if (trackedStepsRef.current.has(i)) return;
+    trackedStepsRef.current.add(i);
+    trackViewStep(i);
+  }
+
+  // Pinned layout: fire view_step_i the moment scroll progress reaches that
+  // step's slot start. Guarded by `reducedMotion` (checked at call time, not
+  // via a conditional hook) since the stacked layout tracks steps via
+  // IntersectionObserver instead, below.
+  useMotionValueEvent(scrollYProgress, 'change', (v) => {
+    if (reducedMotion) return;
+    for (let i = 1; i <= N; i++) {
+      if (v >= (i - 1) / N) trackStepIfNeeded(i);
+    }
+  });
+
+  useEffect(() => {
+    if (!reducedMotion) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const idx = rmStepRefs.current.indexOf(entry.target) + 1;
+          if (idx > 0) trackStepIfNeeded(idx);
+        });
+      },
+      { threshold: 0.5 }
+    );
+    rmStepRefs.current.forEach((el) => el && observer.observe(el));
+    return () => observer.disconnect();
+  }, [reducedMotion]);
 
   const [step1In, step1Out] = stepBreakpoints(1);
   const [step2In, step2Out] = stepBreakpoints(2);
@@ -167,8 +209,8 @@ export default function AdsScrollytelling({ content }) {
 
   if (reducedMotion) {
     return (
-      <div ref={containerRef} className="flex flex-col gap-10 py-16 px-5" style={{ background: '#1a251d' }}>
-        <div className="text-center">
+      <div ref={containerRef} data-track-section="scrollytelling" className="flex flex-col gap-10 py-16 px-5" style={{ background: '#1a251d' }}>
+        <div ref={(el) => (rmStepRefs.current[0] = el)} className="text-center">
           <div className="text-5xl mb-3">{TARGET_FLAG}</div>
           <h2 className="text-3xl font-bold text-white" style={{ fontFamily: 'Poppins' }}>
             {T.ads_intro_heading}
@@ -176,24 +218,40 @@ export default function AdsScrollytelling({ content }) {
           <p className="text-[#50C878] text-sm font-semibold tracking-wide mt-2">{T.ads_hero_tag}</p>
           <p className="text-white/40 text-sm mt-3">{T.ads_scroll_hint}</p>
         </div>
-        <AdsDemoStep2Flashcard
-          T={T}
-          vocabulary={vocabulary}
-          ttsLocale={TTS_LOCALE}
-          onAnswer={(knewIt) => {
-            setKnewWord(knewIt);
-            const el = memoryRef.current;
-            if (el) window.scrollTo(0, el.getBoundingClientRect().top + window.scrollY);
+        <div ref={(el) => (rmStepRefs.current[1] = el)}>
+          <AdsDemoStep2Flashcard
+            T={T}
+            vocabulary={vocabulary}
+            ttsLocale={TTS_LOCALE}
+            onAnswer={(knewIt) => {
+              setKnewWord(knewIt);
+              const el = memoryRef.current;
+              if (el) window.scrollTo(0, el.getBoundingClientRect().top + window.scrollY);
+            }}
+          />
+        </div>
+        <div
+          ref={(el) => {
+            memoryRef.current = el;
+            rmStepRefs.current[2] = el;
           }}
-        />
-        <div ref={memoryRef}>
+        >
           <AdsDemoStepMemoryExplainer T={T} knewWord={knewWord} />
         </div>
-        <div ref={step3Ref}>
+        <div
+          ref={(el) => {
+            step3Ref.current = el;
+            rmStepRefs.current[3] = el;
+          }}
+        >
           <AdsDemoStep3Example T={T} vocabulary={vocabulary} exampleSentences={exampleSentences} ttsLocale={TTS_LOCALE} />
         </div>
-        <AdsDemoStepListenRepeatTip T={T} />
-        <AdsDemoStep4Analysis T={T} explanation={explanation} loading={false} onCtaClick={onCta} />
+        <div ref={(el) => (rmStepRefs.current[4] = el)}>
+          <AdsDemoStepListenRepeatTip T={T} />
+        </div>
+        <div ref={(el) => (rmStepRefs.current[5] = el)}>
+          <AdsDemoStep4Analysis T={T} explanation={explanation} loading={false} onCtaClick={onCta} />
+        </div>
 
         <motion.div style={{ opacity: ctaOpacity }} className="fixed bottom-4 left-0 right-0 z-40 flex justify-center px-5 pointer-events-none">
           <motion.button
@@ -209,7 +267,12 @@ export default function AdsScrollytelling({ content }) {
   }
 
   return (
-    <div ref={containerRef} style={{ height: `${stepCount * 100}vh`, background: '#1a251d' }} className="relative">
+    <div
+      ref={containerRef}
+      data-track-section="scrollytelling"
+      style={{ height: `${stepCount * 100}vh`, background: '#1a251d' }}
+      className="relative"
+    >
       <div className="sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden px-5">
         <motion.div style={{ opacity: step1Opacity, pointerEvents: step1Pointer }} className="absolute inset-0 flex flex-col items-center justify-center gap-3 px-5">
           <div className="text-6xl">{TARGET_FLAG}</div>

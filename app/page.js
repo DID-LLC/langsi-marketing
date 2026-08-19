@@ -10,6 +10,8 @@ import Footer from '../components/pair-page/Footer';
 import LanguageRedirect from '../components/pair-page/LanguageRedirect';
 import SoftwareApplicationSchema from '../components/pair-page/SoftwareApplicationSchema';
 import FAQPageSchema from '../components/pair-page/FAQPageSchema';
+import CookieConsent from '../components/pair-page/CookieConsent';
+import AnalyticsTracker from '../components/pair-page/AnalyticsTracker';
 import FAQ from '../components/pair-page/FAQ';
 
 // Same hreflang set as every /{source}/ hub page (see app/*/page.js) — '/'
@@ -73,6 +75,8 @@ export default function RootPage() {
     <>
       <SoftwareApplicationSchema content={content} />
       <FAQPageSchema content={content} />
+      <CookieConsent content={content} />
+      <AnalyticsTracker pageVariant="root" />
       <LanguageRedirect />
       <Header content={content} showFaq hubLinks />
       <Hero content={content} />

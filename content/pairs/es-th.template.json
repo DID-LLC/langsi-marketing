@@ -212,5 +212,22 @@
   },
   "faq_heading": "Preguntas frecuentes",
   "faq_show_all_label": "Mostrar todas las preguntas",
-  "faq_show_less_label": "Mostrar menos"
+  "faq_show_less_label": "Mostrar menos",
+  "cookie_consent": {
+    "title": "Cookies y privacidad",
+    "intro": "Usamos cookies necesarias para el funcionamiento de la plataforma. Con su consentimiento, también usamos cookies de análisis (Google Analytics) para entender y mejorar el uso.",
+    "show_details": "Mostrar detalles",
+    "hide_details": "Ocultar detalles",
+    "necessary_title": "✅ Cookies necesarias (siempre activas)",
+    "necessary_text": "Tokens de autenticación, gestión de sesión, configuración de aprendizaje en almacenamiento local. Sin estas cookies la plataforma no funciona.",
+    "analytics_title": "📊 Cookies de análisis (opcionales, requieren consentimiento)",
+    "analytics_text": "Google Analytics 4 – datos de uso pseudónimos (páginas visitadas, tiempo dedicado, datos del dispositivo). Se usa para mejorar la plataforma. Proveedor: Google Ireland Ltd.",
+    "more_info": "Más información en la",
+    "privacy_policy": "Política de privacidad",
+    "necessary_only": "Solo necesarias",
+    "accept_all": "Aceptar todo",
+    "change_anytime": "El consentimiento puede revocarse en cualquier momento en la",
+    "privacy_settings": "Configuración de privacidad",
+    "change_anytime2": "."
+  }
 }
