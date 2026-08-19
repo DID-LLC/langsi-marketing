@@ -127,6 +127,10 @@
     {
       "q": "How long does it take to see real progress in Thai?",
       "a": "That depends on how often you practice, but most learners notice a real shift in reading and listening comprehension within the first few weeks of consistent, short daily sessions — which is exactly what Langsi's daily goal and spaced-repetition system are built around."
+    },
+    {
+      "q": "How many words does the English–Thai course cover?",
+      "a": "The English–Thai course currently covers more than 570 actively enriched Thai vocabulary words, ranked by everyday relevance and difficulty — and the set keeps growing as Langsi enriches new content."
     }
   ],
   "final_cta_h2": "Turn your next Thai word into a real sentence.",
@@ -234,5 +238,10 @@
     "Thai is a tonal language: the same syllable can mean completely different things depending on pitch. The word 'mai' can mean new, burn, wood, silk, or a simple question particle, depending entirely on its tone. Langsi marks the tone on every word and example sentence, so you're never guessing — and you can hear it spoken correctly every time.",
     "Thai script also doesn't use spaces between words. A sentence like \"ฉันรักแมวมาก\" looks like one continuous string of characters to a beginner, even though it's really four separate words. Before you can read fluently, you need to learn how to mentally segment sentences — which is exactly what Langsi's word-by-word breakdown trains, sentence after sentence.",
     "Because Thai script takes time to learn, Langsi shows every word and sentence in Latin transliteration with tone marks alongside the original script. You can start speaking and understanding immediately, then gradually get comfortable with reading Thai characters as you go — no need to master the alphabet first. Thai also uses classifiers — special counting words that change depending on what you're counting — and shifts noticeably between formal and casual registers depending on who you're speaking to. These aren't edge cases; they show up in nearly every real Thai sentence, which is why Langsi always teaches vocabulary inside full example sentences instead of as isolated words."
-  ]
+  ],
+  "footer_legal_labels": {
+    "imprint": "Legal Notice",
+    "privacy": "Privacy Policy",
+    "terms": "Terms"
+  }
 }

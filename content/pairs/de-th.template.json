@@ -195,5 +195,10 @@
       "q": "Kann ich mein Langsi-Abonnement jederzeit kündigen?",
       "a": "Für kostenpflichtige Langsi-Tarife gelten die beim Abschluss angezeigten Laufzeit- und Kündigungsbedingungen. Diese Bedingungen werden dir angezeigt, bevor du ein kostenpflichtiges Abonnement abschließt."
     }
-  ]
+  ],
+  "footer_legal_labels": {
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "terms": "AGB"
+  }
 }

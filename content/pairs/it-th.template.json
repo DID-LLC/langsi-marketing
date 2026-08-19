@@ -195,5 +195,10 @@
       "q": "Posso disdire il mio abbonamento Langsi in qualsiasi momento?",
       "a": "Per i piani a pagamento di Langsi valgono le condizioni di durata e disdetta mostrate al momento della sottoscrizione. Queste condizioni vengono mostrate prima di attivare qualsiasi abbonamento a pagamento."
     }
-  ]
+  ],
+  "footer_legal_labels": {
+    "imprint": "Note Legali",
+    "privacy": "Informativa sulla Privacy",
+    "terms": "Termini"
+  }
 }

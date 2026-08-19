@@ -195,5 +195,10 @@
       "q": "¿Puedo cancelar mi suscripción a Langsi en cualquier momento?",
       "a": "Para los planes de pago de Langsi se aplican las condiciones de duración y cancelación mostradas al contratar. Estas condiciones se muestran antes de que confirmes una suscripción de pago."
     }
-  ]
+  ],
+  "footer_legal_labels": {
+    "imprint": "Aviso Legal",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos"
+  }
 }

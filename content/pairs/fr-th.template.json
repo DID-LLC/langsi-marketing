@@ -195,5 +195,10 @@
       "q": "Puis-je résilier mon abonnement Langsi à tout moment ?",
       "a": "Les offres payantes de Langsi sont soumises aux conditions de durée et de résiliation affichées au moment de la souscription. Ces conditions vous sont présentées avant la validation de tout abonnement payant."
     }
-  ]
+  ],
+  "footer_legal_labels": {
+    "imprint": "Mentions Légales",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions"
+  }
 }
