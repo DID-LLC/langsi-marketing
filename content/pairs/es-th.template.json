@@ -123,7 +123,16 @@
     "ads_fallback_headline": "Tres idiomas. Un método.",
     "ads_fallback_sub": "Entender palabra por palabra — no solo traducir.",
     "ads_empty_state": "Actualmente no hay ejemplos disponibles. Vuelve pronto — ampliamos nuestra oferta continuamente.",
-    "ads_intro_heading": "Así funciona."
+    "ads_intro_heading": "Así funciona.",
+    "ads_memory_point_1": "Tu palabra se incorpora a tu sistema de aprendizaje personal.",
+    "ads_memory_point_1_no": "Como todavía no la conocías, esta palabra volverá a aparecer pronto.",
+    "ads_memory_point_1_yes": "Como ya la conocías, aparecerá con menos frecuencia a partir de ahora.",
+    "ads_memory_point_2": "Tu próxima repetición se programa automáticamente.",
+    "ads_memory_point_3": "Cada respuesta hace que la selección de palabras sea más precisa para ti.",
+    "ads_memory_transition": "Ahora vamos a afianzarla con ejemplos reales.",
+    "ads_listen_tip": "Escucha bien la palabra y las frases — la pronunciación se fija mejor cuando la dices en voz alta al mismo tiempo.",
+    "ads_step4_intro": "Así es como Langsi analiza cada frase de ejemplo: palabra por palabra, con traducción y transliteración.",
+    "ads_step4_teaser": "Y esto es solo el comienzo — en el curso completo hay mucho más esperándote."
   },
   "hub": {
     "h1": "Entiende el vocabulario. Y úsalo de verdad.",

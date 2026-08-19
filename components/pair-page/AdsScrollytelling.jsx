@@ -2,7 +2,7 @@
 
 // Ported from the app repo's src/components/landing/LandingAdsScrollytelling.jsx
 // as closely as possible: same pinned-scroll mechanism (position: sticky,
-// 4×100vh container, framer-motion opacity crossfade over scroll progress),
+// N×100vh container, framer-motion opacity crossfade over scroll progress),
 // same fixed scroll-along CTA button, same prefers-reduced-motion fallback
 // (stacked instead of pinned). Real adaptations for this static site:
 //   - `language`/`sourceLang`-driven target-language resolution
@@ -23,12 +23,23 @@
 // Data source is content.demo (vocabulary/sentences/analysis), built at
 // prebuild time by scripts/fetchBuildTimeContent.mjs — unchanged by this
 // component, only the presentation layer is new.
+//
+// Six-step version: intro -> flashcard -> memory explainer -> example ->
+// listen/repeat tip -> analysis. Steps 3 (AdsDemoStepMemoryExplainer) and 5
+// (AdsDemoStepListenRepeatTip) are new; the opacity/pointer-events crossfade
+// for all N steps is generated from the STEPS array via stepBreakpoints()
+// instead of N separate hardcoded useTransform breakpoint arrays, so adding
+// or removing a step only means editing STEPS — but useTransform/useScroll
+// themselves stay literal top-level hook calls (one pair per step), since
+// hook calls can't be looped.
 
 import React, { useRef, useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import AdsDemoStep2Flashcard from './AdsDemoStep2Flashcard';
+import AdsDemoStepMemoryExplainer from './AdsDemoStepMemoryExplainer';
 import AdsDemoStep3Example from './AdsDemoStep3Example';
+import AdsDemoStepListenRepeatTip from './AdsDemoStepListenRepeatTip';
 import AdsDemoStep4Analysis from './AdsDemoStep4Analysis';
 
 const TARGET_FLAG = '🇹🇭';
@@ -48,7 +59,40 @@ function usePrefersReducedMotion() {
   return reduced;
 }
 
-const STEP2_TO_STEP3_PROGRESS = 0.5;
+const STEPS = ['intro', 'flashcard', 'memory', 'example', 'listenTip', 'analysis'];
+const N = STEPS.length;
+// Width (in scroll-progress fraction) of each step's fade transition,
+// shared by every step regardless of N.
+const FADE_WIDTH = 0.2 / N;
+
+// For 1-based step index i: [slotStart, slotEnd) is that step's fraction of
+// total scroll progress. Fades in from slotStart-FADE_WIDTH (unless it's the
+// first step — nothing to fade in from) and fades out into slotEnd (unless
+// it's the last step — stays visible through the end). Returns the
+// [input, output] breakpoint arrays useTransform expects.
+function stepBreakpoints(i) {
+  const slotStart = (i - 1) / N;
+  const slotEnd = i / N;
+  const input = [];
+  const output = [];
+  if (i > 1) {
+    input.push(slotStart - FADE_WIDTH);
+    output.push(0);
+  }
+  input.push(slotStart);
+  output.push(1);
+  input.push(slotEnd - FADE_WIDTH);
+  output.push(1);
+  if (i < N) {
+    input.push(slotEnd);
+    output.push(0);
+  }
+  return [input, output];
+}
+
+// Slot start of step 3 (the new memory-explainer step) — where the flashcard
+// answer jumps to, in both the pinned and reduced-motion layouts.
+const STEP2_TO_STEP3_PROGRESS = (3 - 1) / N;
 
 function animateScrollTo(targetY, duration = 500) {
   const startY = window.scrollY;
@@ -83,21 +127,40 @@ export default function AdsScrollytelling({ content }) {
     window.location.href = content.app_deep_link;
   };
 
+  // Set by Step 2's onAnswer, read by AdsDemoStepMemoryExplainer (Step 3) to
+  // pick the ads_memory_point_1_yes/no variant.
+  const [knewWord, setKnewWord] = useState(null);
+
   const containerRef = useRef(null);
+  // step3Ref keeps wrapping the Example section (unchanged from before);
+  // memoryRef is the new second ref — Step 2's onAnswer now scrolls there
+  // instead, since the memory explainer is the new immediate next step.
   const step3Ref = useRef(null);
+  const memoryRef = useRef(null);
   const reducedMotion = usePrefersReducedMotion();
   const { scrollYProgress } = useScroll({ target: containerRef, offset: ['start start', 'end end'] });
-  const stepCount = 4;
+  const stepCount = N;
 
-  const step1Opacity = useTransform(scrollYProgress, [0, 0.2, 0.25], [1, 1, 0]);
-  const step2Opacity = useTransform(scrollYProgress, [0.2, 0.25, 0.45, 0.5], [0, 1, 1, 0]);
-  const step3Opacity = useTransform(scrollYProgress, [0.45, 0.5, 0.7, 0.75], [0, 1, 1, 0]);
-  const step4Opacity = useTransform(scrollYProgress, [0.7, 0.75, 1], [0, 1, 1]);
+  const [step1In, step1Out] = stepBreakpoints(1);
+  const [step2In, step2Out] = stepBreakpoints(2);
+  const [step3In, step3Out] = stepBreakpoints(3);
+  const [step4In, step4Out] = stepBreakpoints(4);
+  const [step5In, step5Out] = stepBreakpoints(5);
+  const [step6In, step6Out] = stepBreakpoints(6);
+
+  const step1Opacity = useTransform(scrollYProgress, step1In, step1Out);
+  const step2Opacity = useTransform(scrollYProgress, step2In, step2Out);
+  const step3Opacity = useTransform(scrollYProgress, step3In, step3Out);
+  const step4Opacity = useTransform(scrollYProgress, step4In, step4Out);
+  const step5Opacity = useTransform(scrollYProgress, step5In, step5Out);
+  const step6Opacity = useTransform(scrollYProgress, step6In, step6Out);
 
   const step1Pointer = useTransform(step1Opacity, (v) => (v > 0.5 ? 'auto' : 'none'));
   const step2Pointer = useTransform(step2Opacity, (v) => (v > 0.5 ? 'auto' : 'none'));
   const step3Pointer = useTransform(step3Opacity, (v) => (v > 0.5 ? 'auto' : 'none'));
   const step4Pointer = useTransform(step4Opacity, (v) => (v > 0.5 ? 'auto' : 'none'));
+  const step5Pointer = useTransform(step5Opacity, (v) => (v > 0.5 ? 'auto' : 'none'));
+  const step6Pointer = useTransform(step6Opacity, (v) => (v > 0.5 ? 'auto' : 'none'));
 
   const ctaOpacity = useTransform(scrollYProgress, [0.95, 1], [1, 0]);
   const ctaPointer = useTransform(ctaOpacity, (v) => (v > 0.5 ? 'auto' : 'none'));
@@ -117,14 +180,19 @@ export default function AdsScrollytelling({ content }) {
           T={T}
           vocabulary={vocabulary}
           ttsLocale={TTS_LOCALE}
-          onAnswer={() => {
-            const el = step3Ref.current;
+          onAnswer={(knewIt) => {
+            setKnewWord(knewIt);
+            const el = memoryRef.current;
             if (el) window.scrollTo(0, el.getBoundingClientRect().top + window.scrollY);
           }}
         />
+        <div ref={memoryRef}>
+          <AdsDemoStepMemoryExplainer T={T} knewWord={knewWord} />
+        </div>
         <div ref={step3Ref}>
           <AdsDemoStep3Example T={T} vocabulary={vocabulary} exampleSentences={exampleSentences} ttsLocale={TTS_LOCALE} />
         </div>
+        <AdsDemoStepListenRepeatTip T={T} />
         <AdsDemoStep4Analysis T={T} explanation={explanation} loading={false} onCtaClick={onCta} />
 
         <motion.div style={{ opacity: ctaOpacity }} className="fixed bottom-4 left-0 right-0 z-40 flex justify-center px-5 pointer-events-none">
@@ -157,15 +225,26 @@ export default function AdsScrollytelling({ content }) {
             T={T}
             vocabulary={vocabulary}
             ttsLocale={TTS_LOCALE}
-            onAnswer={() => scrollWindowToContainerProgress(containerRef, STEP2_TO_STEP3_PROGRESS)}
+            onAnswer={(knewIt) => {
+              setKnewWord(knewIt);
+              scrollWindowToContainerProgress(containerRef, STEP2_TO_STEP3_PROGRESS);
+            }}
           />
         </motion.div>
 
         <motion.div style={{ opacity: step3Opacity, pointerEvents: step3Pointer }} className="absolute inset-0 flex items-center justify-center px-5">
-          <AdsDemoStep3Example T={T} vocabulary={vocabulary} exampleSentences={exampleSentences} ttsLocale={TTS_LOCALE} />
+          <AdsDemoStepMemoryExplainer T={T} knewWord={knewWord} />
         </motion.div>
 
         <motion.div style={{ opacity: step4Opacity, pointerEvents: step4Pointer }} className="absolute inset-0 flex items-center justify-center px-5">
+          <AdsDemoStep3Example T={T} vocabulary={vocabulary} exampleSentences={exampleSentences} ttsLocale={TTS_LOCALE} />
+        </motion.div>
+
+        <motion.div style={{ opacity: step5Opacity, pointerEvents: step5Pointer }} className="absolute inset-0 flex items-center justify-center px-5">
+          <AdsDemoStepListenRepeatTip T={T} />
+        </motion.div>
+
+        <motion.div style={{ opacity: step6Opacity, pointerEvents: step6Pointer }} className="absolute inset-0 flex items-center justify-center px-5">
           <AdsDemoStep4Analysis T={T} explanation={explanation} loading={false} onCtaClick={onCta} />
         </motion.div>
       </div>

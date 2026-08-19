@@ -123,7 +123,16 @@
     "ads_fallback_headline": "三种语言，一种方法。",
     "ads_fallback_sub": "逐词理解——而不仅仅是翻译。",
     "ads_empty_state": "目前暂无可用示例。请稍后再来——我们正在持续扩充内容。",
-    "ads_intro_heading": "它是这样运作的。"
+    "ads_intro_heading": "它是这样运作的。",
+    "ads_memory_point_1": "你的单词会被归入你的个人学习系统。",
+    "ads_memory_point_1_no": "因为你还不认识它，这个单词很快会再次出现。",
+    "ads_memory_point_1_yes": "因为你已经认识它，从现在起它出现的频率会降低。",
+    "ads_memory_point_2": "你的下一次复习会自动安排。",
+    "ads_memory_point_3": "每一次回答都会让为你挑选的单词更精准。",
+    "ads_memory_transition": "现在让我们用真实例句来巩固它。",
+    "ads_listen_tip": "仔细听这个单词和例句——跟着大声读出来，发音记得最牢。",
+    "ads_step4_intro": "这就是 Langsi 拆解每个例句的方式：逐词讲解，附带翻译和转写。",
+    "ads_step4_teaser": "这只是开始——完整课程中还有更多等着你。"
   },
   "hub": {
     "h1": "理解词汇。真正学以致用。",

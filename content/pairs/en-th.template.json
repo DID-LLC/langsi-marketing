@@ -159,7 +159,16 @@
     "ads_fallback_headline": "Three languages. One method.",
     "ads_fallback_sub": "Understand word by word — not just translate.",
     "ads_empty_state": "No examples are available right now. Check back soon — we're expanding our offering all the time.",
-    "ads_intro_heading": "This is how it works."
+    "ads_intro_heading": "This is how it works.",
+    "ads_memory_point_1": "Your word gets placed into your personal learning system.",
+    "ads_memory_point_1_no": "Since you didn't know it yet, this word comes back again soon.",
+    "ads_memory_point_1_yes": "Since you already knew it, it'll show up less often from here.",
+    "ads_memory_point_2": "Your next repetition is automatically scheduled.",
+    "ads_memory_point_3": "Every answer makes your word selection more precise.",
+    "ads_memory_transition": "Now let's anchor it with real examples.",
+    "ads_listen_tip": "Listen closely to the word and sentences — pronunciation sticks best when you say it out loud right along with it.",
+    "ads_step4_intro": "This is how Langsi breaks down every example sentence: word by word, with translation and transliteration.",
+    "ads_step4_teaser": "And this is just the beginning — there's a lot more waiting in the full course."
   },
   "hub": {
     "h1": "Understand Vocabulary. Actually Use It.",

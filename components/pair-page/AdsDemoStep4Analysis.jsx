@@ -44,39 +44,62 @@ export default function AdsDemoStep4Analysis({ T, explanation, loading, onCtaCli
       )}
 
       {explanation && rows.length > 0 && (
-        <div className="rounded-xl border border-[#50C878]/25 overflow-hidden" style={{ boxShadow: '0 4px 24px 0 rgba(80,200,120,0.15)' }}>
-          <div className="overflow-x-auto" style={{ WebkitOverflowScrolling: 'touch' }}>
-            <table className="w-full min-w-[260px] table-fixed">
-              <colgroup>
-                <col className="w-[26%]" />
-                <col className="w-[32%]" />
-                <col className="w-[42%]" />
-              </colgroup>
-              <thead>
-                <tr className="bg-[#50C878]/10 border-b border-[#50C878]/20">
-                  <th className="text-left p-2 text-[#50C878]/80 font-semibold text-[10px] uppercase tracking-wide">{T.ads_table_word}</th>
-                  <th className="text-left p-2 text-[#50C878]/80 font-semibold text-[10px] uppercase tracking-wide">{T.ads_table_transliteration}</th>
-                  <th className="text-left p-2 text-[#50C878]/80 font-semibold text-[10px] uppercase tracking-wide">{T.ads_table_meaning}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {rows.map((row, i) => (
-                  <tr key={i} className="border-b border-white/5 last:border-b-0">
-                    <td className="p-2 text-xs text-white font-semibold align-top break-words" style={{ wordBreak: 'break-word' }}>
-                      {row.word}
-                    </td>
-                    <td className="p-2 text-xs text-white/80 align-top break-words" style={{ wordBreak: 'break-word' }}>
-                      {row.transliteration}
-                    </td>
-                    <td className="p-2 text-xs text-white/80 align-top break-words" style={{ wordBreak: 'break-word' }}>
-                      {row.gloss}
-                    </td>
+        <>
+          <div className="rounded-xl border border-[#50C878]/25 overflow-hidden" style={{ boxShadow: '0 4px 24px 0 rgba(80,200,120,0.15)' }}>
+            <div className="overflow-x-auto" style={{ WebkitOverflowScrolling: 'touch' }}>
+              <table className="w-full min-w-[260px] table-fixed">
+                <colgroup>
+                  <col className="w-[26%]" />
+                  <col className="w-[32%]" />
+                  <col className="w-[42%]" />
+                </colgroup>
+                <thead>
+                  <tr className="bg-[#50C878]/10 border-b border-[#50C878]/20">
+                    <th className="text-left p-2 text-[#50C878]/80 font-semibold text-[10px] uppercase tracking-wide">{T.ads_table_word}</th>
+                    <th className="text-left p-2 text-[#50C878]/80 font-semibold text-[10px] uppercase tracking-wide">{T.ads_table_transliteration}</th>
+                    <th className="text-left p-2 text-[#50C878]/80 font-semibold text-[10px] uppercase tracking-wide">{T.ads_table_meaning}</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {rows.map((row, i) => (
+                    <tr key={i} className="border-b border-white/5 last:border-b-0">
+                      <td className="p-2 text-xs text-white font-semibold align-top break-words" style={{ wordBreak: 'break-word' }}>
+                        {row.word}
+                      </td>
+                      <td className="p-2 text-xs text-white/80 align-top break-words" style={{ wordBreak: 'break-word' }}>
+                        {row.transliteration}
+                      </td>
+                      <td className="p-2 text-xs text-white/80 align-top break-words" style={{ wordBreak: 'break-word' }}>
+                        {row.gloss}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
-        </div>
+
+          <p className="text-white/70 text-sm leading-relaxed">{T.ads_step4_intro}</p>
+
+          {/* Teaser: a few blurred, non-readable placeholder rows behind a
+              translucent overlay carrying T.ads_step4_teaser — suggests more
+              analysis content exists in the full course. Purely decorative
+              (no real data), sits above the CTA button as its own block, so
+              the CTA itself never has pointer-events disabled. */}
+          <div className="relative rounded-xl overflow-hidden border border-white/10">
+            <div className="p-3 space-y-2" style={{ filter: 'blur(4px)', opacity: 0.5 }} aria-hidden="true">
+              <div className="h-3 bg-white/20 rounded w-3/4" />
+              <div className="h-3 bg-white/20 rounded w-1/2" />
+              <div className="h-3 bg-white/20 rounded w-2/3" />
+            </div>
+            <div
+              className="absolute inset-0 flex items-center justify-center text-center px-4"
+              style={{ background: 'rgba(20,35,26,0.6)' }}
+            >
+              <p className="text-white text-xs font-semibold leading-snug">{T.ads_step4_teaser}</p>
+            </div>
+          </div>
+        </>
       )}
 
       <motion.button

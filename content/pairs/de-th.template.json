@@ -123,7 +123,16 @@
     "ads_fallback_headline": "Drei Sprachen. Eine Methode.",
     "ads_fallback_sub": "Wort für Wort verstehen — nicht nur übersetzen.",
     "ads_empty_state": "Aktuell sind noch keine Beispiele verfügbar. Schau bald wieder vorbei — wir erweitern unser Angebot laufend.",
-    "ads_intro_heading": "So funktioniert's."
+    "ads_intro_heading": "So funktioniert's.",
+    "ads_memory_point_1": "Dein Wort wird in dein persönliches Lernsystem einsortiert.",
+    "ads_memory_point_1_no": "Weil du es noch nicht kanntest, wiederholt sich dieses Wort bald erneut.",
+    "ads_memory_point_1_yes": "Weil du es schon kanntest, taucht es seltener wieder auf.",
+    "ads_memory_point_2": "Die nächste Wiederholung wird automatisch vorbereitet.",
+    "ads_memory_point_3": "Jede Antwort macht die Wortauswahl für dich treffsicherer.",
+    "ads_memory_transition": "Jetzt verankern wir es mit konkreten Beispielen.",
+    "ads_listen_tip": "Hör dir das Wort und die Sätze genau an — Aussprache prägt sich am besten ein, wenn du sie direkt mitsprichst.",
+    "ads_step4_intro": "So seziert Langsi jeden Beispielsatz: Wort für Wort, mit Übersetzung und Umschrift.",
+    "ads_step4_teaser": "Und das ist erst der Anfang — im vollen Kurs wartet noch deutlich mehr."
   },
   "hub": {
     "h1": "Vokabeln verstehen. Wirklich anwenden.",

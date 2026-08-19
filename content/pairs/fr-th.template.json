@@ -123,7 +123,16 @@
     "ads_fallback_headline": "Trois langues. Une méthode.",
     "ads_fallback_sub": "Comprendre mot par mot — pas seulement traduire.",
     "ads_empty_state": "Aucun exemple disponible pour le moment. Revenez bientôt — nous élargissons notre offre en continu.",
-    "ads_intro_heading": "Voici comment ça marche."
+    "ads_intro_heading": "Voici comment ça marche.",
+    "ads_memory_point_1": "Votre mot est intégré à votre système d'apprentissage personnel.",
+    "ads_memory_point_1_no": "Comme vous ne le connaissiez pas encore, ce mot reviendra bientôt.",
+    "ads_memory_point_1_yes": "Comme vous le connaissiez déjà, il reviendra moins souvent désormais.",
+    "ads_memory_point_2": "Votre prochaine répétition est planifiée automatiquement.",
+    "ads_memory_point_3": "Chaque réponse rend la sélection de vos mots plus précise.",
+    "ads_memory_transition": "Ancrons-le maintenant avec de vrais exemples.",
+    "ads_listen_tip": "Écoutez attentivement le mot et les phrases — la prononciation s'ancre mieux quand vous la répétez à voix haute en même temps.",
+    "ads_step4_intro": "Voici comment Langsi décompose chaque phrase d'exemple : mot par mot, avec traduction et translittération.",
+    "ads_step4_teaser": "Et ce n'est que le début — le cours complet réserve bien plus encore."
   },
   "hub": {
     "h1": "Comprenez le vocabulaire. Utilisez-le vraiment.",
