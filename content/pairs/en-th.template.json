@@ -10,7 +10,7 @@
   ],
   "hero_h1_1": "Understand Thai vocabulary",
   "hero_h1_2": "and actually use it.",
-  "hero_sub": "Context instead of flashcards, real sentences instead of isolated words — learn Thai the way it's actually spoken.",
+  "hero_sub": "Context instead of flashcards, real sentences instead of isolated words: with Langsi, you learn Thai the way it's actually spoken. Unlike Anki, you don't have to build your own learning system — and unlike Duolingo, there are no games, leagues, or endless learning paths to distract you. You focus on what matters: understanding vocabulary, using it in context, and actually retaining it long-term.",
   "hero_badge": "English → Thai",
   "hero_cta": "English → Thai — start for free",
   "nav_login": "Log in",
@@ -95,6 +95,38 @@
     {
       "q": "What does Langsi cost, and do I need to install anything?",
       "a": "You can start for free. Langsi runs directly in your browser, no installation needed — see the pricing section above for the details."
+    },
+    {
+      "q": "How many Thai words do I need to know to hold a basic conversation?",
+      "a": "Most learners can handle everyday conversations with around 800–1,000 core words used in context, plus a working sense of tones and sentence structure. Langsi prioritizes exactly this kind of high-frequency, real-use vocabulary instead of random word lists."
+    },
+    {
+      "q": "Is Thai hard to learn for English speakers?",
+      "a": "Thai has a different alphabet, tones, and grammar patterns than English, so it takes real practice — but none of that makes it inaccessible. The biggest shift is learning to hear and reproduce tones early, which is exactly why Langsi puts audio and pronunciation front and center from your very first word."
+    },
+    {
+      "q": "What's the difference between formal and casual Thai?",
+      "a": "Thai vocabulary and sentence particles shift depending on who you're talking to — friends, strangers, or people you owe respect to. Langsi's example sentences show natural, real-world phrasing so you pick up the right register as you go, not just textbook Thai."
+    },
+    {
+      "q": "Do Thai words change form like in many European languages?",
+      "a": "No — Thai has no verb conjugation, plurals, or gender agreement, which makes the grammar itself simpler than many other languages. What replaces that complexity is tone, word order, and classifiers, all of which Langsi builds directly into every example sentence."
+    },
+    {
+      "q": "What are Thai classifiers, and why do they matter?",
+      "a": "Thai uses special counting words (classifiers) that change depending on what you're counting — people, animals, flat objects, vehicles, and more. They appear constantly in everyday speech, so Langsi teaches them naturally inside full sentences instead of as an abstract grammar rule."
+    },
+    {
+      "q": "How is Langsi different from a Thai flashcard deck?",
+      "a": "A flashcard deck shows you a word in isolation and expects you to remember it. Langsi shows every word inside a real, natural sentence — with audio, transliteration, and a full word-by-word breakdown — so you learn how the word is actually used, not just what it means in the abstract."
+    },
+    {
+      "q": "Can I learn Thai on my phone with Langsi?",
+      "a": "Yes. Langsi runs directly in your mobile browser — no app store download required — so you can practice Thai vocabulary anywhere, on any device."
+    },
+    {
+      "q": "How long does it take to see real progress in Thai?",
+      "a": "That depends on how often you practice, but most learners notice a real shift in reading and listening comprehension within the first few weeks of consistent, short daily sessions — which is exactly what Langsi's daily goal and spaced-repetition system are built around."
     }
   ],
   "final_cta_h2": "Turn your next Thai word into a real sentence.",
@@ -127,11 +159,80 @@
   },
   "hub": {
     "h1": "Understand Vocabulary. Actually Use It.",
-    "sub": "Context instead of flashcards, real sentences instead of isolated words — learn any language the way it's actually spoken.",
+    "sub": "Context instead of flashcards, real sentences instead of isolated words: with Langsi, you learn any language the way it's actually spoken. Unlike Anki, you don't have to build your own learning system — and unlike Duolingo, there are no games, leagues, or endless learning paths to distract you. You focus on what matters: understanding vocabulary, using it in context, and actually retaining it long-term.",
     "title": "Vocabulary App · Langsi",
     "meta_description": "Langsi is a vocabulary app that teaches real words in real sentences — not flashcards. Learn any language in context. Free to start.",
     "video_title": "Our philosophy",
     "badge": "Multiple Languages Available",
     "final_cta_h2": "Truly understand every new word."
-  }
+  },
+  "hub_faq": [
+    {
+      "q": "What is Langsi and how does the vocabulary app work?",
+      "a": "Langsi is an intelligent vocabulary app that helps you do more than memorize words — it helps you understand their meaning, pronunciation, and real-world use. The app combines vocabulary training with translations, audio, example sentences, pronunciation aids, and additional explanations. Repetitions are based on your personal learning progress, so you always practice the vocabulary that matters most to you right now."
+    },
+    {
+      "q": "What makes Langsi different from a classic vocabulary app?",
+      "a": "Many classic vocabulary trainers focus mainly on linking a word to its translation. Langsi goes a step further. The vocabulary app connects words with example sentences, audio, pronunciation, and a structured breakdown of the language. You don't just learn what a word means — you learn how it sounds and how it's actually used in real sentences."
+    },
+    {
+      "q": "Which languages can I learn with the Langsi vocabulary app?",
+      "a": "Langsi was built as a multilingual vocabulary app for many different languages and language pairs. It takes into account both the language you want to learn and your own native language, so translations, explanations, and learning content match your exact language combination. You can choose your currently available languages directly when you set up Langsi."
+    },
+    {
+      "q": "How does Langsi help me actually use new vocabulary?",
+      "a": "A translation alone is usually not enough to use a new word confidently. That's why Langsi shows you how a word is used in different example sentences and situations. This helps you build a real feel for meaning, sentence structure, and natural usage — turning a single vocabulary word into language you can actually apply."
+    },
+    {
+      "q": "How does the Langsi method for learning vocabulary work?",
+      "a": "The Langsi method combines several learning steps. You see a new word and its meaning, hear its pronunciation, encounter it in example sentences, and can analyze sentence structure in more detail. The word is then repeated according to your learning progress. This way, the Langsi vocabulary app connects seeing, understanding, hearing, remembering, and applying into one structured learning process."
+    },
+    {
+      "q": "Are there example sentences and explanations for the vocabulary?",
+      "a": "Yes. Langsi adds example sentences of varying difficulty and extra information about meaning and usage to each word. For supported learning content, you can also analyze sentences and their individual parts in more detail. This way, you learn vocabulary in context instead of in isolation."
+    },
+    {
+      "q": "Can I practice pronunciation and speaking with Langsi?",
+      "a": "Yes. Pronunciation and listening comprehension are core parts of the Langsi vocabulary app. You can listen to words and learning content and practice your own pronunciation. This means you don't just learn a word visually — you also build a real feel for how it's actually pronounced and how it sounds."
+    },
+    {
+      "q": "Is the vocabulary app also suitable for Thai, Chinese, and other writing systems?",
+      "a": "Yes. Langsi also works well for learning vocabulary in languages with a different writing system, such as Thai. Where it makes sense for a language pair, an easier-to-read transliteration is shown alongside the original script. This lets you first learn pronunciation and meaning while gradually getting used to the language's original script."
+    },
+    {
+      "q": "Does the vocabulary app adapt to my learning progress?",
+      "a": "Yes. Langsi distinguishes between new vocabulary and words you've already learned or should review. Your learning status develops based on your answers, so words aren't repeated randomly — they're brought back into your training depending on your actual learning progress."
+    },
+    {
+      "q": "Can I try the Langsi vocabulary app for free?",
+      "a": "Yes. You can register with Langsi and try out the vocabulary app. This lets you test for yourself how learning with audio, example sentences, pronunciation, and structured repetition works — and whether the Langsi method fits the way you learn."
+    },
+    {
+      "q": "Do I need to install the vocabulary app?",
+      "a": "No. You can use Langsi directly in your browser on your smartphone, tablet, or computer. On supported devices, you can also install the web app on your home screen and open Langsi much like a regular app."
+    },
+    {
+      "q": "Is Langsi a good vocabulary app for beginners?",
+      "a": "Yes. Beginners in particular benefit from not having to learn new words purely through translations. The combination of meaning, audio, example sentences, and optional transliteration helps you learn new words in a clear context from the very start. You can begin with simple content and gradually work your way up to more challenging examples."
+    },
+    {
+      "q": "Does the Langsi vocabulary app use artificial intelligence?",
+      "a": "Yes. Langsi uses artificial intelligence to help generate translations, example sentences, language explanations, and other learning content for different language pairs. AI is a tool within the learning system — the focus remains on structured vocabulary learning and repetition. As with any AI-generated language content, individual results can occasionally contain errors, which is why Langsi is continuously refined and improved."
+    },
+    {
+      "q": "What does the Langsi vocabulary app cost?",
+      "a": "You can try Langsi first at no cost. Which features are included in each plan and what usage costs can be found directly on our pricing page, so you can decide which plan fits your personal learning goals."
+    },
+    {
+      "q": "Can I cancel my Langsi subscription at any time?",
+      "a": "Paid Langsi plans are subject to the term and cancellation conditions shown at checkout. These conditions are displayed before you complete any paid subscription."
+    }
+  ],
+  "depth_h2": "What Makes Thai Vocabulary Different",
+  "depth_content": [
+    "Thai vocabulary works differently from most languages you might have studied before — and that's exactly why memorizing word lists rarely works on its own.",
+    "Thai is a tonal language: the same syllable can mean completely different things depending on pitch. The word 'mai' can mean new, burn, wood, silk, or a simple question particle, depending entirely on its tone. Langsi marks the tone on every word and example sentence, so you're never guessing — and you can hear it spoken correctly every time.",
+    "Thai script also doesn't use spaces between words. A sentence like \"ฉันรักแมวมาก\" looks like one continuous string of characters to a beginner, even though it's really four separate words. Before you can read fluently, you need to learn how to mentally segment sentences — which is exactly what Langsi's word-by-word breakdown trains, sentence after sentence.",
+    "Because Thai script takes time to learn, Langsi shows every word and sentence in Latin transliteration with tone marks alongside the original script. You can start speaking and understanding immediately, then gradually get comfortable with reading Thai characters as you go — no need to master the alphabet first. Thai also uses classifiers — special counting words that change depending on what you're counting — and shifts noticeably between formal and casual registers depending on who you're speaking to. These aren't edge cases; they show up in nearly every real Thai sentence, which is why Langsi always teaches vocabulary inside full example sentences instead of as isolated words."
+  ]
 }

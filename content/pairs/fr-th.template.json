@@ -10,7 +10,7 @@
   ],
   "hero_h1_1": "Comprenez le vocabulaire thaï",
   "hero_h1_2": "et utilisez-le vraiment.",
-  "hero_sub": "Le contexte plutôt que des cartes, de vraies phrases plutôt que des mots isolés — apprenez le thaï comme il se parle vraiment.",
+  "hero_sub": "Le contexte plutôt que des cartes, de vraies phrases plutôt que des mots isolés : avec Langsi, vous apprenez le thaï comme il se parle vraiment. Contrairement à Anki, vous n'avez pas à construire vous-même votre système d'apprentissage — et contrairement à Duolingo, aucun jeu, aucune ligue ni aucun parcours d'apprentissage sans fin ne vient vous distraire. Vous vous concentrez sur l'essentiel : comprendre le vocabulaire, l'utiliser en contexte et le retenir vraiment sur le long terme.",
   "hero_badge": "Français → Thai",
   "hero_cta": "Français → Thai : commencez gratuitement",
   "nav_login": "Se connecter",
@@ -127,11 +127,73 @@
   },
   "hub": {
     "h1": "Comprenez le vocabulaire. Utilisez-le vraiment.",
-    "sub": "Le contexte plutôt que des cartes, de vraies phrases plutôt que des mots isolés — apprenez n'importe quelle langue comme elle se parle vraiment.",
+    "sub": "Le contexte plutôt que des cartes, de vraies phrases plutôt que des mots isolés : avec Langsi, vous apprenez n'importe quelle langue comme elle se parle vraiment. Contrairement à Anki, vous n'avez pas à construire vous-même votre système d'apprentissage — et contrairement à Duolingo, aucun jeu, aucune ligue ni aucun parcours d'apprentissage sans fin ne vient vous distraire. Vous vous concentrez sur l'essentiel : comprendre le vocabulaire, l'utiliser en contexte et le retenir vraiment sur le long terme.",
     "title": "Appli de Vocabulaire · Langsi",
     "meta_description": "Langsi est une application de vocabulaire qui enseigne de vrais mots dans de vraies phrases — pas de cartes mémoire. Apprenez n'importe quelle langue en contexte. Essai gratuit.",
     "video_title": "Notre philosophie",
     "badge": "Plusieurs langues disponibles",
     "final_cta_h2": "Comprenez vraiment chaque nouveau mot."
-  }
+  },
+  "hub_faq": [
+    {
+      "q": "Qu'est-ce que Langsi et comment fonctionne l'application de vocabulaire ?",
+      "a": "Langsi est une application de vocabulaire intelligente qui vous permet non seulement de mémoriser des mots, mais aussi de comprendre leur sens, leur prononciation et leur usage. L'application associe l'entraînement du vocabulaire à des traductions, de l'audio, des phrases d'exemple, des aides à la prononciation et des explications complémentaires. Les répétitions s'adaptent à votre progression personnelle, afin que vous travailliez précisément le vocabulaire qui compte le plus pour vous en ce moment."
+    },
+    {
+      "q": "Qu'est-ce qui distingue Langsi d'une application de vocabulaire classique ?",
+      "a": "De nombreuses applications de vocabulaire classiques se concentrent surtout sur le lien entre un mot et sa traduction. Langsi va plus loin. L'application de vocabulaire relie les mots à des phrases d'exemple, de l'audio, la prononciation et une analyse structurée de la langue. Vous n'apprenez donc pas seulement ce qu'un mot signifie, mais aussi comment il sonne et comment il est utilisé dans de vraies phrases."
+    },
+    {
+      "q": "Quelles langues puis-je apprendre avec l'application de vocabulaire Langsi ?",
+      "a": "Langsi a été conçue comme une application de vocabulaire multilingue pour de nombreuses langues et combinaisons de langues. Elle prend en compte à la fois la langue que vous voulez apprendre et votre propre langue, afin que les traductions, explications et contenus correspondent exactement à votre combinaison. Vous choisissez les langues disponibles directement lors de la configuration de Langsi."
+    },
+    {
+      "q": "Comment Langsi m'aide-t-elle à vraiment utiliser le vocabulaire ?",
+      "a": "Une traduction seule ne suffit généralement pas pour utiliser un nouveau mot avec assurance. C'est pourquoi Langsi vous montre comment un mot est utilisé dans différentes phrases d'exemple et situations. Vous développez ainsi un meilleur sens du sens, de la structure des phrases et de l'usage naturel de la langue — un mot isolé devient, étape par étape, une langue que vous pouvez réellement utiliser."
+    },
+    {
+      "q": "Comment fonctionne la méthode Langsi pour apprendre le vocabulaire ?",
+      "a": "La méthode Langsi combine plusieurs étapes d'apprentissage. Vous découvrez un nouveau mot et son sens, entendez sa prononciation, le rencontrez dans des phrases d'exemple et pouvez analyser la structure de la phrase plus en détail. Le mot est ensuite répété selon votre progression. L'application de vocabulaire Langsi relie ainsi voir, comprendre, entendre, mémoriser et utiliser en un processus d'apprentissage structuré."
+    },
+    {
+      "q": "Y a-t-il des phrases d'exemple et des explications pour le vocabulaire ?",
+      "a": "Oui. Langsi complète chaque mot avec des phrases d'exemple de différents niveaux de difficulté et des informations supplémentaires sur le sens et l'usage. Pour les contenus pris en charge, vous pouvez aussi analyser plus en détail les phrases et leurs éléments. Vous apprenez ainsi le vocabulaire en contexte, pas isolément."
+    },
+    {
+      "q": "Puis-je aussi travailler la prononciation et l’expression orale avec Langsi ?",
+      "a": "Oui. La prononciation et la compréhension orale sont des éléments essentiels de l'application de vocabulaire Langsi. Vous pouvez écouter les mots et les contenus, et vous entraîner à votre propre prononciation. Vous ne découvrez donc pas un mot seulement visuellement, mais développez aussi un vrai sens de la façon dont il se prononce réellement."
+    },
+    {
+      "q": "L'application de vocabulaire convient-elle aussi au thaï, au chinois et à d'autres systèmes d'écriture ?",
+      "a": "Oui. Langsi convient aussi pour apprendre le vocabulaire de langues avec un système d'écriture différent, comme le thaï. Quand cela a du sens pour une combinaison de langues, une translittération plus facile à lire s'affiche en plus de l'écriture d'origine. Vous pouvez ainsi d'abord apprendre la prononciation et le sens, tout en vous habituant progressivement à l'écriture originale de la langue."
+    },
+    {
+      "q": "L'application de vocabulaire s'adapte-t-elle à ma progression ?",
+      "a": "Oui. Langsi distingue le nouveau vocabulaire des mots que vous avez déjà appris ou que vous devriez réviser. Votre statut d'apprentissage évolue selon vos réponses, si bien que les mots ne sont pas répétés au hasard, mais réintégrés dans votre entraînement selon votre progression réelle."
+    },
+    {
+      "q": "Puis-je essayer gratuitement l'application de vocabulaire Langsi ?",
+      "a": "Oui. Vous pouvez vous inscrire sur Langsi et essayer l'application de vocabulaire. Vous pouvez ainsi tester par vous-même comment fonctionne l'apprentissage avec audio, phrases d'exemple, prononciation et répétitions structurées, et si la méthode Langsi correspond à votre façon d'apprendre."
+    },
+    {
+      "q": "Dois-je installer l'application de vocabulaire ?",
+      "a": "Non. Vous pouvez utiliser Langsi directement depuis le navigateur de votre smartphone, tablette ou ordinateur. Sur les appareils compatibles, vous pouvez aussi installer la web app sur votre écran d'accueil et ouvrir Langsi presque comme une application normale."
+    },
+    {
+      "q": "Langsi est-elle une bonne application de vocabulaire pour les débutants ?",
+      "a": "Oui. Les débutants profitent particulièrement du fait de ne pas devoir apprendre de nouveaux mots uniquement par des traductions. La combinaison du sens, de l'audio, des phrases d'exemple et d'une translittération optionnelle aide à apprendre de nouveaux mots dans un contexte clair dès le départ. Vous pouvez commencer par des contenus simples et progresser petit à petit vers des exemples plus difficiles."
+    },
+    {
+      "q": "L'application de vocabulaire Langsi utilise-t-elle l'intelligence artificielle ?",
+      "a": "Oui. Langsi utilise l'intelligence artificielle pour générer, entre autres, des traductions, des phrases d'exemple, des explications linguistiques et d'autres contenus d'apprentissage pour différentes combinaisons de langues. L'IA est un outil au sein du système d'apprentissage ; l'essentiel reste l'apprentissage structuré et la répétition du vocabulaire. Comme pour tout contenu généré par IA, certains résultats peuvent occasionnellement contenir des erreurs, c'est pourquoi Langsi est continuellement amélioré."
+    },
+    {
+      "q": "Combien coûte l'application de vocabulaire Langsi ?",
+      "a": "Vous pouvez d’abord essayer Langsi gratuitement. Les fonctionnalités incluses dans chaque offre et le coût de l’utilisation figurent directement sur notre page tarifs, afin que vous puissiez choisir l’offre adaptée à vos objectifs d’apprentissage."
+    },
+    {
+      "q": "Puis-je résilier mon abonnement Langsi à tout moment ?",
+      "a": "Les offres payantes de Langsi sont soumises aux conditions de durée et de résiliation affichées au moment de la souscription. Ces conditions vous sont présentées avant la validation de tout abonnement payant."
+    }
+  ]
 }

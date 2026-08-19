@@ -9,6 +9,8 @@ import FinalCTA from '../components/pair-page/FinalCTA';
 import Footer from '../components/pair-page/Footer';
 import LanguageRedirect from '../components/pair-page/LanguageRedirect';
 import SoftwareApplicationSchema from '../components/pair-page/SoftwareApplicationSchema';
+import FAQPageSchema from '../components/pair-page/FAQPageSchema';
+import FAQ from '../components/pair-page/FAQ';
 
 // Same hreflang set as every /{source}/ hub page (see app/*/page.js) — '/'
 // is the English entry point, so it's self-canonical here and en's own
@@ -58,24 +60,27 @@ const content = {
   hero_h1_1: 'Understand Vocabulary. Actually Use It.',
   hero_h1_2: '',
   hero_sub:
-    "Context instead of flashcards, real sentences instead of isolated words — learn any language the way it's actually spoken.",
+    "Context instead of flashcards, real sentences instead of isolated words: with Langsi, you learn any language the way it's actually spoken. Unlike Anki, you don't have to build your own learning system — and unlike Duolingo, there are no games, leagues, or endless learning paths to distract you. You focus on what matters: understanding vocabulary, using it in context, and actually retaining it long-term.",
   hero_badge: 'Multiple Languages Available',
   hero_cta: 'Start for free',
   final_cta_h2: 'Truly understand every new word.',
   video_title_root: 'Our philosophy',
+  pair_faq: enThContent.hub_faq,
 };
 
 export default function RootPage() {
   return (
     <>
       <SoftwareApplicationSchema content={content} />
+      <FAQPageSchema content={content} />
       <LanguageRedirect />
-      <Header content={content} showFaq={false} hubLinks />
+      <Header content={content} showFaq hubLinks />
       <Hero content={content} />
       <AdsScrollytelling content={content} />
       <Progress content={content} />
       <Video content={content} titleOverride={content.video_title_root} />
       <RealPricing content={content} />
+      <FAQ content={content} />
       <FinalCTA content={content} />
       <Footer content={content} />
     </>

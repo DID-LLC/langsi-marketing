@@ -8,6 +8,8 @@ import RealPricing from '../../components/pair-page/RealPricing';
 import FinalCTA from '../../components/pair-page/FinalCTA';
 import Footer from '../../components/pair-page/Footer';
 import SoftwareApplicationSchema from '../../components/pair-page/SoftwareApplicationSchema';
+import FAQPageSchema from '../../components/pair-page/FAQPageSchema';
+import FAQ from '../../components/pair-page/FAQ';
 
 // Same hreflang set on every /{source}/ hub page and on root (see
 // app/page.js) — kept as a literal copy rather than a shared import so each
@@ -56,18 +58,21 @@ const content = {
   hero_badge: pairContent.hub.badge,
   hero_cta: pairContent.final_cta,
   final_cta_h2: pairContent.hub.final_cta_h2,
+  pair_faq: pairContent.hub_faq,
 };
 
 export default function Page() {
   return (
     <>
       <SoftwareApplicationSchema content={content} />
-      <Header content={content} showFaq={false} hubLinks />
+      <FAQPageSchema content={content} />
+      <Header content={content} showFaq hubLinks />
       <Hero content={content} />
       <AdsScrollytelling content={content} />
       <Progress content={content} />
       <Video content={content} titleOverride={content.hub.video_title} />
       <RealPricing content={content} />
+      <FAQ content={content} />
       <FinalCTA content={content} />
       <Footer content={content} />
     </>

@@ -10,7 +10,7 @@
   ],
   "hero_h1_1": "Entiende el vocabulario tailandés",
   "hero_h1_2": "y úsalo de verdad.",
-  "hero_sub": "Contexto en lugar de tarjetas, frases reales en lugar de palabras sueltas — así se aprende tailandés tal como se habla de verdad.",
+  "hero_sub": "Contexto en lugar de tarjetas, frases reales en lugar de palabras sueltas: con Langsi aprendes tailandés tal como se habla de verdad. A diferencia de Anki, no tienes que construir tu propio sistema de aprendizaje — y a diferencia de Duolingo, no hay juegos, ligas ni interminables rutas de aprendizaje que te distraigan. Te concentras en lo esencial: entender el vocabulario, usarlo en contexto y retenerlo de verdad a largo plazo.",
   "hero_badge": "Español → Thai",
   "hero_cta": "Español → Thai: empieza gratis",
   "nav_login": "Iniciar sesión",
@@ -127,11 +127,73 @@
   },
   "hub": {
     "h1": "Entiende el vocabulario. Y úsalo de verdad.",
-    "sub": "Contexto en lugar de tarjetas, frases reales en lugar de palabras sueltas — aprende cualquier idioma tal como se habla de verdad.",
+    "sub": "Contexto en lugar de tarjetas, frases reales en lugar de palabras sueltas: con Langsi aprendes cualquier idioma tal como se habla de verdad. A diferencia de Anki, no tienes que construir tu propio sistema de aprendizaje — y a diferencia de Duolingo, no hay juegos, ligas ni interminables rutas de aprendizaje que te distraigan. Te concentras en lo esencial: entender el vocabulario, usarlo en contexto y retenerlo de verdad a largo plazo.",
     "title": "App de Vocabulario · Langsi",
     "meta_description": "Langsi es una app de vocabulario que enseña palabras reales en frases reales — no tarjetas. Aprende cualquier idioma en contexto. Empieza gratis.",
     "video_title": "Nuestra filosofía",
     "badge": "Varios idiomas disponibles",
     "final_cta_h2": "Comprende de verdad cada palabra nueva."
-  }
+  },
+  "hub_faq": [
+    {
+      "q": "¿Qué es Langsi y cómo funciona la app de vocabulario?",
+      "a": "Langsi es una app de vocabulario inteligente con la que no solo memorizas palabras, sino que entiendes su significado, pronunciación y uso. La app combina el entrenamiento de vocabulario con traducciones, audio, frases de ejemplo, ayudas de pronunciación y explicaciones adicionales. Las repeticiones se adaptan a tu progreso de aprendizaje personal, para que practiques justo el vocabulario que más te conviene ahora mismo."
+    },
+    {
+      "q": "¿En qué se diferencia Langsi de una app de vocabulario tradicional?",
+      "a": "Muchos entrenadores de vocabulario clásicos se centran sobre todo en unir una palabra con su traducción. Langsi va un paso más allá. La app de vocabulario conecta las palabras con frases de ejemplo, audio, pronunciación y un análisis estructurado del idioma. Así no solo aprendes qué significa una palabra, sino también cómo suena y cómo se usa en frases reales."
+    },
+    {
+      "q": "¿Qué idiomas puedo aprender con la app de vocabulario Langsi?",
+      "a": "Langsi se diseñó como una app de vocabulario multilingüe para muchos idiomas y combinaciones de idiomas. Tiene en cuenta tanto el idioma que quieres aprender como tu propio idioma, de modo que las traducciones, explicaciones y contenidos se adaptan a tu combinación exacta. Puedes elegir los idiomas disponibles directamente al configurar Langsi."
+    },
+    {
+      "q": "¿Cómo me ayuda Langsi a usar realmente el vocabulario?",
+      "a": "Una traducción sola normalmente no basta para usar una palabra nueva con seguridad. Por eso Langsi te muestra cómo se usa una palabra en distintas frases de ejemplo y situaciones. Así desarrollas un mejor sentido para el significado, la estructura de la frase y el uso natural del idioma, y una palabra suelta se convierte, paso a paso, en un idioma que realmente puedes usar."
+    },
+    {
+      "q": "¿Cómo funciona el método Langsi para aprender vocabulario?",
+      "a": "El método Langsi combina varios pasos de aprendizaje. Ves una palabra nueva y su significado, escuchas su pronunciación, la conoces en frases de ejemplo y puedes analizar la estructura de la frase con más detalle. Después, la palabra se repite según tu progreso de aprendizaje. Así, la app de vocabulario Langsi une ver, entender, escuchar, recordar y aplicar en un proceso de aprendizaje estructurado."
+    },
+    {
+      "q": "¿Hay frases de ejemplo y explicaciones para el vocabulario?",
+      "a": "Sí. Langsi añade a cada palabra frases de ejemplo de distinta dificultad e información adicional sobre su significado y uso. En los contenidos compatibles, además puedes analizar frases y sus partes con más detalle. Así aprendes el vocabulario en contexto, no de forma aislada."
+    },
+    {
+      "q": "¿Puedo practicar pronunciación y expresión oral con Langsi?",
+      "a": "Sí. La pronunciación y la comprensión auditiva son partes fundamentales de la app de vocabulario Langsi. Puedes escuchar palabras y contenidos y practicar tu propia pronunciación. Así no solo conoces una palabra de forma visual, sino que también desarrollas un mejor sentido de cómo suena realmente."
+    },
+    {
+      "q": "¿La app de vocabulario también sirve para tailandés, chino y otros sistemas de escritura?",
+      "a": "Sí. Langsi también es adecuada para aprender vocabulario en idiomas con un sistema de escritura distinto, como el tailandés. Cuando tiene sentido para una combinación de idiomas, se muestra además una transcripción más fácil de leer junto a la escritura original. Así puedes aprender primero la pronunciación y el significado y, poco a poco, acostumbrarte a la escritura original del idioma."
+    },
+    {
+      "q": "¿La app de vocabulario se adapta a mi progreso de aprendizaje?",
+      "a": "Sí. Langsi diferencia entre vocabulario nuevo y palabras que ya has aprendido o que deberías repasar. Tu estado de aprendizaje evoluciona con tus respuestas, así que las palabras no se repiten al azar, sino según tu progreso real."
+    },
+    {
+      "q": "¿Puedo probar gratis la app de vocabulario Langsi?",
+      "a": "Sí. Puedes registrarte en Langsi y probar la app de vocabulario. Así puedes comprobar tú mismo cómo funciona aprender con audio, frases de ejemplo, pronunciación y repeticiones estructuradas, y si el método Langsi encaja con tu forma de aprender."
+    },
+    {
+      "q": "¿Tengo que instalar la app de vocabulario?",
+      "a": "No. Puedes usar Langsi directamente desde el navegador de tu móvil, tablet u ordenador. En los dispositivos compatibles, también puedes instalar la web app en tu pantalla de inicio y abrir Langsi casi como una app normal."
+    },
+    {
+      "q": "¿Langsi es una buena app de vocabulario para principiantes?",
+      "a": "Sí. Los principiantes se benefician especialmente de no tener que aprender palabras nuevas solo a través de traducciones. La combinación de significado, audio, frases de ejemplo y transcripción opcional ayuda a aprender palabras nuevas en un contexto claro desde el principio. Puedes empezar con contenidos sencillos e ir avanzando poco a poco hacia ejemplos más difíciles."
+    },
+    {
+      "q": "¿La app de vocabulario Langsi usa inteligencia artificial?",
+      "a": "Sí. Langsi utiliza inteligencia artificial para generar, entre otras cosas, traducciones, frases de ejemplo, explicaciones lingüísticas y otra información de aprendizaje para distintas combinaciones de idiomas. La IA es una herramienta dentro del sistema de aprendizaje; el centro sigue siendo el aprendizaje y la repetición estructurada del vocabulario. Como con cualquier contenido generado por IA, algunos resultados pueden contener errores ocasionales, por lo que Langsi se mejora de forma continua."
+    },
+    {
+      "q": "¿Cuánto cuesta la app de vocabulario Langsi?",
+      "a": "Primero puedes probar Langsi sin coste. Qué funciones incluye cada plan y cuánto cuesta el uso lo encuentras directamente en nuestra página de precios, para que puedas decidir qué plan se ajusta a tus objetivos de aprendizaje."
+    },
+    {
+      "q": "¿Puedo cancelar mi suscripción a Langsi en cualquier momento?",
+      "a": "Para los planes de pago de Langsi se aplican las condiciones de duración y cancelación mostradas al contratar. Estas condiciones se muestran antes de que confirmes una suscripción de pago."
+    }
+  ]
 }
