@@ -124,5 +124,14 @@
     "ads_fallback_sub": "Capire parola per parola — non solo tradurre.",
     "ads_empty_state": "Al momento non ci sono esempi disponibili. Torna presto — ampliamo costantemente la nostra offerta.",
     "ads_intro_heading": "Ecco come funziona."
+  },
+  "hub": {
+    "h1": "Capisci il vocabolario. E usalo davvero.",
+    "sub": "Contesto invece di flashcard, frasi vere invece di parole isolate — impara qualsiasi lingua come si parla davvero.",
+    "title": "App di Vocabolario · Langsi",
+    "meta_description": "Langsi è un'app di vocabolario che insegna parole reali in frasi reali — non flashcard. Impara qualsiasi lingua nel contesto. Inizia gratis.",
+    "video_title": "La nostra filosofia",
+    "badge": "Più lingue disponibili",
+    "final_cta_h2": "Comprendi davvero ogni nuova parola."
   }
 }

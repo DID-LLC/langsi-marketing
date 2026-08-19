@@ -124,5 +124,14 @@
     "ads_fallback_sub": "Understand word by word — not just translate.",
     "ads_empty_state": "No examples are available right now. Check back soon — we're expanding our offering all the time.",
     "ads_intro_heading": "This is how it works."
+  },
+  "hub": {
+    "h1": "Understand Vocabulary. Actually Use It.",
+    "sub": "Context instead of flashcards, real sentences instead of isolated words — learn any language the way it's actually spoken.",
+    "title": "Vocabulary App · Langsi",
+    "meta_description": "Langsi is a vocabulary app that teaches real words in real sentences — not flashcards. Learn any language in context. Free to start.",
+    "video_title": "Our philosophy",
+    "badge": "Multiple Languages Available",
+    "final_cta_h2": "Truly understand every new word."
   }
 }

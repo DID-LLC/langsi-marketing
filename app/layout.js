@@ -1,6 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
+  metadataBase: new URL("https://langsi.app"),
   title: "Langsi",
   description: "Langsi Marketing",
 };

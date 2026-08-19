@@ -29,7 +29,11 @@ const SOURCE_LANGS = [
 // border, active-row highlight) — pure styling reference, no live data need:
 // all 11 target pages already exist statically, so each entry is a plain
 // next/link to its own /{code}/th/ route.
-export default function Header({ content, showFaq = true }) {
+// hubLinks: false (default, used by the 11 /{source}/th/ pair pages) links
+// the switcher to the other pair pages (/{code}/th/). true (used by '/' and
+// the 11 /{source}/ hub pages) links to the other hub pages (/{code}/)
+// instead — two separate instances of the same dropdown, different targets.
+export default function Header({ content, showFaq = true, hubLinks = false }) {
   const [langOpen, setLangOpen] = useState(false);
   const currentLang = SOURCE_LANGS.find((l) => l.code === content.base_language);
 
@@ -62,7 +66,7 @@ export default function Header({ content, showFaq = true }) {
                   {SOURCE_LANGS.map((lang) => (
                     <Link
                       key={lang.code}
-                      href={`/${lang.code}/th/`}
+                      href={hubLinks ? `/${lang.code}/` : `/${lang.code}/th/`}
                       onClick={() => setLangOpen(false)}
                       className={`flex items-center gap-2 px-4 py-2.5 text-sm transition-colors border-b border-white/5 last:border-b-0 ${
                         lang.code === content.base_language ? 'text-[#50C878] bg-[#50C878]/10' : 'text-white hover:bg-[#50C878]/10'

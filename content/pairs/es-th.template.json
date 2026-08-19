@@ -124,5 +124,14 @@
     "ads_fallback_sub": "Entender palabra por palabra — no solo traducir.",
     "ads_empty_state": "Actualmente no hay ejemplos disponibles. Vuelve pronto — ampliamos nuestra oferta continuamente.",
     "ads_intro_heading": "Así funciona."
+  },
+  "hub": {
+    "h1": "Entiende el vocabulario. Y úsalo de verdad.",
+    "sub": "Contexto en lugar de tarjetas, frases reales en lugar de palabras sueltas — aprende cualquier idioma tal como se habla de verdad.",
+    "title": "App de Vocabulario · Langsi",
+    "meta_description": "Langsi es una app de vocabulario que enseña palabras reales en frases reales — no tarjetas. Aprende cualquier idioma en contexto. Empieza gratis.",
+    "video_title": "Nuestra filosofía",
+    "badge": "Varios idiomas disponibles",
+    "final_cta_h2": "Comprende de verdad cada palabra nueva."
   }
 }

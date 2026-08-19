@@ -124,5 +124,14 @@
     "ads_fallback_sub": "Wort für Wort verstehen — nicht nur übersetzen.",
     "ads_empty_state": "Aktuell sind noch keine Beispiele verfügbar. Schau bald wieder vorbei — wir erweitern unser Angebot laufend.",
     "ads_intro_heading": "So funktioniert's."
+  },
+  "hub": {
+    "h1": "Vokabeln verstehen. Wirklich anwenden.",
+    "sub": "Kontext statt Karteikarten, echte Sätze statt Einzelwörter — lerne jede Sprache so, wie sie wirklich gesprochen wird.",
+    "title": "Vokabel-App · Langsi",
+    "meta_description": "Langsi ist eine Vokabel-App, die echte Wörter in echten Sätzen lehrt — keine Karteikarten. Jede Sprache im Kontext lernen. Kostenlos starten.",
+    "video_title": "Unsere Philosophie",
+    "badge": "Mehrere Sprachen verfügbar",
+    "final_cta_h2": "Jedes neue Wort wirklich verstehen."
   }
 }

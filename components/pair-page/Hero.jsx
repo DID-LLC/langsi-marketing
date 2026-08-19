@@ -20,8 +20,12 @@ export default function Hero({ content }) {
           style={{ fontFamily: 'Poppins' }}
         >
           <span className="text-white">{content.hero_h1_1}</span>
-          <br />
-          <span style={{ color: '#50C878' }}>{content.hero_h1_2}</span>
+          {content.hero_h1_2 && (
+            <>
+              <br />
+              <span style={{ color: '#50C878' }}>{content.hero_h1_2}</span>
+            </>
+          )}
         </motion.h1>
 
         <motion.p {...fadeUp(0.2)} className="text-white/55 text-base md:text-lg max-w-xl mx-auto mb-8">
