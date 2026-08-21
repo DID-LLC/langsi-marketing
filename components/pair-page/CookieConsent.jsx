@@ -8,9 +8,10 @@
 //     here is already fully localized, so the banner just reads
 //     content.cookie_consent (this page's own language) directly — no lang
 //     state, no supported-locale allowlist.
-//   - Links to the privacy pages are plain <a> tags to app.langsi.app (the
-//     real app, which hosts /datenschutz and /privacy-settings) instead of
-//     react-router <Link>, since this site has no such routes itself.
+//   - The privacy-policy link points at this site's own /datenschutz/ page
+//     (migrated here — see components/legal/) instead of app.langsi.app.
+//     /privacy-settings stays on the app (that page is dynamic — GA4
+//     consent revocation — and deliberately wasn't migrated).
 // localStorage key/version and loadGoogleAnalytics() itself are unchanged —
 // langsi.app and app.langsi.app are different origins so there's no actual
 // storage sharing, but keeping the same key name keeps the two consent
@@ -129,7 +130,7 @@ export default function CookieConsent({ content }) {
                 </div>
                 <p className="text-xs text-white/40 mt-2">
                   {s.more_info}{' '}
-                  <a href="https://app.langsi.app/datenschutz" className="text-[#50C878] hover:underline">
+                  <a href="/datenschutz/" className="text-[#50C878] hover:underline">
                     {s.privacy_policy}
                   </a>
                   .

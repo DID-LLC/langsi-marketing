@@ -1,6 +1,7 @@
-// Link targets stay fixed (app.langsi.app hosts a single set of legal pages,
-// not localized per source language) — only the visible label is
-// translated, via content.footer_legal_labels (imprint/privacy/terms).
+// Legal pages (impressum/datenschutz/agb) now live on this domain — relative
+// links. Login stays on app.langsi.app (unchanged, correct as-is: that's the
+// actual app). Visible label stays translated per source language via
+// content.footer_legal_labels (imprint/privacy/terms).
 export default function Footer({ content }) {
   const L = content.footer_legal_labels;
 
@@ -12,13 +13,13 @@ export default function Footer({ content }) {
           <a href="https://app.langsi.app/login" className="text-white/50 hover:text-white transition-colors">
             {content.footer_login}
           </a>
-          <a href="https://app.langsi.app/impressum" className="text-white/50 hover:text-white transition-colors">
+          <a href="/impressum/" className="text-white/50 hover:text-white transition-colors">
             {L.imprint}
           </a>
-          <a href="https://app.langsi.app/datenschutz" className="text-white/50 hover:text-white transition-colors">
+          <a href="/datenschutz/" className="text-white/50 hover:text-white transition-colors">
             {L.privacy}
           </a>
-          <a href="https://app.langsi.app/agb" className="text-white/50 hover:text-white transition-colors">
+          <a href="/agb/" className="text-white/50 hover:text-white transition-colors">
             {L.terms}
           </a>
         </div>
