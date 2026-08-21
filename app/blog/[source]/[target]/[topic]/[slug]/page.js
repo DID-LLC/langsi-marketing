@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
+import { topicUrlSegment } from '../../../../../../lib/blogRouting.mjs';
 
 const POSTS_PATH = path.join(process.cwd(), 'content/blog/posts.json');
 
@@ -14,20 +15,6 @@ function loadPosts() {
   } catch {
     return [];
   }
-}
-
-// `topic_segment` can be an empty string in the real BlogPost data. An empty
-// string produces an empty URL segment, which Next.js's static export
-// rejects outright — surfacing as the misleading "missing
-// generateStaticParams()" build error instead of anything about the empty
-// segment itself (confirmed by reproducing locally: a single post with
-// topic_segment: "" is enough to trigger it). This fallback is ONLY for the
-// routing/URL segment value — the underlying topic_segment field itself is
-// left untouched for display/metadata use. Used identically in both
-// generateStaticParams() and the lookup below so the generated route and
-// the post it resolves to always agree.
-function topicUrlSegment(post) {
-  return post.topic_segment || 'allgemein';
 }
 
 export async function generateStaticParams() {

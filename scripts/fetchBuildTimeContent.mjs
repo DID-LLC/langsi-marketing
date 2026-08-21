@@ -3,8 +3,10 @@
 // Runs as the `prebuild` step (see package.json) in the GitHub Actions build,
 // before `next build`. Fetches build-time content from the Base44 REST API
 // and writes it to content/pairs/{source}-th.json (one per pair in
-// SOURCE_LANGS below) and content/blog/posts.json — all gitignored,
-// generated fresh on every build.
+// SOURCE_LANGS, see scripts/lib/sourceLangs.mjs) and content/blog/posts.json
+// — all gitignored, generated fresh on every build. scripts/generate-sitemap.mjs
+// runs right after this in the `prebuild` chain and relies on it having
+// already verified every SOURCE_LANGS pair is active.
 //
 // Required env var: BASE44_API_KEY (GitHub Actions secret, already configured).
 // Exits non-zero on any network/auth/shape error so the build fails loudly
@@ -20,6 +22,7 @@
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
+import { SOURCE_LANGS } from './lib/sourceLangs.mjs';
 
 const BASE_URL = 'https://langsi-9a154b61.base44.app/api';
 // getLandingDemo is called through the SDK's dedicated function-invocation
@@ -31,8 +34,6 @@ const BASE_URL = 'https://langsi-9a154b61.base44.app/api';
 // no api_key header on this call, unlike the /api/entities/* calls below.
 const FUNCTIONS_BASE_URL = 'https://langsi-9a154b61.base44.app';
 const API_KEY = process.env.BASE44_API_KEY;
-
-const SOURCE_LANGS = ['de', 'en', 'fr', 'it', 'ru', 'zh', 'hi', 'es', 'ur', 'ar', 'ja'];
 
 const OUTPUT_BLOG_PATH = path.join(process.cwd(), 'content/blog/posts.json');
 

@@ -8,6 +8,17 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+  # Periodic rebuild so sitemap.xml / robots.txt stay current even when no
+  # code changes: BlogPost/LanguagePair content lives in Base44, not in this
+  # repo, so a push-only trigger would never pick up a newly published blog
+  # post. Every run does a full rebuild (scripts/generate-sitemap.mjs runs
+  # as part of `prebuild`) and redeploys, whether or not source changed. To
+  # change the interval, edit the cron expression below (currently every 6
+  # hours) — new content is visible in the live sitemap/robots.txt within
+  # this interval, not instantly.
+  schedule:
+    - cron: "0 */6 * * *"
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
