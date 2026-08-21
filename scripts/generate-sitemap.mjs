@@ -1,18 +1,25 @@
 // scripts/generate-sitemap.mjs
 //
-// Runs as part of the `prebuild` chain (see package.json), AFTER
-// fetchBuildTimeContent.mjs and BEFORE `next build`. Writes robots.txt and
-// four sitemap XML files into public/, so Next's static export (output:
-// 'export') copies them into out/ verbatim along with everything else in
-// public/ — no separate build step or postbuild hook needed.
+// Runs as its own explicit step in .github/workflows/nextjs.yml ("Generate
+// sitemap and robots.txt"), AFTER "Fetch build-time content from Base44"
+// (scripts/fetchBuildTimeContent.mjs) and BEFORE "Build with Next.js". NOT
+// wired through npm's `prebuild` lifecycle hook — the workflow calls
+// `node scripts/fetchBuildTimeContent.mjs` and `npx next build` directly as
+// separate steps, never `npm run build`/`npm run prebuild`, so a script
+// only added to package.json's "prebuild" would silently never run in CI.
+// (package.json's "prebuild" chain still calls this too, purely so a local
+// `npm run build` behaves the same way — CI does not use it.)
+// Writes robots.txt and four sitemap XML files into public/, so Next's
+// static export (output: 'export') copies them into out/ verbatim along
+// with everything else in public/.
 //
 // Deliberately does NOT re-fetch LanguagePair from Base44: this site only
 // ever ships the 11 SOURCE_LANGS -> 'th' pairs (see scripts/lib/sourceLangs.mjs),
 // and fetchBuildTimeContent.mjs already fails the whole build (exit 1) if
 // any one of those 11 pairs is missing or inactive. So by the time this
 // script runs, every one of the 11 has already been verified active by the
-// prebuild step that ran immediately before it — a second independent check
-// here would just be a redundant API call.
+// step that ran immediately before it — a second independent check here
+// would just be a redundant API call.
 //
 // Blog URLs are read from content/blog/posts.json, written by
 // fetchBuildTimeContent.mjs's buildBlogPosts() — same file the actual

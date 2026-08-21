@@ -5,8 +5,8 @@
 // and writes it to content/pairs/{source}-th.json (one per pair in
 // SOURCE_LANGS, see scripts/lib/sourceLangs.mjs) and content/blog/posts.json
 // — all gitignored, generated fresh on every build. scripts/generate-sitemap.mjs
-// runs right after this in the `prebuild` chain and relies on it having
-// already verified every SOURCE_LANGS pair is active.
+// runs right after this as its own workflow step (see .github/workflows/nextjs.yml)
+// and relies on it having already verified every SOURCE_LANGS pair is active.
 //
 // Required env var: BASE44_API_KEY (GitHub Actions secret, already configured).
 // Exits non-zero on any network/auth/shape error so the build fails loudly

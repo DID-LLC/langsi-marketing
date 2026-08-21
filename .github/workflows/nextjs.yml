@@ -11,8 +11,8 @@ on:
   # Periodic rebuild so sitemap.xml / robots.txt stay current even when no
   # code changes: BlogPost/LanguagePair content lives in Base44, not in this
   # repo, so a push-only trigger would never pick up a newly published blog
-  # post. Every run does a full rebuild (scripts/generate-sitemap.mjs runs
-  # as part of `prebuild`) and redeploys, whether or not source changed. To
+  # post. Every run does a full rebuild (see the "Generate sitemap and
+  # robots.txt" step below) and redeploys, whether or not source changed. To
   # change the interval, edit the cron expression below (currently every 6
   # hours) — new content is visible in the live sitemap/robots.txt within
   # this interval, not instantly.
@@ -53,6 +53,8 @@ jobs:
         run: node scripts/fetchBuildTimeContent.mjs
         env:
           BASE44_API_KEY: ${{ secrets.BASE44_API_KEY }}
+      - name: Generate sitemap and robots.txt
+        run: node scripts/generate-sitemap.mjs
       - name: Build with Next.js
         run: npx next build
       - name: Upload artifact
