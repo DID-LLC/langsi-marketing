@@ -99,7 +99,7 @@ export default function Header({ content, showFaq = true, hubLinks = false }) {
               FAQ
             </a>
           )}
-          <a href="https://app.langsi.app/login" className="text-white/60 hover:text-white text-sm transition-colors">
+          <a href="/login/" className="text-white/60 hover:text-white text-sm transition-colors">
             {content.nav_login}
           </a>
           <a

@@ -67,7 +67,7 @@
     "trust2": "Cancel anytime",
     "trust3": "Ready immediately"
   },
-  "app_deep_link": "https://app.langsi.app/register?source=en&target=th",
+  "app_deep_link": "/register/?source=en&target=th",
   "progress": {
     "tag": "Your Progress",
     "h2": "Learning that stays visible",

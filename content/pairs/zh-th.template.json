@@ -67,7 +67,7 @@
     "trust2": "随时可取消",
     "trust3": "即刻可用"
   },
-  "app_deep_link": "https://app.langsi.app/register?source=zh&target=th",
+  "app_deep_link": "/register/?source=zh&target=th",
   "progress": {
     "tag": "你的学习进度",
     "h2": "看得见的学习成果",

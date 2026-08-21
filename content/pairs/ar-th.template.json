@@ -67,7 +67,7 @@
     "trust2": "ألغِ في أي وقت",
     "trust3": "جاهز فورًا"
   },
-  "app_deep_link": "https://app.langsi.app/register?source=ar&target=th",
+  "app_deep_link": "/register/?source=ar&target=th",
   "progress": {
     "tag": "تقدّمك",
     "h2": "تعلّم يبقى واضحًا للعين",

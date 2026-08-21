@@ -67,7 +67,7 @@
     "trust2": "いつでも解約可能",
     "trust3": "すぐに利用可能"
   },
-  "app_deep_link": "https://app.langsi.app/register?source=ja&target=th",
+  "app_deep_link": "/register/?source=ja&target=th",
   "progress": {
     "tag": "あなたの進捗",
     "h2": "見える形で残る学習",

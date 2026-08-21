@@ -67,7 +67,7 @@
     "trust2": "Отмена в любой момент",
     "trust3": "Готово сразу"
   },
-  "app_deep_link": "https://app.langsi.app/register?source=ru&target=th",
+  "app_deep_link": "/register/?source=ru&target=th",
   "progress": {
     "tag": "Твой прогресс",
     "h2": "Обучение, которое видно",

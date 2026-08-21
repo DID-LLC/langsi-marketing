@@ -67,7 +67,7 @@
     "trust2": "कभी भी रद्द करें",
     "trust3": "तुरंत तैयार"
   },
-  "app_deep_link": "https://app.langsi.app/register?source=hi&target=th",
+  "app_deep_link": "/register/?source=hi&target=th",
   "progress": {
     "tag": "आपकी प्रगति",
     "h2": "ऐसा सीखना जो दिखता है",

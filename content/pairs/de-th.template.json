@@ -67,7 +67,7 @@
     "trust2": "Jederzeit kündbar",
     "trust3": "Sofort einsatzbereit"
   },
-  "app_deep_link": "https://app.langsi.app/register?source=de&target=th",
+  "app_deep_link": "/register/?source=de&target=th",
   "progress": {
     "tag": "Dein Fortschritt",
     "h2": "Lernen, das sichtbar bleibt",
